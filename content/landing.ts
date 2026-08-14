@@ -227,7 +227,7 @@ export const site: SiteContent = {
   title: "Envíos a Cuba desde Miami | Precios claros y tracking | CT Envios",
   description:
     "Envía a Cuba desde Miami con CT Envios: tarifas desde $0.99/lb, cajas fijas, tracking en tiempo real y atención por WhatsApp en Hialeah Gardens. Cotiza hoy.",
-  phones: ["(305) 851-3004", "(754) 313-3140"],
+  phones: ["(305) 851-3004"],
   whatsappDisplay: "(754) 277-8810",
   email: "soporte@ctenvios.com",
   address: "10230 NW 80th Ave",

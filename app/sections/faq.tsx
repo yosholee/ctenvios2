@@ -43,11 +43,11 @@ export function Faq(): ReactElement {
             <Image
               src={faq.image.src}
               alt={faq.image.alt}
-              width={900}
-              height={1100}
-              quality={100}
+              width={408}
+              height={612}
+              quality={75}
               className="relative z-10 h-auto w-full max-w-sm object-contain object-bottom lg:max-w-md"
-              sizes="(max-width: 1024px) 80vw, 420px"
+              sizes="(max-width: 1024px) 384px, 448px"
               priority={false}
             />
           </div>

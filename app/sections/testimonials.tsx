@@ -5,7 +5,11 @@ import { testimonials } from "@/content/landing";
 
 function Stars({ rating }: { rating: number }): ReactElement {
   return (
-    <div className="flex items-center gap-0.5" aria-label={`${rating} de 5`}>
+    <div
+      className="flex items-center gap-0.5"
+      role="img"
+      aria-label={`${rating} de 5`}
+    >
       {Array.from({ length: 5 }, (_, index) => (
         <StarIcon
           key={index}

@@ -3,7 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   allowedDevOrigins: ["10.1.10.70"],
   images: {
-    qualities: [75, 100],
+    // Default Next quality is 75; keep allowlist tight for /_next/image.
+    qualities: [75],
+    formats: ["image/avif", "image/webp"],
   },
   async headers(): Promise<
     { source: string; headers: { key: string; value: string }[] }[]

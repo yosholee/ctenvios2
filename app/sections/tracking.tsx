@@ -126,7 +126,7 @@ export function Tracking(): ReactElement {
                 alt={tracking.image.alt}
                 width={559}
                 height={447}
-                quality={100}
+                quality={75}
                 priority={false}
                 className="h-auto w-full object-contain"
                 sizes="(max-width: 1024px) 90vw, 480px"

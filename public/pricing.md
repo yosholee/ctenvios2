@@ -4,7 +4,7 @@ Last updated: 2026-08-14
 
 Envíos marítimos a Cuba desde Miami (Hialeah Gardens, FL). Moneda: USD. Cotiza por WhatsApp antes de empacar.
 
-Contacto: https://wa.me/17542778810 · soporte@ctenvios.com · (305) 851-3004 · (754) 313-3140
+Contacto: https://wa.me/17542778810 · soporte@ctenvios.com · (305) 851-3004
 
 ## Tarifas por libra (mínimo 15 lb)
 
