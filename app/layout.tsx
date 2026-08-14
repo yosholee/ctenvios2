@@ -1,22 +1,74 @@
 import type { ReactElement } from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Inter } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
+import { JsonLd } from "@/components/json-ld";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { site } from "@/content/landing";
+import { SITE_URL } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: site.title,
   description: site.description,
+  applicationName: site.brand,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: [{ url: site.logoSrc, type: "image/webp" }],
+    apple: [{ url: site.logoSrc, type: "image/webp" }],
+  },
+  openGraph: {
+    type: "website",
+    locale: "es_US",
+    url: SITE_URL,
+    siteName: site.brand,
+    title: site.title,
+    description: site.description,
+    images: [
+      {
+        url: "/images/hero/shipping-1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Envíos marítimos a Cuba desde Miami — CT Envios",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.title,
+    description: site.description,
+    images: ["/images/hero/shipping-1.jpg"],
+  },
+  other: {
+    "llms-txt": `${SITE_URL}/llms.txt`,
+  },
 };
 
 export default function RootLayout({
@@ -24,17 +76,23 @@ export default function RootLayout({
 }: LayoutProps<"/">): ReactElement {
   return (
     <html
-      lang="es"
-      suppressHydrationWarning
+      lang="es-US"
       className={cn(
-              "h-full scroll-smooth antialiased font-sans",
-              geistMono.variable
-            , "font-sans", inter.variable)}
+        "h-full scroll-smooth antialiased font-sans",
+        geistMono.variable,
+        "font-sans",
+        inter.variable
+      )}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
-        <ThemeProvider>
-          <TooltipProvider>{children}</TooltipProvider>
-        </ThemeProvider>
+        <JsonLd />
+        <a
+          href="#contenido"
+          className="bg-brand-navy text-white focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-full focus:px-4 focus:py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow sr-only focus:not-sr-only"
+        >
+          Saltar al contenido
+        </a>
+        <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
   );

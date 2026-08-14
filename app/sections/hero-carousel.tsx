@@ -26,9 +26,26 @@ interface HeroCarouselProps {
   slides: readonly OfferSlide[];
 }
 
+function usePrefersReducedMotion(): boolean {
+  const [reduced, setReduced] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const onChange = (): void => {
+      setReduced(media.matches);
+    };
+    onChange();
+    media.addEventListener("change", onChange);
+    return () => media.removeEventListener("change", onChange);
+  }, []);
+
+  return reduced;
+}
+
 export function HeroCarousel({ slides }: HeroCarouselProps): ReactElement {
   const [api, setApi] = useState<CarouselApi>();
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
     if (!api) {
@@ -53,7 +70,11 @@ export function HeroCarousel({ slides }: HeroCarouselProps): ReactElement {
     <div className="relative w-full px-6 text-white">
       <Carousel
         opts={{ loop: true }}
-        plugins={[Autoplay({ delay: 3500, stopOnInteraction: true })]}
+        plugins={
+          prefersReducedMotion
+            ? []
+            : [Autoplay({ delay: 3500, stopOnInteraction: true })]
+        }
         setApi={setApi}
         className="w-full"
       >
@@ -70,9 +91,9 @@ export function HeroCarousel({ slides }: HeroCarouselProps): ReactElement {
                   </span>
                 </div>
                 <div className="mt-0.5 flex items-baseline justify-center gap-2">
-                  <h3 className="text-xl font-black tracking-tight text-white sm:text-2xl">
+                  <p className="text-xl font-black tracking-tight text-white sm:text-2xl">
                     {slide.title}
-                  </h3>
+                  </p>
                   {slide.regularPrice ? (
                     <span className="text-[11px] font-semibold text-white/45 line-through">
                       {slide.regularPrice}
@@ -110,7 +131,7 @@ export function HeroCarousel({ slides }: HeroCarouselProps): ReactElement {
               aria-current={isActive ? "true" : undefined}
               onClick={() => api?.scrollTo(index)}
               className={cn(
-                "h-1 rounded-full transition-all duration-300",
+                "h-1 rounded-full transition-[width,background-color] duration-300 focus-visible:ring-2 focus-visible:ring-brand-yellow/80 focus-visible:outline-none",
                 isActive
                   ? "w-4 bg-brand-yellow"
                   : "w-1 bg-white/30 hover:bg-white/45"

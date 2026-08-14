@@ -35,7 +35,7 @@ export function Offers(): ReactElement {
           <span className="inline-flex rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold tracking-wide text-brand-navy uppercase">
             {offers.eyebrow}
           </span>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl lg:text-5xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-balance text-brand-navy sm:text-4xl lg:text-5xl">
             {headlineBefore}
             {highlightIndex >= 0 ? (
               <Highlighter
@@ -138,7 +138,7 @@ export function Offers(): ReactElement {
                 <div className="relative z-10 mt-6 flex items-end gap-2">
                   <span
                     className={cn(
-                      "text-5xl font-black tracking-tight",
+                      "text-5xl font-black tracking-tight tabular-nums",
                       isFeatured ? "text-white" : "text-brand-navy"
                     )}
                   >
@@ -204,7 +204,7 @@ export function Offers(): ReactElement {
                             : "bg-brand-yellow/40 text-brand-navy"
                         )}
                       >
-                        <CheckIcon className="size-3" />
+                        <CheckIcon className="size-3" aria-hidden />
                       </span>
                       {feature}
                     </li>

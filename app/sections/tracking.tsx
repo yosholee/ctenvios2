@@ -43,7 +43,7 @@ function TrackingNotification({
     <figure
       className={cn(
         "relative mx-auto w-full max-w-md overflow-hidden rounded-2xl border border-brand-navy/10 bg-white p-4",
-        "transition-all duration-200 ease-in-out hover:border-brand-navy/20"
+        "transition-[border-color] duration-200 ease-in-out hover:border-brand-navy/20"
       )}
     >
       <div className="flex flex-row items-center gap-3">
@@ -84,7 +84,7 @@ export function Tracking(): ReactElement {
           <span className="inline-flex rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold tracking-wide text-brand-navy uppercase">
             {tracking.eyebrow}
           </span>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl lg:text-5xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-balance text-brand-navy sm:text-4xl lg:text-5xl">
             {tracking.headline}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-brand-navy/65 sm:text-lg">
@@ -94,7 +94,7 @@ export function Tracking(): ReactElement {
             href={tracking.cta.href}
             target={tracking.cta.external ? "_blank" : undefined}
             rel={tracking.cta.external ? "noreferrer" : undefined}
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-yellow px-5 py-2.5 text-sm font-bold text-brand-navy transition-colors hover:bg-brand-yellow/90"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-yellow px-5 py-2.5 text-sm font-bold text-brand-navy transition-colors hover:bg-brand-yellow/90 focus-visible:ring-2 focus-visible:ring-brand-navy/35 focus-visible:outline-none"
           >
             <MapPinIcon className="size-4" aria-hidden />
             {tracking.cta.label}
@@ -134,7 +134,11 @@ export function Tracking(): ReactElement {
             </div>
           </div>
 
-          <div className="relative mx-auto h-[360px] w-full max-w-md overflow-hidden sm:h-[400px] lg:mx-0 lg:h-[440px] lg:-translate-x-2">
+          <div
+            className="relative mx-auto h-[360px] w-full max-w-md overflow-hidden sm:h-[400px] lg:mx-0 lg:h-[440px] lg:-translate-x-2"
+            aria-live="polite"
+            aria-atomic="false"
+          >
             <p className="mb-3 text-center text-xs font-semibold tracking-wide text-brand-navy/45 uppercase lg:text-left">
               Actualizaciones en vivo
             </p>

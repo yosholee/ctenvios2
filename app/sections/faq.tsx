@@ -56,7 +56,7 @@ export function Faq(): ReactElement {
             <span className="inline-flex w-fit rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold tracking-wide text-brand-navy uppercase">
               FAQ
             </span>
-            <h2 className="mt-5 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="mt-5 text-3xl font-bold tracking-tight text-balance text-white sm:text-4xl">
               {faq.headline}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white/60 sm:text-lg">

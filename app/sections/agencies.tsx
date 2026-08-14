@@ -19,7 +19,7 @@ export function Agencies(): ReactElement {
           </div>
 
           <div className="flex flex-col justify-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl">
               {agencies.headline}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white/70 sm:text-lg">
@@ -30,7 +30,7 @@ export function Agencies(): ReactElement {
               {agencies.benefits.map((benefit) => (
                 <li key={benefit.id} className="flex items-center gap-2.5">
                   <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                    <CheckIcon className="size-3" />
+                    <CheckIcon aria-hidden className="size-3" />
                   </span>
                   <span className="text-sm font-medium text-white">
                     {benefit.title}
@@ -43,7 +43,7 @@ export function Agencies(): ReactElement {
               href={agencies.cta.href}
               target={agencies.cta.external ? "_blank" : undefined}
               rel={agencies.cta.external ? "noreferrer" : undefined}
-              className="mt-8 inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-brand-yellow transition-colors hover:text-white"
+              className="mt-8 inline-flex w-fit items-center gap-1.5 rounded-sm text-sm font-semibold text-brand-yellow transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-brand-yellow/70 focus-visible:outline-none"
             >
               {agencies.cta.label}
               <ArrowRightIcon className="size-4" aria-hidden />

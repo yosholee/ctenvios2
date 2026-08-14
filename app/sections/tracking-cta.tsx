@@ -1,6 +1,6 @@
 "use client";
 
-import type { FormEvent, ReactElement } from "react";
+import type { ReactElement, SubmitEvent } from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,7 +9,7 @@ import { tracking } from "@/content/landing";
 export function TrackingCta(): ReactElement {
   const [value, setValue] = useState("");
 
-  const onSubmit = (event: FormEvent<HTMLFormElement>): void => {
+  const onSubmit = (event: SubmitEvent<HTMLFormElement>): void => {
     event.preventDefault();
     const query = value.trim();
     const url = query
@@ -23,7 +23,7 @@ export function TrackingCta(): ReactElement {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
         <div className="rounded-3xl border border-border bg-card p-6 shadow-sm sm:p-10">
           <div className="max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
               {tracking.headline}
             </h2>
             <p className="mt-3 text-muted-foreground">{tracking.support}</p>
@@ -34,10 +34,14 @@ export function TrackingCta(): ReactElement {
             className="mt-8 flex flex-col gap-3 sm:flex-row"
           >
             <Input
+              name="tracking"
               value={value}
               onChange={(event) => setValue(event.target.value)}
               placeholder={tracking.placeholder}
               aria-label={tracking.placeholder}
+              autoComplete="off"
+              spellCheck={false}
+              inputMode="text"
               className="h-11 flex-1"
             />
             <Button type="submit" size="lg" className="sm:min-w-36">

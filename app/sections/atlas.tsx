@@ -145,7 +145,7 @@ export function Atlas(): ReactElement {
             href={atlas.cta.href}
             target={atlas.cta.external ? "_blank" : undefined}
             rel={atlas.cta.external ? "noreferrer" : undefined}
-            className="inline-flex items-center gap-2 rounded-full bg-brand-yellow px-5 py-2.5 text-sm font-bold text-brand-navy transition-colors hover:bg-brand-yellow/90"
+            className="inline-flex items-center gap-2 rounded-full bg-brand-yellow px-5 py-2.5 text-sm font-bold text-brand-navy transition-colors hover:bg-brand-yellow/90 focus-visible:ring-2 focus-visible:ring-brand-navy/35 focus-visible:outline-none"
           >
             {atlas.cta.label}
             <ArrowRightIcon className="size-4" aria-hidden />

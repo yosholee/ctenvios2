@@ -10,7 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Highlighter } from "@/components/ui/highlighter";
 import { OrbitingCircles } from "@/components/ui/orbiting-circles";
-import { getActiveOffers, hero, site } from "@/content/landing";
+import { getActiveOffers, formatPrice, hero, site } from "@/content/landing";
 import { HeroCarousel } from "@/app/sections/hero-carousel";
 
 function OrbitIcon({
@@ -33,11 +33,11 @@ export function Hero(): ReactElement {
   const offerSlides = getActiveOffers().map((offer) => ({
     id: offer.id,
     label: offer.dayLabel,
-    title: `$${offer.price.toFixed(2)} ${offer.unit}`,
+    title: `${formatPrice(offer.price)} ${offer.unit}`,
     description: `${offer.category}. Mínimo ${offer.minLbs} lb.`,
     regularPrice:
       offer.price < offer.regularPrice
-        ? `$${offer.regularPrice.toFixed(2)}${offer.unit}`
+        ? `${formatPrice(offer.regularPrice)}${offer.unit}`
         : undefined,
     featured: offer.featured,
   }));
@@ -49,7 +49,7 @@ export function Hero(): ReactElement {
           <span className="inline-flex rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold tracking-wide text-brand-navy uppercase">
             {hero.eyebrow}
           </span>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-brand-navy sm:text-5xl lg:text-[3.25rem] lg:leading-[1.2]">
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-balance text-brand-navy sm:text-5xl lg:text-[3.25rem] lg:leading-[1.2]">
             Envíos a Cuba desde Miami:{" "}
             <Highlighter
               action="underline"
@@ -69,7 +69,7 @@ export function Hero(): ReactElement {
               href={site.mapsUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex w-full min-w-0 max-w-full items-center justify-center gap-2 rounded-full border border-brand-navy/10 bg-brand-navy/[0.03] px-3 py-2 text-left text-sm text-brand-navy/70 transition-colors hover:border-brand-navy/20 hover:bg-brand-navy/[0.06] hover:text-brand-navy sm:w-auto sm:justify-start sm:px-3.5 lg:justify-start"
+              className="inline-flex w-full min-w-0 max-w-full items-center justify-center gap-2 rounded-full border border-brand-navy/10 bg-brand-navy/[0.03] px-3 py-2 text-left text-sm text-brand-navy/70 transition-colors hover:border-brand-navy/20 hover:bg-brand-navy/[0.06] hover:text-brand-navy focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:outline-none sm:w-auto sm:justify-start sm:px-3.5 lg:justify-start"
             >
               <MapPinIcon
                 className="size-4 shrink-0 text-brand-navy/55"
@@ -100,12 +100,12 @@ export function Hero(): ReactElement {
               size="lg"
               className="shrink-0 bg-brand-yellow text-brand-navy hover:bg-brand-yellow/90"
             >
-              <MessageCircleIcon data-icon="inline-start" />
+              <MessageCircleIcon data-icon="inline-start" aria-hidden />
               {hero.primaryCta.label}
             </Button>
             <a
               href={hero.secondaryCta.href}
-              className="inline-flex shrink items-center gap-1 text-sm font-semibold whitespace-nowrap text-brand-navy transition-colors hover:text-brand"
+              className="inline-flex shrink items-center gap-1 rounded-sm text-sm font-semibold whitespace-nowrap text-brand-navy transition-colors hover:text-brand focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:outline-none"
             >
               {hero.secondaryCta.label}
               <ArrowRightIcon className="size-4" aria-hidden />
@@ -130,7 +130,7 @@ export function Hero(): ReactElement {
                 speed={1}
               >
                 <OrbitIcon className="border-brand/30 bg-brand text-white shadow-sm">
-                  <MessageCircleIcon className="size-5" />
+                  <MessageCircleIcon className="size-5" aria-hidden />
                 </OrbitIcon>
               </OrbitingCircles>
 
@@ -144,7 +144,7 @@ export function Hero(): ReactElement {
                 reverse
               >
                 <OrbitIcon className="border-brand-navy/20 bg-white text-brand-navy shadow-sm">
-                  <ShipIcon className="size-5" />
+                  <ShipIcon className="size-5" aria-hidden />
                 </OrbitIcon>
               </OrbitingCircles>
 
@@ -157,7 +157,7 @@ export function Hero(): ReactElement {
                 speed={0.8}
               >
                 <OrbitIcon className="border-brand-yellow/50 bg-brand-yellow text-brand-navy shadow-sm">
-                  <PackageIcon className="size-5" />
+                  <PackageIcon className="size-5" aria-hidden />
                 </OrbitIcon>
               </OrbitingCircles>
             </div>

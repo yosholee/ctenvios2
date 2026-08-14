@@ -224,9 +224,9 @@ export const site: SiteContent = {
   brand: "CT Envios",
   logoSrc: "/brand/logo.webp",
   tagline: "Tu aliado en cada envío",
-  title: "Envíos a Cuba desde Miami | CT Envios",
+  title: "Envíos a Cuba desde Miami | Precios claros y tracking | CT Envios",
   description:
-    "Envíos a Cuba con precios bajos, tracking en tiempo real y atención real por WhatsApp. Agencia en Hialeah Gardens.",
+    "Envía a Cuba desde Miami con CT Envios: tarifas desde $0.99/lb, cajas fijas, tracking en tiempo real y atención por WhatsApp en Hialeah Gardens. Cotiza hoy.",
   phones: ["(305) 851-3004", "(754) 313-3140"],
   whatsappDisplay: "(754) 277-8810",
   email: "soporte@ctenvios.com",
@@ -234,13 +234,13 @@ export const site: SiteContent = {
   city: "Hialeah Gardens, FL 33016",
   mapsUrl: "https://maps.google.com/?q=10230+NW+80th+Ave+Hialeah+Gardens+FL",
   whatsappUrl: "https://wa.me/17542778810",
-  trackingUrl: "https://ctenvios.com/tracking",
+  trackingUrl: "https://atlas.ctenvios.com/tracking",
   nav: [
     { label: "Inicio", href: "#" },
-    { label: "Servicios", href: "#servicios" },
     { label: "Precios", href: "#ofertas" },
+    { label: "Cajas", href: "#cajas" },
+    { label: "Reseñas", href: "#reseñas" },
     { label: "Tracking", href: "#tracking" },
-    { label: "Agencias", href: "#agencias" },
     { label: "FAQ", href: "#faq" },
     { label: "Contacto", href: "#contacto" },
   ],
@@ -333,7 +333,7 @@ export const tracking: TrackingContent = {
   headline: "Conozca en todo momento dónde se encuentra su envío",
   support:
     "Sigue cada etapa desde que recibimos el paquete en Miami hasta la entrega en Cuba.",
-  placeholder: "Ingresa tu número de tracking",
+  placeholder: "Ingresa tu número de tracking…",
   buttonLabel: "Tracking",
   steps: [
     { id: "recibido", label: "Recibido" },
@@ -381,7 +381,7 @@ export const tracking: TrackingContent = {
   ],
   cta: {
     label: "Tracking",
-    href: "https://ctenvios.com/tracking",
+    href: "https://atlas.ctenvios.com/tracking",
     external: true,
   },
   image: {
@@ -587,16 +587,28 @@ export const faq: FaqContent = {
       title: "Información general",
       items: [
         {
+          id: "que-es",
+          question: "¿Qué es CT Envios?",
+          answer:
+            "CT Envios es una agencia de envíos marítimos a Cuba desde Miami, con sede en Hialeah Gardens, FL. Ofrecemos tarifas por libra y cajas fijas, entrega puerta a puerta, tracking en tiempo real y atención personalizada por WhatsApp.",
+        },
+        {
           id: "tiempo",
           question: "¿Qué tiempo demora un envío a Cuba?",
           answer:
-            "Depende de la ruta marítima y aduana. Cotiza por WhatsApp para un estimado según tu paquete.",
+            "El tiempo depende de la ruta marítima y de los tiempos de aduana en Cuba. No hay un plazo fijo para todos los paquetes. Al cotizar por WhatsApp te damos un estimado según el tipo de carga, destino y oferta del día.",
         },
         {
           id: "peso",
           question: "¿Cuál es el peso mínimo o máximo?",
           answer:
-            "Las ofertas semanales suelen tener mínimo de 15 libras. Confirma el máximo permitido según el tipo de producto.",
+            "Las ofertas semanales de CT Envios suelen tener un mínimo de 15 libras. El máximo permitido depende del tipo de producto (alimentos, aseo, electrodomésticos, etc.). Confírmalo al cotizar antes de empacar.",
+        },
+        {
+          id: "precios",
+          question: "¿Cuánto cuesta enviar a Cuba con CT Envios?",
+          answer:
+            "Las tarifas por libra van desde $0.99/lb los jueves (alimentos, medicina y aseo) hasta $1.99/lb en precio regular, con mínimo de 15 lb. También hay cajas fijas desde $30. Consulta /pricing.md o la sección de precios del sitio para el detalle actualizado.",
         },
       ],
     },
@@ -608,13 +620,13 @@ export const faq: FaqContent = {
           id: "prohibidos",
           question: "¿Qué artículos están prohibidos?",
           answer:
-            "No se admiten artículos restringidos por aduana. Pregúntanos antes de empacar para evitar demoras.",
+            "No se admiten artículos restringidos por aduana cubana ni por la normativa de transporte. Pregúntanos por WhatsApp antes de empacar para evitar demoras, decomisos o costos extra. En cajas fijas solo se admiten Alimentos, Aseo, Ropa y Medicinas.",
         },
         {
           id: "seguro",
           question: "¿Ofrecen seguro?",
           answer:
-            "Sí. Pregunta por opciones de protección al cotizar tu envío.",
+            "Sí. CT Envios ofrece opciones de protección al cotizar tu envío. Pregunta por cobertura y condiciones cuando escribas por WhatsApp con el detalle de tu paquete.",
         },
       ],
     },
@@ -626,13 +638,13 @@ export const faq: FaqContent = {
           id: "rastrear",
           question: "¿Cómo rastreo mi paquete?",
           answer:
-            "Usa tu número de tracking en la sección de rastreo o en ctenvios.com/tracking.",
+            "Ingresa tu número de tracking en la sección de rastreo del sitio o en ctenvios.com/tracking. Verás el estado actualizado: recibido, en tránsito, en aduana Cuba, en reparto y entregado.",
         },
         {
           id: "danado",
-          question: "¿Qué hago si hay un problema?",
+          question: "¿Qué hago si hay un problema con mi envío?",
           answer:
-            "Escríbenos por WhatsApp con el tracking, destinatario y descripción del caso.",
+            "Escríbenos por WhatsApp con el número de tracking, nombre del destinatario y una descripción clara del caso. El equipo de CT Envios te orienta sobre el siguiente paso según el estado del paquete.",
         },
       ],
     },
@@ -792,5 +804,8 @@ export function getActiveOffers(): OfferItem[] {
 }
 
 export function formatPrice(price: number): string {
-  return `$${price.toFixed(2)}`;
+  return new Intl.NumberFormat("es-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(price);
 }

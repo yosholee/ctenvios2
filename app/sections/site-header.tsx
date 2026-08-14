@@ -5,7 +5,6 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MenuIcon } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -20,12 +19,16 @@ export function SiteHeader(): ReactElement {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 bg-background/90 pt-[env(safe-area-inset-top)] backdrop-blur-md">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3 lg:px-8"
       >
-        <Link href="/" className="flex shrink-0 items-center gap-2">
+        <Link
+          href="/"
+          translate="no"
+          className="flex shrink-0 items-center gap-2 rounded-sm focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:outline-none"
+        >
           <Image
             src={site.logoSrc}
             alt={site.brand}
@@ -41,7 +44,7 @@ export function SiteHeader(): ReactElement {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-semibold text-foreground transition-colors hover:text-primary"
+              className="rounded-sm text-sm font-semibold text-foreground transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:outline-none"
             >
               {item.label}
             </a>
@@ -49,7 +52,6 @@ export function SiteHeader(): ReactElement {
         </div>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger
               render={
@@ -62,9 +64,12 @@ export function SiteHeader(): ReactElement {
                 />
               }
             >
-              <MenuIcon className="size-5" />
+              <MenuIcon className="size-5" aria-hidden />
             </SheetTrigger>
-            <SheetContent side="right" className="w-[min(100%,20rem)]">
+            <SheetContent
+              side="right"
+              className="w-[min(100%,20rem)] overscroll-contain"
+            >
               <SheetHeader>
                 <SheetTitle>{site.brand}</SheetTitle>
               </SheetHeader>
@@ -74,7 +79,7 @@ export function SiteHeader(): ReactElement {
                     key={item.href}
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="rounded-lg px-3 py-3 text-base font-semibold text-foreground transition-colors hover:bg-muted"
+                    className="rounded-lg px-3 py-3 text-base font-semibold text-foreground transition-colors hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:outline-none"
                   >
                     {item.label}
                   </a>

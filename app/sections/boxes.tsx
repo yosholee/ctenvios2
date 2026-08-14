@@ -29,7 +29,7 @@ export function Boxes(): ReactElement {
               <div className="my-8 border-t border-dashed border-brand-navy/20" />
 
               <div className="flex items-end justify-center gap-2.5">
-                <span className="text-5xl font-black tracking-tight text-brand-navy sm:text-6xl">
+                <span className="text-5xl font-black tracking-tight text-brand-navy tabular-nums sm:text-6xl">
                   {formatPrice(regularOffer.price)}
                 </span>
                 <span className="mb-1.5 flex flex-col text-left text-sm leading-tight text-brand-navy/45">
@@ -44,7 +44,7 @@ export function Boxes(): ReactElement {
             <span className="inline-flex rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold tracking-wide text-brand-navy uppercase">
               {boxes.eyebrow}
             </span>
-            <h2 className="mt-5 text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl">
+            <h2 className="mt-5 text-3xl font-bold tracking-tight text-balance text-brand-navy sm:text-4xl">
               {boxes.headline}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-brand-navy/65">

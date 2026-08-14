@@ -5,14 +5,17 @@ import { footer, site } from "@/content/landing";
 
 export function ContactFooter(): ReactElement {
   return (
-    <footer id="contacto" className="scroll-mt-20 bg-brand-navy text-white">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-[1.2fr_1fr] lg:px-8">
+    <footer
+      id="contacto"
+      className="scroll-mt-20 bg-brand-navy pb-[env(safe-area-inset-bottom)] text-white"
+    >      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-[1.2fr_1fr] lg:px-8">
         <div>
           <Image
             src={site.logoSrc}
             alt={site.brand}
             width={140}
             height={56}
+            translate="no"
             className="h-12 w-auto object-contain"
           />
           <p className="mt-4 max-w-md text-sm text-white/75 md:text-base">
@@ -50,7 +53,7 @@ export function ContactFooter(): ReactElement {
               <a
                 key={phone}
                 href={`tel:${phone.replace(/[^\d+]/g, "")}`}
-                className="block text-white/75 transition-colors hover:text-white"
+                className="block rounded-sm text-white/75 transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-brand-yellow/60 focus-visible:outline-none"
               >
                 {phone}
               </a>
@@ -60,7 +63,7 @@ export function ContactFooter(): ReactElement {
             <p className="font-semibold">Correo</p>
             <a
               href={`mailto:${site.email}`}
-              className="block text-white/75 transition-colors hover:text-white"
+              className="block rounded-sm text-white/75 transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-brand-yellow/60 focus-visible:outline-none"
             >
               {site.email}
             </a>
@@ -82,7 +85,7 @@ export function ContactFooter(): ReactElement {
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-white/75 transition-colors hover:text-white"
+                  className="rounded-sm text-white/75 transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-brand-yellow/60 focus-visible:outline-none"
                 >
                   {item.label}
                 </a>
@@ -93,14 +96,14 @@ export function ContactFooter(): ReactElement {
       </div>
       <div className="border-t border-white/15">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-6 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <p>
+          <p translate="no">
             © {new Date().getFullYear()} {site.brand}. {site.tagline}.
           </p>
           <a
             href={site.trackingUrl}
             target="_blank"
             rel="noreferrer"
-            className="hover:text-white"
+            className="rounded-sm transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-brand-yellow/60 focus-visible:outline-none"
           >
             Rastrear envío
           </a>
