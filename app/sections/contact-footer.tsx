@@ -1,14 +1,22 @@
 import type { ReactElement } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { FooterRouteMap } from "@/app/sections/footer-route-map";
 import { Button } from "@/components/ui/button";
 import { footer, site } from "@/content/landing";
 
 export function ContactFooter(): ReactElement {
   return (
-    <footer
-      id="contacto"
-      className="scroll-mt-20 bg-brand-navy pb-[env(safe-area-inset-bottom)] text-white"
-    >      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-[1.2fr_1fr] lg:px-8">
+    <footer className="relative overflow-hidden bg-brand-navy pb-[env(safe-area-inset-bottom)] text-white">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -left-10 -bottom-24 size-72 rounded-full bg-[radial-gradient(circle,rgba(0,102,255,0.28)_0%,transparent_70%)]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-10 -top-20 size-72 rounded-full bg-[radial-gradient(circle,rgba(255,209,65,0.2)_0%,transparent_68%)] lg:right-[12%] lg:top-8 lg:size-80"
+      />
+      <div className="relative mx-auto grid max-w-7xl items-start gap-10 px-6 py-16 lg:grid-cols-[1fr_0.9fr_1.35fr] lg:gap-8 lg:px-8">
         <div>
           <Image
             src={site.logoSrc}
@@ -46,7 +54,7 @@ export function ContactFooter(): ReactElement {
           </div>
         </div>
 
-        <div className="grid gap-6 text-sm sm:grid-cols-2">
+        <div className="grid gap-5 text-sm sm:grid-cols-2 lg:grid-cols-1">
           <div className="space-y-2">
             <p className="font-semibold">Teléfono</p>
             {site.phones.map((phone) => (
@@ -68,7 +76,7 @@ export function ContactFooter(): ReactElement {
               {site.email}
             </a>
           </div>
-          <div className="space-y-2 sm:col-span-2">
+          <div className="space-y-2 sm:col-span-2 lg:col-span-1">
             <p className="font-semibold">Ubicación</p>
             <p className="text-white/75">
               {site.address}
@@ -76,7 +84,7 @@ export function ContactFooter(): ReactElement {
               {site.city}
             </p>
           </div>
-          <div className="space-y-2 sm:col-span-2">
+          <div className="space-y-2 sm:col-span-2 lg:col-span-1">
             <p className="font-semibold">Redes</p>
             <div className="flex flex-wrap gap-4">
               {footer.social.map((item) => (
@@ -93,19 +101,23 @@ export function ContactFooter(): ReactElement {
             </div>
           </div>
         </div>
+
+        <FooterRouteMap />
       </div>
-      <div className="border-t border-white/15">
-        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-6 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <p translate="no">
-            © {new Date().getFullYear()} {site.brand}. {site.tagline}.
-          </p>
-          <a
-            href={site.trackingUrl}
+      <div className="relative mx-auto max-w-7xl px-6 py-6 text-center text-xs text-white/55 lg:px-8">
+        <p>
+          <span translate="no">
+            © {new Date().getFullYear()} {footer.legal}
+          </span>
+          {" | "}
+          <Link
+            href="/terms"
             className="rounded-sm transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-brand-yellow/60 focus-visible:outline-none"
           >
-            Rastrear envío
-          </a>
-        </div>
+            Términos y condiciones
+          </Link>
+        </p>
+        <p className="mt-1">{footer.credit}</p>
       </div>
     </footer>
   );

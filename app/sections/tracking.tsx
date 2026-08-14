@@ -11,6 +11,7 @@ import {
   WarehouseIcon,
 } from "lucide-react";
 import { AnimatedList } from "@/components/ui/animated-list";
+import { Ripple } from "@/components/ui/ripple";
 import { tracking } from "@/content/landing";
 import { cn } from "@/lib/utils";
 
@@ -105,11 +106,28 @@ export function Tracking(): ReactElement {
           <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-lg">
             <div
               aria-hidden
-              className="pointer-events-none absolute left-1/2 top-[42%] size-[92%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(0,102,255,0.16)_0%,rgba(0,102,255,0.06)_42%,transparent_70%)]"
+              className="pointer-events-none absolute -inset-[18%]"
+              style={{
+                maskImage:
+                  "radial-gradient(ellipse at center, black 32%, transparent 70%)",
+                WebkitMaskImage:
+                  "radial-gradient(ellipse at center, black 32%, transparent 70%)",
+              }}
+            >
+              <Ripple
+                mainCircleSize={140}
+                mainCircleOpacity={0.22}
+                numCircles={7}
+                className="[mask-image:none] [--foreground:var(--brand)]"
+              />
+            </div>
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -right-16 -top-20 size-64 rounded-full bg-[radial-gradient(circle,rgba(255,209,65,0.28)_0%,transparent_68%)] blur-2xl"
             />
             <div
               aria-hidden
-              className="pointer-events-none absolute left-[58%] top-[28%] size-[48%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,209,65,0.22)_0%,transparent_68%)] blur-2xl"
+              className="pointer-events-none absolute -bottom-24 -left-10 size-72 rounded-full bg-[radial-gradient(circle,rgba(0,102,255,0.22)_0%,transparent_70%)] blur-2xl"
             />
 
             <div

@@ -20,8 +20,9 @@ CT Envios ayuda a familias y negocios a enviar paquetes a Cuba con entrega puert
 - [Cajas fijas](https://ctenvios.com/#cajas): Tarifas fijas por tamaño
 - [Reseñas](https://ctenvios.com/#reseñas): Opiniones de clientes
 - [Tracking](https://ctenvios.com/tracking): Seguimiento de paquetes
+- [Términos y condiciones](https://ctenvios.com/terms): Políticas de envío, responsabilidad y reclamaciones
 - [FAQ](https://ctenvios.com/#faq): Preguntas frecuentes
-- [Contacto](https://ctenvios.com/#contacto): Teléfono, WhatsApp y ubicación
+- [Contacto](https://ctenvios.com/#contacto): Formulario, teléfono, WhatsApp y ubicación
 
 ## Servicios
 

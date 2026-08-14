@@ -215,9 +215,39 @@ export interface AgenciesContent {
   };
 }
 
+export interface StoreLink {
+  label: string;
+  caption: string;
+  href: string;
+}
+
+export interface AppsContent {
+  eyebrow: string;
+  headline: string;
+  support: string;
+  appStore: StoreLink;
+  playStore: StoreLink;
+}
+
+export interface ContactContent {
+  eyebrow: string;
+  headline: string;
+  support: string;
+  formTitle: string;
+  emailPlaceholder: string;
+  phonePlaceholder: string;
+  consentLabel: string;
+  submitLabel: string;
+  submittingLabel: string;
+  successMessage: string;
+  consentError: string;
+}
+
 export interface FooterContent {
   blurb: string;
   social: NavLink[];
+  legal: string;
+  credit: string;
 }
 
 export const site: SiteContent = {
@@ -699,6 +729,39 @@ export const agencies: AgenciesContent = {
   },
 };
 
+export const apps: AppsContent = {
+  eyebrow: "App",
+  headline: "Pronto en App Store y Google Play",
+  support:
+    "Rastrea tu envío, consulta precios y habla con nosotros desde el celular. Las tiendas se activan cuando la app esté lista.",
+  appStore: {
+    label: "App Store",
+    caption: "Próximamente",
+    href: "",
+  },
+  playStore: {
+    label: "Google Play",
+    caption: "Próximamente",
+    href: "",
+  },
+};
+
+export const contact: ContactContent = {
+  eyebrow: "Contacto",
+  headline: "Contáctanos para obtener más información",
+  support:
+    "Déjanos tu correo y teléfono. Te escribimos con la cotización y el siguiente paso.",
+  formTitle: "Únete a nuestra familia",
+  emailPlaceholder: "Entre su correo",
+  phonePlaceholder: "Entre su teléfono",
+  consentLabel:
+    "Acepto recibir emails y mensajes de texto con información y promociones de CT Envios.",
+  submitLabel: "Enviar",
+  submittingLabel: "Enviando...",
+  successMessage: "Gracias. Recibimos tus datos y te contactaremos pronto.",
+  consentError: "Por favor acepta el consentimiento para continuar.",
+};
+
 export const footer: FooterContent = {
   blurb:
     "Ayudamos a familias a enviar a Cuba con precios claros, tracking real y atención humana.",
@@ -706,6 +769,8 @@ export const footer: FooterContent = {
     { label: "Facebook", href: "https://www.facebook.com/ctenvios" },
     { label: "WhatsApp", href: "https://wa.me/17542778810" },
   ],
+  legal: "Atlas Logistics | All rights reserved",
+  credit: "Made with ❤️ by Valelee",
 };
 
 export interface TestimonialItem {

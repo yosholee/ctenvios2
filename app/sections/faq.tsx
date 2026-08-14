@@ -9,6 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Meteors } from "@/components/ui/meteors";
 import { faq } from "@/content/landing";
 
 export function Faq(): ReactElement {
@@ -40,6 +41,17 @@ export function Faq(): ReactElement {
                   "radial-gradient(ellipse 80% 70% at 50% 55%, black 25%, transparent 75%)",
               }}
             />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-x-[10%] top-0 z-[1] h-44 overflow-hidden sm:h-52 lg:h-56 [mask-image:linear-gradient(to_bottom,black_45%,transparent)]"
+            >
+              <Meteors
+                number={14}
+                minDuration={2}
+                maxDuration={5}
+                className="bg-brand-yellow text-brand-yellow shadow-[0_0_0_1px_#ffd14140]"
+              />
+            </div>
             <Image
               src={faq.image.src}
               alt={faq.image.alt}
@@ -48,7 +60,7 @@ export function Faq(): ReactElement {
               quality={75}
               className="relative z-10 h-auto w-full max-w-sm object-contain object-bottom lg:max-w-md"
               sizes="(max-width: 1024px) 384px, 448px"
-              priority={false}
+              priority
             />
           </div>
 

@@ -1,5 +1,6 @@
 import type { ReactElement } from "react";
 import { Boxes } from "@/app/sections/boxes";
+import { Contact } from "@/app/sections/contact";
 import { Faq } from "@/app/sections/faq";
 import { Hero } from "@/app/sections/hero";
 import { Offers } from "@/app/sections/offers";
@@ -15,6 +16,7 @@ export default function Home(): ReactElement {
       <Testimonials />
       <Faq />
       <Tracking />
+      <Contact />
     </main>
   );
 }

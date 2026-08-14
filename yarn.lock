@@ -5419,6 +5419,7 @@ __metadata:
     recharts: "npm:3.8.0"
     rough-notation: "npm:^0.5.1"
     shadcn: "npm:^4.17.0"
+    svg-dotted-map: "npm:^2.1.0"
     tailwind-merge: "npm:^3.6.0"
     tailwindcss: "npm:^4"
     tw-animate-css: "npm:^1.4.0"
@@ -6998,6 +6999,13 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 10c0/6c4032340701a9950865f7ae8ef38578d8d7053f5e10518076e6554a9381fa91bd9c6850193695c141f32b21f979c985db07265a758867bac95de05f7d8aeb39
+  languageName: node
+  linkType: hard
+
+"svg-dotted-map@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "svg-dotted-map@npm:2.1.0"
+  checksum: 10c0/2084b0f32ea998c8d8c1f13d4ae2b2c3133dd20820908c39e9910d4cbfa72dcbe3882c47f9d723e079af452af9aed3b8851c58568e235864caa4abbefe019dfe
   languageName: node
   linkType: hard
 
