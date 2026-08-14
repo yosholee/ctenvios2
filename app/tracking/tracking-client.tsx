@@ -392,8 +392,10 @@ export function TrackingClient(): ReactElement {
     <main
       id="contenido"
       className={cn(
-        "mx-auto flex w-full max-w-4xl flex-1 flex-col items-center px-4",
-        isCompact ? "justify-start gap-6 py-8" : "justify-center gap-8 py-10"
+        "mx-auto flex w-full max-w-4xl flex-col items-center px-4",
+        isCompact
+          ? "justify-start gap-6 py-10 sm:py-14"
+          : "justify-center gap-8 py-16 sm:py-20"
       )}
     >
         <div
