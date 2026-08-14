@@ -1,7 +1,10 @@
 import type { ReactElement } from "react";
 import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Inter } from "next/font/google";
+import { ContactFooter } from "@/app/sections/contact-footer";
+import { SiteHeader } from "@/app/sections/site-header";
 import { JsonLd } from "@/components/json-ld";
+import { QueryProvider } from "@/components/providers/query-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { site } from "@/content/landing";
 import { SITE_URL } from "@/lib/site";
@@ -92,7 +95,13 @@ export default function RootLayout({
         >
           Saltar al contenido
         </a>
-        <TooltipProvider>{children}</TooltipProvider>
+        <TooltipProvider>
+          <QueryProvider>
+            <SiteHeader />
+            {children}
+            <ContactFooter />
+          </QueryProvider>
+        </TooltipProvider>
       </body>
     </html>
   );

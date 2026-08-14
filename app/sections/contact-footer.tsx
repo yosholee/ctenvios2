@@ -101,8 +101,6 @@ export function ContactFooter(): ReactElement {
           </p>
           <a
             href={site.trackingUrl}
-            target="_blank"
-            rel="noreferrer"
             className="rounded-sm transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-brand-yellow/60 focus-visible:outline-none"
           >
             Rastrear envío

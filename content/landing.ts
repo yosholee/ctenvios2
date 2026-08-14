@@ -234,15 +234,15 @@ export const site: SiteContent = {
   city: "Hialeah Gardens, FL 33016",
   mapsUrl: "https://maps.google.com/?q=10230+NW+80th+Ave+Hialeah+Gardens+FL",
   whatsappUrl: "https://wa.me/17542778810",
-  trackingUrl: "https://atlas.ctenvios.com/tracking",
+  trackingUrl: "/tracking",
   nav: [
-    { label: "Inicio", href: "#" },
-    { label: "Precios", href: "#ofertas" },
-    { label: "Cajas", href: "#cajas" },
-    { label: "Reseñas", href: "#reseñas" },
-    { label: "Tracking", href: "#tracking" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Contacto", href: "#contacto" },
+    { label: "Inicio", href: "/" },
+    { label: "Precios", href: "/#ofertas" },
+    { label: "Cajas", href: "/#cajas" },
+    { label: "Reseñas", href: "/#reseñas" },
+    { label: "Tracking", href: "/tracking" },
+    { label: "FAQ", href: "/#faq" },
+    { label: "Contacto", href: "/#contacto" },
   ],
 };
 
@@ -259,7 +259,7 @@ export const hero: HeroContent = {
   },
   secondaryCta: {
     label: "Tracking de su Envío",
-    href: "#tracking",
+    href: "/tracking",
   },
   proofPoints: [
     "Envíos rápidos",
@@ -381,8 +381,8 @@ export const tracking: TrackingContent = {
   ],
   cta: {
     label: "Tracking",
-    href: "https://atlas.ctenvios.com/tracking",
-    external: true,
+    href: "/tracking",
+    external: false,
   },
   image: {
     src: "/images/tracking/model-cutout.png",
@@ -638,7 +638,7 @@ export const faq: FaqContent = {
           id: "rastrear",
           question: "¿Cómo rastreo mi paquete?",
           answer:
-            "Ingresa tu número de tracking en la sección de rastreo del sitio o en ctenvios.com/tracking. Verás el estado actualizado: recibido, en tránsito, en aduana Cuba, en reparto y entregado.",
+            "Ingresa tu número de tracking en /tracking o usa tu número de orden/HBL. Verás el estado actualizado: recibido, en tránsito, en aduana Cuba, en reparto y entregado.",
         },
         {
           id: "danado",
