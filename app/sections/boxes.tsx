@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon, CheckIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Highlighter } from "@/components/ui/highlighter";
 import { boxes, formatPrice, site } from "@/content/landing";
 import { cn } from "@/lib/utils";
 
@@ -109,13 +110,11 @@ export function Boxes(): ReactElement {
                       key={item}
                       className="flex items-start gap-3 text-sm text-brand-navy/80"
                     >
-                      <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-[#3b6cff]">
-                        <CheckIcon
-                          className="size-3 text-white"
-                          strokeWidth={3}
-                          aria-hidden
-                        />
-                      </span>
+                      <CheckIcon
+                        className="mt-0.5 size-4 shrink-0 text-brand-navy/55"
+                        strokeWidth={2.5}
+                        aria-hidden
+                      />
                       {item}
                     </li>
                   ))}
@@ -130,7 +129,14 @@ export function Boxes(): ReactElement {
             href={boxes.moreHref}
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-navy transition-colors hover:text-brand-navy/70"
           >
-            {boxes.moreLabel}
+            <Highlighter
+              action="highlight"
+              color="#ffd141"
+              strokeWidth={2}
+              padding={3}
+            >
+              {boxes.moreLabel}
+            </Highlighter>
             <ArrowUpRightIcon className="size-4" aria-hidden />
           </Link>
         </div>
