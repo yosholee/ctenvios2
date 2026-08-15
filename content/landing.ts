@@ -296,7 +296,7 @@ export const site: SiteContent = {
   tagline: "Tu aliado en cada envío",
   title: "Envíos a Cuba desde Miami | Precios claros y tracking | CT Envios",
   description:
-    "Envía a Cuba desde Miami con CT Envios: tarifas desde $0.99/lb, cajas fijas, tracking en tiempo real y atención por WhatsApp en Hialeah Gardens. Cotiza hoy.",
+    "Envía paquetes a Cuba desde Miami con CTEnvios: entrega puerta a puerta, cajas con tarifa fija, tracking en tiempo real y atención por WhatsApp en Hialeah Gardens.",
   phones: ["(305) 851-3004"],
   whatsappDisplay: "(754) 277-8810",
   email: "soporte@ctenvios.com",
@@ -326,7 +326,7 @@ export const hero: HeroContent = {
   headline: "Envíos a Cuba desde Miami: rápidos y confiables",
   highlight: "con precios bajos y tracking real",
   support:
-    "CT Envios es tu agencia de envíos a Cuba en Hialeah. Trabajamos envíos marítimos con entrega puerta a puerta, tracking y atención personalizada por WhatsApp.",
+    "CTEnvios es una agencia de envíos a Cuba ubicada en Hialeah Gardens, Miami. Ofrecemos envíos marítimos, cajas con tarifa fija, entrega puerta a puerta, tracking en tiempo real y atención personalizada por WhatsApp.",
   primaryCta: {
     label: "Contáctanos",
     href: "https://wa.me/17542778810?text=Hola%2C%20quiero%20enviar%20un%20paquete%20a%20Cuba",
@@ -973,7 +973,7 @@ export const testimonials: TestimonialsContent = {
   eyebrow: "Reseñas",
   headline: "Lo que dicen quienes ya enviaron con nosotros",
   support:
-    "Atención por WhatsApp, tracking claro y entrega puerta a puerta: así nos evalúan en Google.",
+    "La valoración y las reseñas están en nuestro perfil de Google. Ahí puedes leer comentarios verificables de clientes reales.",
   rating: 4.6,
   reviewCount: 118,
   sourceLabel: "Google",
@@ -982,62 +982,7 @@ export const testimonials: TestimonialsContent = {
     href: "https://www.google.com/search?q=ctenvios#mpd=~6558092595028842705/customers/reviews",
     external: true,
   },
-  items: [
-    {
-      id: "atencion",
-      quote:
-        "Excelente atención. Siempre están pendientes y responden por WhatsApp en minutos. Cotizan claro y sin rodeos.",
-      name: "María González",
-      handle: "Reseña en Google",
-      initials: "MG",
-      rating: 5,
-    },
-    {
-      id: "tracking",
-      quote:
-        "Me gusta poder seguir el paquete paso a paso. Desde que salió de Hialeah hasta que llegó a Cuba, todo transparente.",
-      name: "Carlos Pérez",
-      handle: "Reseña en Google",
-      initials: "CP",
-      rating: 5,
-    },
-    {
-      id: "ontime",
-      quote:
-        "Mis paquetes llegan a tiempo y en buen estado. Ya es la tercera vez que envío con CT Envios y los recomiendo.",
-      name: "Ana Rodríguez",
-      handle: "Reseña en Google",
-      initials: "AR",
-      rating: 5,
-    },
-    {
-      id: "precio",
-      quote:
-        "Buenos precios por libra y ofertas reales los fines de semana. Atención amable en la agencia de Hialeah Gardens.",
-      name: "Luis Fernández",
-      handle: "Reseña en Google",
-      initials: "LF",
-      rating: 5,
-    },
-    {
-      id: "puerta",
-      quote:
-        "Envío puerta a puerta sin complicaciones. Me ayudaron con el contenido permitido y el paquete llegó completo.",
-      name: "Patricia Díaz",
-      handle: "Reseña en Google",
-      initials: "PD",
-      rating: 5,
-    },
-    {
-      id: "confianza",
-      quote:
-        "Servicio confiable para enviar a la familia. Precios claros, tracking y gente que de verdad ayuda.",
-      name: "José Martínez",
-      handle: "Reseña en Google",
-      initials: "JM",
-      rating: 5,
-    },
-  ],
+  items: [],
 };
 
 export function getActiveOffers(): OfferItem[] {

@@ -27,6 +27,8 @@ export function FaqAccordion({
   return (
     <Accordion
       defaultValue={defaultOpenId ? [defaultOpenId] : undefined}
+      keepMounted
+      hiddenUntilFound
       className="rounded-none border-0 bg-transparent"
     >
       {items.map((item) => (

@@ -6,7 +6,7 @@ import { SiteHeader } from "@/app/sections/site-header";
 import { JsonLd } from "@/components/json-ld";
 import { QueryProvider } from "@/components/providers/query-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { site } from "@/content/landing";
+import { hero, site } from "@/content/landing";
 import { SITE_URL } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import "./globals.css";
@@ -56,10 +56,10 @@ export const metadata: Metadata = {
     description: site.description,
     images: [
       {
-        url: "/images/hero/shipping-1.jpg",
+        url: hero.image.src,
         width: 1200,
         height: 630,
-        alt: "Envíos marítimos a Cuba desde Miami — CT Envios",
+        alt: hero.image.alt,
       },
     ],
   },
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: site.title,
     description: site.description,
-    images: ["/images/hero/shipping-1.jpg"],
+    images: [hero.image.src],
   },
   other: {
     "llms-txt": `${SITE_URL}/llms.txt`,

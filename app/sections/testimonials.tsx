@@ -42,7 +42,12 @@ export function Testimonials(): ReactElement {
           <p className="mt-4 text-base leading-relaxed text-brand-navy/65 sm:text-lg">
             {testimonials.support}
           </p>
-          <div className="mt-6 inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-brand-navy/10 bg-white px-4 py-2 text-sm text-brand-navy">
+          <a
+            href={testimonials.cta.href}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-brand-navy/10 bg-white px-4 py-2 text-sm text-brand-navy transition-colors hover:border-brand-navy/25"
+          >
             <Stars rating={Math.round(testimonials.rating)} />
             <span className="font-bold tabular-nums">
               {testimonials.rating.toFixed(1)}
@@ -51,39 +56,41 @@ export function Testimonials(): ReactElement {
             <span className="text-brand-navy/65">
               {testimonials.reviewCount} reseñas en {testimonials.sourceLabel}
             </span>
-          </div>
+          </a>
         </div>
 
-        <div className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-5 sm:mt-14 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {testimonials.items.map((item) => (
-            <figure
-              key={item.id}
-              className="flex flex-col justify-between rounded-2xl border border-brand-navy/10 bg-white p-6 sm:rounded-3xl sm:p-7"
-            >
-              <div>
-                <Stars rating={item.rating} />
-                <blockquote className="mt-4 text-base leading-relaxed text-brand-navy/80">
-                  “{item.quote}”
-                </blockquote>
-              </div>
-              <figcaption className="mt-6 flex items-center gap-3 border-t border-brand-navy/10 pt-5">
-                <Avatar size="lg" className="bg-brand-navy/5">
-                  <AvatarFallback className="bg-brand-navy text-sm font-semibold text-white">
-                    {item.initials}
-                  </AvatarFallback>
-                </Avatar>
-                <div className="min-w-0 text-left">
-                  <div className="truncate text-sm font-semibold text-brand-navy">
-                    {item.name}
-                  </div>
-                  <div className="truncate text-sm text-brand-navy/45">
-                    {item.handle}
-                  </div>
+        {testimonials.items.length > 0 ? (
+          <div className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-5 sm:mt-14 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            {testimonials.items.map((item) => (
+              <figure
+                key={item.id}
+                className="flex flex-col justify-between rounded-2xl border border-brand-navy/10 bg-white p-6 sm:rounded-3xl sm:p-7"
+              >
+                <div>
+                  <Stars rating={item.rating} />
+                  <blockquote className="mt-4 text-base leading-relaxed text-brand-navy/80">
+                    “{item.quote}”
+                  </blockquote>
                 </div>
-              </figcaption>
-            </figure>
-          ))}
-        </div>
+                <figcaption className="mt-6 flex items-center gap-3 border-t border-brand-navy/10 pt-5">
+                  <Avatar size="lg" className="bg-brand-navy/5">
+                    <AvatarFallback className="bg-brand-navy text-sm font-semibold text-white">
+                      {item.initials}
+                    </AvatarFallback>
+                  </Avatar>
+                  <div className="min-w-0 text-left">
+                    <div className="truncate text-sm font-semibold text-brand-navy">
+                      {item.name}
+                    </div>
+                    <div className="truncate text-sm text-brand-navy/45">
+                      {item.handle}
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        ) : null}
 
         <div className="mt-10 text-center">
           <a
