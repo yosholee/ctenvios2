@@ -1,8 +1,8 @@
 import {
   boxes,
-  faq,
   formatPrice,
   getActiveOffers,
+  getFeaturedFaqItems,
   site,
   testimonials,
 } from "@/content/landing";
@@ -13,12 +13,28 @@ export function buildLocalBusinessJsonLd(): Record<string, unknown> {
     "@type": ["LocalBusiness", "Organization"],
     "@id": `${SITE_URL}/#business`,
     name: site.brand,
+    legalName: site.legalName,
     description: site.description,
     url: SITE_URL,
     image: `${SITE_URL}${site.logoSrc}`,
     logo: `${SITE_URL}${site.logoSrc}`,
     telephone: site.phones[0],
     email: site.email,
+    openingHoursSpecification: site.hours.map((slot) => ({
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "09:00",
+      closes: "17:00",
+      description: `${slot.days}: ${slot.time}`,
+    })),
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
@@ -84,7 +100,7 @@ export function buildWebSiteJsonLd(): Record<string, unknown> {
 }
 
 export function buildFaqJsonLd(): Record<string, unknown> {
-  const items = faq.groups.flatMap((group) => group.items);
+  const items = getFeaturedFaqItems();
 
   return {
     "@type": "FAQPage",
@@ -141,7 +157,8 @@ export function buildJsonLdGraph(): Record<string, unknown> {
 
 function footerSocialUrls(): string[] {
   return [
-    "https://www.facebook.com/ctenvios",
+    "https://www.tiktok.com/@ctenvios",
+    "https://www.instagram.com/ctenvios/",
     site.whatsappUrl,
     site.mapsUrl,
   ];

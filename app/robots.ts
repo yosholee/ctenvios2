@@ -7,6 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/api/"],
       },
       // AI search / citation crawlers
       { userAgent: "GPTBot", allow: "/" },

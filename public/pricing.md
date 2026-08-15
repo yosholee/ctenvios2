@@ -64,4 +64,4 @@ Solo se admite: Alimentos, Aseo, Ropa y Medicinas.
 
 - Los tiempos de entrega dependen de la ruta marítima y aduana; pide un estimado al cotizar.
 - Las ofertas pueden cambiar; esta página refleja las tarifas publicadas en la landing.
-- Fuente web: https://ctenvios.com/#ofertas y https://ctenvios.com/#cajas
+- Fuente web: https://ctenvios.com/#ofertas, https://ctenvios.com/#cajas y https://ctenvios.com/cajas-envios-cuba

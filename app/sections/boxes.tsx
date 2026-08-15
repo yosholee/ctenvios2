@@ -1,118 +1,138 @@
 import type { ReactElement } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowUpRightIcon, CheckIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  boxes,
-  formatPrice,
-  getActiveOffers,
-  site,
-} from "@/content/landing";
+import { boxes, formatPrice, site } from "@/content/landing";
+import { cn } from "@/lib/utils";
 
 export function Boxes(): ReactElement {
-  const regularOffer = getActiveOffers().find((offer) => offer.id === "regular");
-
   return (
     <section
       id="cajas"
-      className="scroll-mt-20 bg-background/90 py-16 backdrop-blur-md sm:py-20"
+      className="scroll-mt-20 bg-white py-16 sm:py-20"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-0">
-          {regularOffer ? (
-            <div className="flex h-full flex-col justify-center text-center lg:min-h-[28rem] lg:pr-10 xl:pr-14">
-              <p className="text-base font-semibold text-brand-navy sm:text-lg">
-                Precio regular
-              </p>
-              <p className="mt-2 text-sm text-brand-navy/60 sm:text-base">
-                {regularOffer.description}
-              </p>
+        <div className="max-w-2xl">
+          <span className="inline-flex rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold tracking-wide text-brand-navy uppercase">
+            {boxes.eyebrow}
+          </span>
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-balance text-brand-navy sm:text-4xl">
+            {boxes.headline}
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-brand-navy/60 sm:text-lg">
+            {boxes.support}
+          </p>
+        </div>
 
-              <div className="my-8 border-t border-dashed border-brand-navy/20" />
+        <div className="mt-12 grid lg:grid-cols-3 lg:divide-x lg:divide-brand-navy/10">
+          {boxes.items.map((box, index) => {
+            const whatsappHref = `${site.whatsappUrl}?text=${encodeURIComponent(
+              `Hola, quiero reservar la ${box.sizeLabel} a ${formatPrice(box.price)} USD.`
+            )}`;
 
-              <div className="flex items-end justify-center gap-2.5">
-                <span className="text-5xl font-black tracking-tight text-brand-navy tabular-nums sm:text-6xl">
-                  {formatPrice(regularOffer.price)}
-                </span>
-                <span className="mb-1.5 flex flex-col text-left text-sm leading-tight text-brand-navy/45">
-                  <span>USD</span>
-                  <span>{regularOffer.unit.replace("/", "")} · libra</span>
-                </span>
-              </div>
-            </div>
-          ) : null}
+            return (
+              <article
+                key={box.id}
+                className={cn(
+                  "row-span-7 grid grid-rows-subgrid items-start py-10 lg:px-8 lg:py-0",
+                  index > 0 && "border-t border-brand-navy/10 lg:border-t-0",
+                  index === 0 && "lg:pl-0",
+                  index === boxes.items.length - 1 && "lg:pr-0"
+                )}
+              >
+                <div className="flex min-h-12 flex-col items-center justify-end gap-2">
+                  {box.featured ? (
+                    <span className="rounded-full bg-brand-yellow px-2.5 py-0.5 text-[10px] font-bold tracking-wide text-brand-navy uppercase">
+                      {box.badge}
+                    </span>
+                  ) : (
+                    <span className="invisible h-[18px] text-[10px]" aria-hidden>
+                      {box.badge}
+                    </span>
+                  )}
+                  <span className="rounded-full bg-brand-navy px-3 py-1 text-xs font-bold tracking-wide text-white">
+                    {box.dimensions}
+                  </span>
+                </div>
 
-          <div className="border-t border-dashed border-brand-navy/20 pt-10 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-10 xl:pl-14">
-            <span className="inline-flex rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold tracking-wide text-brand-navy uppercase">
-              {boxes.eyebrow}
-            </span>
-            <h2 className="mt-5 text-3xl font-bold tracking-tight text-balance text-brand-navy sm:text-4xl">
-              {boxes.headline}
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-brand-navy/65">
-              {boxes.support}
-            </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {boxes.allowedItems.map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-brand-navy/10 bg-white px-3 py-1 text-xs font-semibold text-brand-navy/70"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
+                <div className="mt-6 flex h-40 items-end justify-center sm:h-44">
+                  <Image
+                    src={box.image.src}
+                    alt={box.image.alt}
+                    width={320}
+                    height={320}
+                    className="h-full w-auto object-contain"
+                  />
+                </div>
 
-            <div className="mt-8 overflow-hidden rounded-3xl border border-brand-navy/10 bg-white">
-              <ul className="divide-y divide-brand-navy/10">
-                {boxes.items.map((box) => {
-                  const whatsappHref = `${site.whatsappUrl}?text=${encodeURIComponent(
-                    `Hola, quiero cotizar la ${box.sizeLabel} a ${formatPrice(box.price)} USD (Alimentos, Aseo, Ropa y Medicinas).`
-                  )}`;
+                <p className="mt-6 flex items-baseline justify-center gap-2">
+                  <span className="text-5xl font-bold tracking-tight text-brand-navy tabular-nums">
+                    {formatPrice(box.price)}
+                  </span>
+                  <span className="text-sm text-brand-navy/45">USD</span>
+                </p>
 
-                  return (
+                <p className="mt-2 text-center text-sm text-brand-navy/45">
+                  {box.priceNote}
+                </p>
+
+                <div className="mt-6">
+                  <Button
+                    nativeButton={false}
+                    render={
+                      <a
+                        href={whatsappHref}
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    }
+                    size="lg"
+                    className={cn(
+                      "w-full rounded-xl",
+                      box.featured
+                        ? "bg-brand-yellow text-brand-navy hover:bg-brand-yellow/90"
+                        : "border border-brand-navy/15 bg-transparent text-brand-navy hover:bg-brand-navy/[0.04]"
+                    )}
+                  >
+                    {boxes.ctaLabel}
+                  </Button>
+                </div>
+
+                <p className="mt-6 text-sm leading-relaxed text-brand-navy">
+                  {box.summary}
+                </p>
+
+                <ul className="mt-6 space-y-3">
+                  {box.includes.map((item) => (
                     <li
-                      key={box.id}
-                      className="flex flex-col gap-3 px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6"
+                      key={item}
+                      className="flex items-start gap-3 text-sm text-brand-navy/80"
                     >
-                      <div className="min-w-0">
-                        <p className="text-base font-semibold text-brand-navy">
-                          {box.sizeLabel}
-                        </p>
-                        <p className="mt-0.5 text-sm text-brand-navy/55">
-                          {box.category}
-                        </p>
-                      </div>
-
-                      <div className="flex flex-wrap items-center gap-2.5 sm:justify-end">
-                        <span className="rounded-full border border-brand-navy/15 bg-brand-navy/[0.04] px-2.5 py-0.5 text-[10px] font-bold tracking-wide text-brand-navy/60 uppercase">
-                          {box.badge}
-                        </span>
-                        <span className="text-lg font-black tracking-tight text-brand-navy tabular-nums">
-                          {formatPrice(box.price)}{" "}
-                          <span className="text-xs font-semibold text-brand-navy/45">
-                            USD
-                          </span>
-                        </span>
-                        <Button
-                          nativeButton={false}
-                          render={
-                            <a
-                              href={whatsappHref}
-                              target="_blank"
-                              rel="noreferrer"
-                            />
-                          }
-                          size="sm"
-                          className="bg-brand-yellow text-brand-navy hover:bg-brand-yellow/90"
-                        >
-                          {boxes.ctaLabel}
-                        </Button>
-                      </div>
+                      <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-[#3b6cff]">
+                        <CheckIcon
+                          className="size-3 text-white"
+                          strokeWidth={3}
+                          aria-hidden
+                        />
+                      </span>
+                      {item}
                     </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </div>
+                  ))}
+                </ul>
+              </article>
+            );
+          })}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href={boxes.moreHref}
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-navy transition-colors hover:text-brand-navy/70"
+          >
+            {boxes.moreLabel}
+            <ArrowUpRightIcon className="size-4" aria-hidden />
+          </Link>
         </div>
       </div>
     </section>

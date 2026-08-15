@@ -2,18 +2,14 @@
 
 import type { ReactElement } from "react";
 import Image from "next/image";
-import { MinusIcon, PlusIcon } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import Link from "next/link";
+import { ArrowUpRightIcon } from "lucide-react";
+import { FaqAccordion } from "@/app/sections/faq-accordion";
 import { Meteors } from "@/components/ui/meteors";
-import { faq } from "@/content/landing";
+import { faq, getFeaturedFaqItems } from "@/content/landing";
 
 export function Faq(): ReactElement {
-  const items = faq.groups.flatMap((group) => group.items);
+  const items = getFeaturedFaqItems();
   const defaultOpen = items[0]?.id;
 
   return (
@@ -75,33 +71,17 @@ export function Faq(): ReactElement {
               {faq.support}
             </p>
 
-            <Accordion
-              defaultValue={defaultOpen ? [defaultOpen] : undefined}
-              className="mt-8 rounded-none border-0 bg-transparent"
+            <div className="mt-8">
+              <FaqAccordion items={items} defaultOpenId={defaultOpen} />
+            </div>
+
+            <Link
+              href={faq.moreHref}
+              className="mt-8 inline-flex items-center justify-center gap-1.5 self-center text-sm font-semibold text-brand-yellow transition-colors hover:text-white"
             >
-              {items.map((item) => (
-                <AccordionItem
-                  key={item.id}
-                  value={item.id}
-                  className="border-0 border-b border-white/15 not-last:border-b data-open:bg-transparent"
-                >
-                  <AccordionTrigger className="px-0 py-4 text-base font-semibold text-white hover:no-underline hover:text-brand-yellow sm:py-5 [&_[data-slot=accordion-trigger-icon]]:hidden">
-                    <span className="pr-4">{item.question}</span>
-                    <PlusIcon
-                      aria-hidden
-                      className="size-5 shrink-0 text-white/70 group-aria-expanded/accordion-trigger:hidden"
-                    />
-                    <MinusIcon
-                      aria-hidden
-                      className="hidden size-5 shrink-0 text-brand-yellow group-aria-expanded/accordion-trigger:inline"
-                    />
-                  </AccordionTrigger>
-                  <AccordionContent className="px-0 pb-4 text-sm leading-relaxed text-white/60 sm:pb-5 sm:text-base">
-                    <p>{item.answer}</p>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+              {faq.moreLabel}
+              <ArrowUpRightIcon className="size-4" aria-hidden />
+            </Link>
           </div>
         </div>
       </div>
