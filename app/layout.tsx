@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Inter } from "next/font/google";
 import { ContactFooter } from "@/app/sections/contact-footer";
 import { SiteHeader } from "@/app/sections/site-header";
+import { Gtag } from "@/components/gtag";
 import { JsonLd } from "@/components/json-ld";
 import { QueryProvider } from "@/components/providers/query-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -44,8 +45,13 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: [{ url: site.logoSrc, type: "image/webp" }],
-    apple: [{ url: site.logoSrc, type: "image/webp" }],
+    icon: [
+      { url: "/icon-48.png", type: "image/png", sizes: "48x48" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+      { url: "/favicon.ico", sizes: "48x48" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
     type: "website",
@@ -88,6 +94,7 @@ export default function RootLayout({
       )}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
+        <Gtag />
         <JsonLd />
         <a
           href="#contenido"

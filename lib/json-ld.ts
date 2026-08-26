@@ -13,6 +13,7 @@ export function buildLocalBusinessJsonLd(): Record<string, unknown> {
     "@type": ["LocalBusiness", "Organization"],
     "@id": `${SITE_URL}/#business`,
     name: site.brand,
+    alternateName: ["CTEnvios", "CT Envíos"],
     legalName: site.legalName,
     description: site.description,
     url: SITE_URL,
@@ -65,6 +66,13 @@ export function buildLocalBusinessJsonLd(): Record<string, unknown> {
       { "@type": "Country", name: "Cuba" },
       { "@type": "City", name: "Miami" },
       { "@type": "City", name: "Hialeah Gardens" },
+    ],
+    knowsAbout: [
+      "Envíos a Cuba",
+      "Envíos a Cuba desde Miami",
+      "Envíos marítimos a Cuba",
+      "Paquetería a Cuba",
+      "Envios Cuba"
     ],
     sameAs: footerSocialUrls(),
     aggregateRating: {
@@ -120,7 +128,9 @@ export function buildServiceJsonLd(): Record<string, unknown> {
   return {
     "@type": "Service",
     "@id": `${SITE_URL}/#service`,
-    name: "Envíos marítimos a Cuba desde Miami",
+    name: "Envíos a Cuba",
+    serviceType: "Envíos a Cuba",
+    alternateName: "Envíos a Cuba desde Miami",
     provider: { "@id": `${SITE_URL}/#business` },
     areaServed: { "@type": "Country", name: "Cuba" },
     description: site.description,

@@ -294,9 +294,9 @@ export const site: SiteContent = {
   brand: "CT Envios",
   logoSrc: "/brand/logo.webp",
   tagline: "Tu aliado en cada envío",
-  title: "Envíos a Cuba desde Miami | Precios claros y tracking | CT Envios",
+  title: "Envíos a Cuba desde Miami | Agencia CT Envios",
   description:
-    "Envía paquetes a Cuba desde Miami con CTEnvios: entrega puerta a puerta, cajas con tarifa fija, tracking en tiempo real y atención por WhatsApp en Hialeah Gardens.",
+    "Envíos a Cuba desde Miami con CT Envios: agencia en Hialeah Gardens, entrega puerta a puerta, cajas fijas, tracking y atención por WhatsApp.",
   phones: ["(305) 851-3004"],
   whatsappDisplay: "(754) 277-8810",
   email: "soporte@ctenvios.com",
@@ -347,7 +347,7 @@ export const hero: HeroContent = {
   offerNote: "Todos los jueves",
   image: {
     src: "/images/hero/model-agency.png",
-    alt: "Modelo CT Envios con caja lista para envío a Cuba",
+    alt: "Envíos a Cuba desde Miami: caja CT Envios lista para enviar",
   },
   slides: [
     {
@@ -693,8 +693,8 @@ export const atlas: AtlasContent = {
 
 export const howItWorks: HowItWorksContent = {
   eyebrow: "Cómo funciona",
-  headline: "Así de simple es enviar",
-  support: "Cuatro pasos. Sin sorpresas.",
+  headline: "Así de simple es enviar a Cuba",
+  support: "Envíos a Cuba desde Hialeah Gardens, Miami. Cuatro pasos, sin sorpresas.",
   steps: [
     {
       id: "prepara",
@@ -737,6 +737,13 @@ export const faq: FaqContent = {
       id: "envio-precios",
       title: "Envío y precios",
       items: [
+        {
+          id: "como-enviar",
+          featured: true,
+          question: "¿Cómo hacer envíos a Cuba desde Miami?",
+          answer:
+            "En CT Envios, agencia de envíos a Cuba en Hialeah Gardens, traes el paquete, cotizamos por libra o caja fija, te damos tracking y entregamos puerta a puerta en Cuba. Cotiza por WhatsApp o visítanos en 10230 NW 80th Ave.",
+        },
         {
           id: "demora",
           featured: true,
@@ -935,7 +942,7 @@ export const contact: ContactContent = {
 
 export const footer: FooterContent = {
   blurb:
-    "Ayudamos a familias a enviar a Cuba con precios claros, tracking real y atención humana.",
+    "Agencia de envíos a Cuba en Hialeah Gardens, Miami. Entrega puerta a puerta, cajas fijas, tracking y atención por WhatsApp.",
   social: [
     { label: "TikTok", href: "https://www.tiktok.com/@ctenvios" },
     { label: "Instagram", href: "https://www.instagram.com/ctenvios/" },

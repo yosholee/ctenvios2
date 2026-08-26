@@ -152,10 +152,10 @@ export function SeoHub(): ReactElement {
                 Servicios
               </span>
               <h2 className="mt-3 text-2xl font-bold tracking-tight text-balance text-white sm:text-3xl">
-                Elige el envío que necesitas
+                Envíos a Cuba: elige el servicio que necesitas
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-white/60 sm:text-base">
-                Conozca más sobre nuestros servicios
+                Agencia de envíos a Cuba en Hialeah Gardens, Miami
               </p>
             </div>
 
