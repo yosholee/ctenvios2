@@ -344,7 +344,7 @@ export const hero: HeroContent = {
   ],
   offerBadge: "Super oferta",
   offerPrice: "$0.99",
-  offerNote: "Todos los jueves",
+  offerNote: "Martes, miércoles y jueves",
   image: {
     src: "/images/hero/model-agency.png",
     alt: "Envíos a Cuba desde Miami: caja CT Envios lista para enviar",
@@ -352,7 +352,7 @@ export const hero: HeroContent = {
   slides: [
     {
       id: "jueves",
-      label: "Todos los jueves",
+      label: "Martes, miércoles y jueves",
       title: "Desde $0.99 / lb",
       description: "Alimentos, medicina y aseo. Envíos a toda Cuba.",
     },
@@ -474,7 +474,7 @@ export const offers: OffersContent = {
   items: [
     {
       id: "jueves",
-      dayLabel: "Todos los Jueves",
+      dayLabel: "Martes, Miércoles y Jueves",
       category: "Alimentos, Medicina y Aseo",
       price: 0.99,
       regularPrice: 1.99,
@@ -756,7 +756,7 @@ export const faq: FaqContent = {
           featured: true,
           question: "¿Cuánto cuesta enviar una caja?",
           answer:
-            "Las cajas fijas empiezan en $30 (12×12×12), $60 (15×15×15) y $65 (16×16×16). Solo admiten alimentos, aseo, ropa y medicinas. Si vas por libra, el mínimo es 15 lb: jueves desde $0.99/lb, fin de semana $1.45/lb, martes $1.64/lb (electrodomésticos, piezas y muebles) y regular $1.99/lb.",
+            "Las cajas fijas empiezan en $30 (12×12×12), $60 (15×15×15) y $65 (16×16×16). Solo admiten alimentos, aseo, ropa y medicinas. Si vas por libra, el mínimo es 15 lb: martes, miércoles y jueves desde $0.99/lb (alimentos, medicina y aseo), fin de semana $1.45/lb, martes $1.64/lb (electrodomésticos, piezas y muebles) y regular $1.99/lb.",
         },
         {
           id: "minimo",

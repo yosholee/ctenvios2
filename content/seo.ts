@@ -37,7 +37,7 @@ export const servicePages: ServicePageContent[] = [
     intro:
       "Atendemos en 10230 NW 80th Ave, Hialeah Gardens. Envíos marítimos a toda Cuba, tarifas por libra, cajas fijas y seguimiento desde que recibimos el paquete hasta la entrega.",
     priceInfo:
-      "Desde $0.99/lb los jueves (alimentos, medicina y aseo). Fin de semana $1.45/lb. Martes $1.64/lb para electrodomésticos, piezas y muebles. Regular $1.99/lb. Cajas fijas desde $30. Mínimo 15 lb en tarifas por libra.",
+      "Desde $0.99/lb martes, miércoles y jueves (alimentos, medicina y aseo). Fin de semana $1.45/lb. Martes $1.64/lb para electrodomésticos, piezas y muebles. Regular $1.99/lb. Cajas fijas desde $30. Mínimo 15 lb en tarifas por libra.",
     timeInfo:
       "El tiempo depende de la ruta marítima y de aduana en Cuba. Al cotizar te damos un estimado según destino, tipo de carga y oferta del día.",
     benefits: [
@@ -69,7 +69,7 @@ export const servicePages: ServicePageContent[] = [
     intro:
       "El marítimo es la vía de CT Envios para paquetes familiares y carga consolidada: mejor precio por libra, entrega en puerta y seguimiento en cada etapa.",
     priceInfo:
-      "Regular $1.99/lb. Ofertas: jueves $0.99/lb (alimentos, medicina y aseo), fin de semana $1.45/lb, martes $1.64/lb (electrodomésticos, piezas y muebles). Mínimo 15 lb. Cajas fijas desde $30.",
+      "Regular $1.99/lb. Ofertas: martes, miércoles y jueves $0.99/lb (alimentos, medicina y aseo), fin de semana $1.45/lb, martes $1.64/lb (electrodomésticos, piezas y muebles). Mínimo 15 lb. Cajas fijas desde $30.",
     timeInfo:
       "No hay un plazo fijo para todos los destinos. El estimado se confirma al cotizar, según provincia, aduana y tipo de carga.",
     benefits: [
@@ -97,11 +97,11 @@ export const servicePages: ServicePageContent[] = [
     eyebrow: "Alimentos",
     title: "Enviar alimentos a Cuba desde Miami",
     description:
-      "Envía alimentos no perecederos a Cuba con CT Envios. Oferta de jueves desde $0.99/lb, empaque y declaración claros.",
+      "Envía alimentos no perecederos a Cuba con CT Envios. Oferta de martes, miércoles y jueves desde $0.99/lb, empaque y declaración claros.",
     intro:
-      "Los jueves la tarifa de alimentos, medicina y aseo parte de $0.99/lb (mínimo 15 lb). También puedes usar cajas fijas si el contenido es alimentos, aseo, ropa o medicinas.",
+      "Martes, miércoles y jueves la tarifa de alimentos, medicina y aseo parte de $0.99/lb (mínimo 15 lb). También puedes usar cajas fijas si el contenido es alimentos, aseo, ropa o medicinas.",
     priceInfo:
-      "Jueves $0.99/lb para alimentos, medicina y aseo. Cajas 12×12×12 $30, 15×15×15 $60, 16×16×16 $65. Confirma la lista vigente antes de empacar.",
+      "Martes, miércoles y jueves $0.99/lb para alimentos, medicina y aseo. Cajas 12×12×12 $30, 15×15×15 $60, 16×16×16 $65. Confirma la lista vigente antes de empacar.",
     timeInfo:
       "Va por vía marítima. El estimado de entrega se da al cotizar, según destino y aduana.",
     benefits: [
@@ -204,7 +204,7 @@ export const blogPosts: BlogPostContent[] = [
     publishedAt: "2026-02-26",
     readTime: "5 min",
     paragraphs: [
-      "En CT Envios el envío marítimo a Cuba desde Miami parte de $0.99/lb los jueves (alimentos, medicina y aseo), con mínimo 15 lb. El fin de semana está en $1.45/lb, el martes en $1.64/lb para electrodomésticos, piezas y muebles, y el regular en $1.99/lb.",
+      "En CT Envios el envío marítimo a Cuba desde Miami parte de $0.99/lb martes, miércoles y jueves (alimentos, medicina y aseo), con mínimo 15 lb. El fin de semana está en $1.45/lb, el martes en $1.64/lb para electrodomésticos, piezas y muebles, y el regular en $1.99/lb.",
       "Si no quieres calcular libras, hay cajas fijas: 12×12×12 por $30, 15×15×15 por $60 y 16×16×16 por $65. En caja solo se admite alimentos, aseo, ropa y medicinas.",
       "El precio final también depende del contenido y de aduana. Una cotización útil incluye peso o tamaño de caja, lista de artículos y destino en Cuba.",
       "Cotiza el día que vas a enviar. Las ofertas semanales cambian el total más que cualquier calculadora genérica.",
@@ -304,7 +304,7 @@ export const seoHubLinks: SeoHubLink[] = [
   {
     label: "Enviar alimentos",
     href: "/envio-alimentos-cuba",
-    support: "Jueves desde $0.99/lb. Comida, medicina y aseo.",
+    support: "Mar, mié y jue desde $0.99/lb. Comida, medicina y aseo.",
   },
   {
     label: "Electrodomésticos",
