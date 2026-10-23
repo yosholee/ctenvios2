@@ -270,6 +270,22 @@ export const blogPosts: BlogPostContent[] = [
       "Manda foto del artículo por WhatsApp. Resolverlo en Hialeah es más barato que resolverlo en aduana.",
     ],
   },
+  {
+    slug: "enviar-planta-electrica-a-cuba-desde-miami",
+    title: "Cómo enviar una planta eléctrica a Cuba desde Miami",
+    description:
+      "Guía para enviar una planta eléctrica (generador) a Cuba: qué confirmar antes, empaque, tarifa de martes para electrodomésticos y tracking puerta a puerta.",
+    publishedAt: "2026-10-23",
+    readTime: "5 min",
+    paragraphs: [
+      "Las plantas eléctricas están entre los equipos más pedidos para Cuba. En CT Envios se cotizan como electrodomésticos: antes de empacar, confirma por WhatsApp la marca, los watts y si el modelo se puede transportar por vía marítima, porque no todos los equipos ni todas las baterías se aceptan igual.",
+      "Los martes aplica la oferta de electrodomésticos, piezas y muebles desde $1.64/lb, con mínimo de 15 lb. El resto de días hábiles aplica la tarifa regular de $1.99/lb. Los equipos grandes o voluminosos se cotizan uno a uno por peso y volumen, así que la foto y las medidas ayudan a darte un precio cerrado.",
+      "Empaca la planta en su caja original si la tienes, protegida por los cuatro lados y sin combustible. Retira o asegura cualquier pieza suelta, protege el panel de controles y declara el equipo con nombre concreto, marca y potencia. Evita descripciones genéricas: una declaración clara reduce revisiones en aduana.",
+      "No des por hecho un tiempo de entrega fijo. El envío va por vía marítima y el estimado depende de la provincia de destino, la aduana y si el equipo requiere manejo especial. Al cotizar te damos el estimado para tu destino, no un promedio genérico.",
+      "Cuando el paquete entra en agencia en Hialeah Gardens recibes tu número de orden o HBL. Con ese número sigues el envío en ctenvios.com/tracking: recibido, en tránsito, en aduana en Cuba, en reparto y entregado en la puerta del destinatario.",
+      "Antes de comprar la planta, escríbenos por WhatsApp con el enlace o la foto del modelo. Confirmarlo en Miami es más barato y más rápido que resolver una retención en aduana en Cuba.",
+    ],
+  },
 ];
 
 export function getServicePage(slug: string): ServicePageContent | undefined {

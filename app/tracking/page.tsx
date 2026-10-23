@@ -4,7 +4,7 @@ import { TrackingView } from "@/app/tracking/tracking-view";
 import { site } from "@/content/landing";
 
 export const metadata: Metadata = {
-  title: `Tracking de envíos | ${site.brand}`,
+  title: `Tracking de envíos a Cuba: rastrea tu paquete | ${site.brand}`,
   description:
     "Rastrea tu envío a Cuba con CT Envios. Introduce tu número de orden o HBL para ver el estado en tiempo real.",
   alternates: {

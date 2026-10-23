@@ -5,12 +5,12 @@ import { faq, site } from "@/content/landing";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `Preguntas frecuentes | ${site.brand}`,
+  title: `Preguntas frecuentes sobre envíos a Cuba desde Miami | ${site.brand}`,
   description:
     "FAQ de CT Envios: cuánto demora un envío a Cuba, precio de cajas, mínimo de peso, qué se puede enviar, tracking y reclamaciones.",
   alternates: { canonical: "/faq" },
   openGraph: {
-    title: `Preguntas frecuentes | ${site.brand}`,
+    title: `Preguntas frecuentes sobre envíos a Cuba desde Miami | ${site.brand}`,
     description:
       "Respuestas sobre tiempos, cajas fijas, productos permitidos, entrega en Cuba, tracking y reclamos.",
     url: "/faq",
