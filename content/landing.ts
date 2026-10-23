@@ -12,6 +12,9 @@ export interface CtaLink {
 export interface SiteHours {
   days: string;
   time: string;
+  dayOfWeek: string[];
+  opens: string;
+  closes: string;
 }
 
 export interface SiteContent {
@@ -306,7 +309,22 @@ export const site: SiteContent = {
   mapsUrl: "https://maps.google.com/?q=10230+NW+80th+Ave+Hialeah+Gardens+FL",
   whatsappUrl: "https://wa.me/17542778810",
   trackingUrl: "/tracking",
-  hours: [{ days: "Lunes a domingo", time: "9:00 AM – 5:00 PM" }],
+  hours: [
+    {
+      days: "Lunes a viernes",
+      time: "9:00 AM – 6:00 PM",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+    {
+      days: "Sábado y domingo",
+      time: "10:00 AM – 4:00 PM",
+      dayOfWeek: ["Saturday", "Sunday"],
+      opens: "10:00",
+      closes: "16:00",
+    },
+  ],
   legalName: "Atlas Logistics",
   legalNote: "CT Envios es una marca de Atlas Logistics.",
   nav: [
@@ -360,7 +378,7 @@ export const hero: HeroContent = {
       id: "finde",
       label: "Fin de semana",
       title: "Desde $1.45 / lb",
-      description: "Abrimos sábado y domingo de 9:00 AM a 5:00 PM.",
+      description: "Abrimos sábado y domingo de 10:00 AM a 4:00 PM.",
     },
     {
       id: "tracking",
@@ -499,11 +517,11 @@ export const offers: OffersContent = {
       regularPrice: 1.99,
       unit: "/lb",
       minLbs: 15,
-      description: "Tarifa especial de fin de semana, 9:00 AM – 5:00 PM.",
+      description: "Tarifa especial de fin de semana, 10:00 AM – 4:00 PM.",
       features: [
         "Todos los productos",
         "Mínimo 15 libras",
-        "Horario 9:00 AM – 5:00 PM",
+        "Horario 10:00 AM – 4:00 PM",
         "Atención por WhatsApp",
       ],
       ctaLabel: "Cotizar fin de semana",

@@ -19,7 +19,7 @@ Contacto: https://wa.me/17542778810 · soporte@ctenvios.com · (305) 851-3004
 - Price: $1.45 / lb
 - Precio regular de referencia: $1.99 / lb
 - Categoría: Todos los productos
-- Horario en agencia: 9:00 AM – 5:00 PM
+- Horario en agencia: lunes a viernes 9:00 AM – 6:00 PM; sábado y domingo 10:00 AM – 4:00 PM
 - Incluye: atención por WhatsApp, tracking
 - Mínimo: 15 libras
 
