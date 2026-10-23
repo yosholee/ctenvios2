@@ -31,9 +31,9 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "envios-cuba-miami",
     eyebrow: "Agencia en Hialeah",
-    title: "Agencia de envíos a Cuba en Miami (Hialeah)",
+    title: "Envíos a Cuba desde Miami: desde $0.99/lb en Hialeah",
     description:
-      "CT Envios, agencia de paquetería a Cuba en Hialeah Gardens. Envío marítimo puerta a puerta, tracking y cotización por WhatsApp.",
+      "Envía paquetes a Cuba desde Hialeah Gardens: marítimo puerta a puerta desde $0.99/lb (mar–jue), cajas fijas desde $30, tracking incluido y cotización por WhatsApp.",
     intro:
       "Atendemos en 10230 NW 80th Ave, Hialeah Gardens. Envíos marítimos a toda Cuba, tarifas por libra, cajas fijas y seguimiento desde que recibimos el paquete hasta la entrega.",
     priceInfo:
@@ -95,9 +95,9 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "envio-alimentos-cuba",
     eyebrow: "Alimentos",
-    title: "Enviar alimentos a Cuba desde Miami",
+    title: "Enviar comida y medicinas a Cuba desde $0.99/lb",
     description:
-      "Envía alimentos no perecederos a Cuba con CT Envios. Oferta de martes, miércoles y jueves desde $0.99/lb, empaque y declaración claros.",
+      "Envía alimentos, medicinas y aseo a Cuba desde Miami: $0.99/lb de martes a jueves o cajas fijas de $30 a $65. Entrega puerta a puerta con tracking.",
     intro:
       "Martes, miércoles y jueves la tarifa de alimentos, medicina y aseo parte de $0.99/lb (mínimo 15 lb). También puedes usar cajas fijas si el contenido es alimentos, aseo, ropa o medicinas.",
     priceInfo:
@@ -229,9 +229,9 @@ export const blogPosts: BlogPostContent[] = [
   },
   {
     slug: "cuanto-demora-envio-maritimo-cuba",
-    title: "Cuánto demora un envío marítimo a Cuba",
+    title: "¿Cuánto demora un envío marítimo a Cuba? Tiempos y claves",
     description:
-      "Qué influye en el tiempo de un envío marítimo a Cuba y cómo pedir un estimado real.",
+      "El tiempo de un envío marítimo a Cuba depende de la ruta, la aduana y tu provincia. Qué lo acorta, qué lo demora y cómo pedir un estimado real para tu destino.",
     publishedAt: "2026-02-26",
     readTime: "4 min",
     paragraphs: [
@@ -243,9 +243,9 @@ export const blogPosts: BlogPostContent[] = [
   },
   {
     slug: "como-rastrear-un-envio-a-cuba",
-    title: "Cómo rastrear un envío a Cuba",
+    title: "Cómo rastrear un envío a Cuba: tracking por orden o HBL",
     description:
-      "Cómo usar el número de orden o HBL de CT Envios para ver recibido, tránsito, aduana, reparto y entregado.",
+      "Rastrea tu paquete a Cuba en minutos: entra al tracking de CT Envios con tu número de orden o HBL y mira recibido, en tránsito, aduana, en reparto y entregado.",
     publishedAt: "2026-04-09",
     readTime: "4 min",
     paragraphs: [
