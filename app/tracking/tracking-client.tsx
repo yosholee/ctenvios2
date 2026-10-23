@@ -2,6 +2,7 @@
 
 import {
   useEffect,
+  useRef,
   useState,
   type ReactElement,
   type SubmitEvent,
@@ -34,6 +35,7 @@ import {
   InputGroupInput,
 } from "@/components/ui/input-group";
 import { Spinner } from "@/components/ui/spinner";
+import { trackEvent } from "@/lib/analytics";
 import { usePublicTracking } from "@/lib/use-public-tracking";
 import {
   PUBLIC_TRACKING_MAX_LENGTH,
@@ -313,7 +315,8 @@ function TrackingLanding({ compact }: { compact: boolean }): ReactElement {
         )}
       >
         Introduce tu número de orden o HBL para ver el estado de tu paquete
-        marítimo en tiempo real.
+        marítimo en tiempo real. Es el tracking de CT Envios para el rastreo
+        de envíos marítimos a Cuba desde Estados Unidos.
       </p>
     </div>
   );
@@ -366,6 +369,26 @@ export function TrackingClient(): ReactElement {
     result !== null &&
     result !== undefined;
 
+  const reportedResultFor = useRef<string | null>(null);
+  useEffect(() => {
+    if (!hasSearch || !urlValidation.valid || !apiConfigured) return;
+    if (reportedResultFor.current === trackingIdFromUrl) return;
+    if (isSuccess) {
+      reportedResultFor.current = trackingIdFromUrl;
+      trackEvent("tracking_result", { found: true });
+    } else if (isNotFound) {
+      reportedResultFor.current = trackingIdFromUrl;
+      trackEvent("tracking_result", { found: false });
+    }
+  }, [
+    hasSearch,
+    urlValidation.valid,
+    apiConfigured,
+    isSuccess,
+    isNotFound,
+    trackingIdFromUrl,
+  ]);
+
   const handleSubmit = (event: SubmitEvent<HTMLFormElement>): void => {
     event.preventDefault();
     const validation = validatePublicTrackingId(query);
@@ -375,6 +398,11 @@ export function TrackingClient(): ReactElement {
     }
 
     setValidationError(null);
+    trackEvent("tracking_search", {
+      search_type: validation.normalized.toUpperCase().startsWith("CTE")
+        ? "hbl"
+        : "orden",
+    });
     router.replace(`/tracking/${encodeURIComponent(validation.normalized)}`);
   };
 

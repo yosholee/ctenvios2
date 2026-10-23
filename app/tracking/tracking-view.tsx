@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import { Suspense } from "react";
 import { Contact } from "@/app/sections/contact";
+import { TrackingGuide } from "@/app/sections/tracking-guide";
 import { TrackingClient } from "@/app/tracking/tracking-client";
 import { Spinner } from "@/components/ui/spinner";
 
@@ -18,6 +19,7 @@ export function TrackingView(): ReactElement {
       <Suspense fallback={<TrackingFallback />}>
         <TrackingClient />
       </Suspense>
+      <TrackingGuide />
       <Contact />
     </div>
   );

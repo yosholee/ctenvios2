@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Inter } from "next/font/google";
 import { ContactFooter } from "@/app/sections/contact-footer";
 import { SiteHeader } from "@/app/sections/site-header";
+import { AnalyticsListeners } from "@/components/analytics-listeners";
 import { Gtag } from "@/components/gtag";
 import { JsonLd } from "@/components/json-ld";
 import { QueryProvider } from "@/components/providers/query-provider";
@@ -95,6 +96,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <Gtag />
+        <AnalyticsListeners />
         <JsonLd />
         <a
           href="#contenido"
