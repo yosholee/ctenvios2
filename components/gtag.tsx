@@ -1,7 +1,10 @@
 import type { ReactElement } from "react";
 import Script from "next/script";
 
-const GA_MEASUREMENT_IDS = ["G-DMGE29VG1R", "G-E53C6QQ7Z8"] as const;
+// Solo la propiedad GA4 del dueño (G-DMGE29VG1R). El segundo ID que estuvo
+// configurado (G-E53C6QQ7Z8) no pertenece a la cuenta de Google del negocio
+// y el usuario ordenó retirarlo el 2026-10-23.
+const GA_MEASUREMENT_IDS = ["G-DMGE29VG1R"] as const;
 
 export function Gtag(): ReactElement {
   return (
