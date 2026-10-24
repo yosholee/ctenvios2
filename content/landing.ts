@@ -999,8 +999,8 @@ export const testimonials: TestimonialsContent = {
   headline: "Lo que dicen quienes ya enviaron con nosotros",
   support:
     "La valoración y las reseñas están en nuestro perfil de Google. Ahí puedes leer comentarios verificables de clientes reales.",
-  rating: 4.6,
-  reviewCount: 118,
+  rating: 4.7,
+  reviewCount: 126,
   sourceLabel: "Google",
   cta: {
     label: "Ver reseñas en Google",
