@@ -306,7 +306,7 @@ export const site: SiteContent = {
   address: "10230 NW 80th Ave",
   city: "Hialeah Gardens, FL 33016",
   fullAddress: "10230 NW 80th Ave, Hialeah Gardens, FL 33016, Estados Unidos",
-  mapsUrl: "https://maps.google.com/?q=10230+NW+80th+Ave+Hialeah+Gardens+FL",
+  mapsUrl: "https://maps.google.com/?cid=3890236566317076358",
   whatsappUrl: "https://wa.me/17542778810",
   trackingUrl: "/tracking",
   hours: [
