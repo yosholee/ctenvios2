@@ -27,6 +27,12 @@ export interface BlogPostContent {
   paragraphs: string[];
   image?: string;
   imageAlt?: string;
+  cta?: {
+    whatsappText: string;
+    label: string;
+    secondaryHref: string;
+    secondaryLabel: string;
+  };
 }
 
 export const servicePages: ServicePageContent[] = [
@@ -198,6 +204,31 @@ export const servicePages: ServicePageContent[] = [
 ];
 
 export const blogPosts: BlogPostContent[] = [
+  {
+    slug: "como-abrir-agencia-envios-cuba",
+    title:
+      "Cómo abrir una agencia de envíos a Cuba con CT Envios: Atlas, tracking y tarifas de socio",
+    description:
+      "Guía para agencias y emprendedores: vende envíos a Cuba con el respaldo de CT Envios, el sistema Atlas como CRM, tracking en tiempo real para tus clientes y tarifas de socio. Escríbenos por WhatsApp.",
+    publishedAt: "2026-10-27",
+    readTime: "5 min",
+    cta: {
+      whatsappText:
+        "Hola, leí el artículo de agencias socias y quiero abrir una agencia CT Envios con Atlas.",
+      label: "Quiero ser agencia",
+      secondaryHref: "/#agencias",
+      secondaryLabel: "Ver la sección de agencias",
+    },
+    paragraphs: [
+      "Si vendes envíos a Cuba desde tu negocio — o quieres empezar a venderlos — conoces el problema: el cliente te escribe cada dos días preguntando dónde está su paquete, y tú dependes de llamadas, mensajes sueltos y hojas de cálculo para responder. Operar así cansa, quita tiempo y te hace perder clientes.",
+      "La agencia socia de CT Envios funciona al revés: tú atiendes a tus clientes y vendes con tu negocio, y CT Envios mueve la carga marítima hasta la puerta en Cuba. Nosotros consolidamos y transportamos; tú ganas clientes y comisión, con tarifas preferenciales de socio que se definen según tu zona y tu volumen.",
+      "El centro de la operación es Atlas, nuestro sistema, incluido para las agencias socias. Desde un solo panel gestionas tus órdenes, tus clientes y tus métricas: ves qué vendiste, qué está en tránsito y qué ya se entregó. Tu equipo trabaja con usuarios, roles y permisos propios, con autonomía y con el respaldo de CT Envios.",
+      "Para tu cliente final, la diferencia se nota en el tracking: cada paquete se sigue en tiempo real, desde que se recibe hasta la entrega en la puerta en Cuba. Y los tiempos que das son los tiempos reales de la ruta marítima y la aduana: estimados honestos al cotizar, sin prometer fechas imposibles que después te reclamen a ti.",
+      "No empiezas desde cero: entras a una red que ya opera, con más de 15,000 envíos movidos y una agencia en Hialeah Gardens con 4.7 estrellas y 126 reseñas en Google. Esa reputación también respalda a tu negocio frente a tus clientes.",
+      "¿Qué necesitas para asociarte? Primero, escríbenos por WhatsApp: es el único canal para abrir una agencia socia, y por ahí revisamos tu caso y tus tarifas de socio. Segundo, debes contar con todo lo necesario para operar en regla y cumplir las leyes y regulaciones vigentes de Estados Unidos y de Cuba aplicables a los envíos de paquetería. Sin eso no se puede trabajar con nosotros.",
+      "Si cumples eso, el arranque es simple: conversamos por WhatsApp, activamos tu cuenta en Atlas y empiezas a vender. Escríbenos al (754) 277-8810 y dile al equipo que quieres abrir una agencia CT Envios con Atlas.",
+    ],
+  },
   {
     slug: "cuanto-cuesta-enviar-a-cuba-desde-miami",
     title: "Cuánto cuesta enviar a Cuba desde Miami",

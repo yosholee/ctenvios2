@@ -92,19 +92,20 @@ export function BlogArticle({ slug }: BlogArticleProps): ReactElement {
           <div className="mt-10 flex flex-wrap gap-3">
             <a
               href={serviceWhatsAppUrl(
-                `Hola, leí “${post.title}” y quiero cotizar un envío a Cuba.`
+                post.cta?.whatsappText ??
+                  `Hola, leí “${post.title}” y quiero cotizar un envío a Cuba.`
               )}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center rounded-full bg-brand-yellow px-5 py-2.5 text-sm font-bold text-brand-navy transition-colors hover:bg-brand-yellow/90"
             >
-              Cotizar por WhatsApp
+              {post.cta?.label ?? "Cotizar por WhatsApp"}
             </a>
             <Link
-              href="/#ofertas"
+              href={post.cta?.secondaryHref ?? "/#ofertas"}
               className="inline-flex items-center rounded-full border border-brand-navy/15 px-5 py-2.5 text-sm font-bold text-brand-navy hover:bg-brand-navy/5"
             >
-              Ver precios
+              {post.cta?.secondaryLabel ?? "Ver precios"}
             </Link>
           </div>
 
