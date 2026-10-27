@@ -372,7 +372,7 @@ export const hero: HeroContent = {
       id: "jueves",
       label: "Martes, miércoles y jueves",
       title: "Desde $0.99 / lb",
-      description: "Alimentos, medicina y aseo. Envíos a toda Cuba.",
+      description: "Alimentos, aseo, medicina, ropa y calzado. Envíos a toda Cuba.",
     },
     {
       id: "finde",
@@ -493,14 +493,14 @@ export const offers: OffersContent = {
     {
       id: "jueves",
       dayLabel: "Martes, Miércoles y Jueves",
-      category: "Alimentos, Medicina y Aseo",
+      category: "Alimentos, Aseo, Medicina, Ropa y Calzado",
       price: 0.99,
       regularPrice: 1.99,
       unit: "/lb",
       minLbs: 15,
       description: "La mejor tarifa de la semana para lo esencial.",
       features: [
-        "Alimentos, medicina y aseo",
+        "Alimentos, aseo, medicina, ropa y calzado",
         "Mínimo 15 libras",
         "Envío a toda Cuba",
         "Tracking incluido",
@@ -529,21 +529,21 @@ export const offers: OffersContent = {
       active: true,
     },
     {
-      id: "martes",
-      dayLabel: "Todos los Martes",
-      category: "Electrodomésticos, Piezas y Muebles",
+      id: "duraderos",
+      dayLabel: "Lunes y Viernes",
+      category: "Artículos duraderos",
       price: 1.64,
       regularPrice: 1.99,
       unit: "/lb",
       minLbs: 15,
       description: "Ideal para envíos más pesados y voluminosos.",
       features: [
-        "Electrodomésticos y muebles",
-        "Piezas y voluminosos",
+        "Electrodomésticos, piezas y muebles",
+        "Artículos duraderos y voluminosos",
         "Mínimo 15 libras",
         "Entrega puerta a puerta",
       ],
-      ctaLabel: "Cotizar martes",
+      ctaLabel: "Cotizar duraderos",
       featured: false,
       active: true,
     },
@@ -774,7 +774,7 @@ export const faq: FaqContent = {
           featured: true,
           question: "¿Cuánto cuesta enviar una caja?",
           answer:
-            "Las cajas fijas empiezan en $30 (12×12×12), $60 (15×15×15) y $65 (16×16×16). Solo admiten alimentos, aseo, ropa y medicinas. Si vas por libra, el mínimo es 15 lb: martes, miércoles y jueves desde $0.99/lb (alimentos, medicina y aseo), fin de semana $1.45/lb, martes $1.64/lb (electrodomésticos, piezas y muebles) y regular $1.99/lb.",
+            "Las cajas fijas empiezan en $30 (12×12×12), $60 (15×15×15) y $65 (16×16×16). Solo admiten alimentos, aseo, ropa y medicinas. Si vas por libra, el mínimo es 15 lb: martes, miércoles y jueves desde $0.99/lb (alimentos, aseo, medicina, ropa y calzado), fin de semana $1.45/lb, lunes y viernes $1.64/lb (artículos duraderos) y regular $1.99/lb.",
         },
         {
           id: "minimo",
@@ -801,13 +801,13 @@ export const faq: FaqContent = {
           featured: true,
           question: "¿Qué productos se pueden enviar?",
           answer:
-            "Alimentos no perecederos, aseo, ropa, medicinas permitidas, misceláneas y, en la oferta del martes, electrodomésticos, piezas y muebles. En cajas fijas solo alimentos, aseo, ropa y medicinas. Confirma artículos sensibles por WhatsApp antes de empacar.",
+            "Alimentos no perecederos, aseo, ropa, medicinas permitidas, misceláneas y, en la oferta de lunes y viernes, artículos duraderos como electrodomésticos, piezas y muebles. En cajas fijas solo alimentos, aseo, ropa y medicinas. Confirma artículos sensibles por WhatsApp antes de empacar.",
         },
         {
           id: "electrodomesticos",
           question: "¿Puedo enviar electrodomésticos?",
           answer:
-            "Sí. Los martes la tarifa es $1.64/lb para electrodomésticos, piezas y muebles (mínimo 15 lb). Equipos grandes o frágiles se cotizan uno a uno. El resto de días hábiles aplica el regular $1.99/lb.",
+            "Sí. Los lunes y viernes la tarifa es $1.64/lb para artículos duraderos: electrodomésticos, piezas y muebles (mínimo 15 lb). Equipos grandes o frágiles se cotizan uno a uno por WhatsApp.",
         },
         {
           id: "prohibidos",

@@ -39,7 +39,7 @@ export const servicePages: ServicePageContent[] = [
     intro:
       "Atendemos en 10230 NW 80th Ave, Hialeah Gardens. Envíos marítimos a toda Cuba, tarifas por libra, cajas fijas y seguimiento desde que recibimos el paquete hasta la entrega.",
     priceInfo:
-      "Desde $0.99/lb martes, miércoles y jueves (alimentos, medicina y aseo). Fin de semana $1.45/lb. Martes $1.64/lb para electrodomésticos, piezas y muebles. Regular $1.99/lb. Cajas fijas desde $30. Mínimo 15 lb en tarifas por libra.",
+      "Desde $0.99/lb martes, miércoles y jueves (alimentos, aseo, medicina, ropa y calzado). Fin de semana $1.45/lb. Lunes y viernes $1.64/lb para artículos duraderos. Regular $1.99/lb. Cajas fijas desde $30. Mínimo 15 lb en tarifas por libra.",
     timeInfo:
       "El tiempo depende de la ruta marítima y de aduana en Cuba. Al cotizar te damos un estimado según destino, tipo de carga y oferta del día.",
     benefits: [
@@ -71,7 +71,7 @@ export const servicePages: ServicePageContent[] = [
     intro:
       "El marítimo es la vía de CT Envios para paquetes familiares y carga consolidada: mejor precio por libra, entrega en puerta y seguimiento en cada etapa.",
     priceInfo:
-      "Regular $1.99/lb. Ofertas: martes, miércoles y jueves $0.99/lb (alimentos, medicina y aseo), fin de semana $1.45/lb, martes $1.64/lb (electrodomésticos, piezas y muebles). Mínimo 15 lb. Cajas fijas desde $30.",
+      "Regular $1.99/lb. Ofertas: martes, miércoles y jueves $0.99/lb (alimentos, aseo, medicina, ropa y calzado), fin de semana $1.45/lb, lunes y viernes $1.64/lb (artículos duraderos). Mínimo 15 lb. Cajas fijas desde $30.",
     timeInfo:
       "No hay un plazo fijo para todos los destinos. El estimado se confirma al cotizar, según provincia, aduana y tipo de carga.",
     benefits: [
@@ -89,7 +89,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Qué conviene enviar por marítimo?",
         answer:
-          "Alimentos no perecederos, aseo, ropa, medicinas permitidas, misceláneas y electrodomésticos o muebles en la oferta del martes.",
+          "Alimentos no perecederos, aseo, ropa, medicinas permitidas, misceláneas y electrodomésticos o muebles en la oferta de lunes y viernes.",
       },
     ],
     whatsappText: "Hola, quiero cotizar un envío marítimo a Cuba.",
@@ -99,11 +99,11 @@ export const servicePages: ServicePageContent[] = [
     eyebrow: "Alimentos",
     title: "Enviar comida y medicinas a Cuba desde $0.99/lb",
     description:
-      "Envía alimentos, medicinas y aseo a Cuba desde Miami: $0.99/lb de martes a jueves o cajas fijas de $30 a $65. Entrega puerta a puerta con tracking.",
+      "Envía alimentos, aseo, medicinas, ropa y calzado a Cuba desde Miami: $0.99/lb de martes a jueves o cajas fijas de $30 a $65. Entrega puerta a puerta con tracking.",
     intro:
-      "Martes, miércoles y jueves la tarifa de alimentos, medicina y aseo parte de $0.99/lb (mínimo 15 lb). También puedes usar cajas fijas si el contenido es alimentos, aseo, ropa o medicinas.",
+      "Martes, miércoles y jueves la tarifa de alimentos, aseo, medicina, ropa y calzado parte de $0.99/lb (mínimo 15 lb). También puedes usar cajas fijas si el contenido es alimentos, aseo, ropa o medicinas.",
     priceInfo:
-      "Martes, miércoles y jueves $0.99/lb para alimentos, medicina y aseo. Cajas 12×12×12 $30, 15×15×15 $60, 16×16×16 $65. Confirma la lista vigente antes de empacar.",
+      "Martes, miércoles y jueves $0.99/lb para alimentos, aseo, medicina, ropa y calzado. Cajas 12×12×12 $30, 15×15×15 $60, 16×16×16 $65. Confirma la lista vigente antes de empacar.",
     timeInfo:
       "Va por vía marítima. El estimado de entrega se da al cotizar, según destino y aduana.",
     benefits: [
@@ -131,15 +131,15 @@ export const servicePages: ServicePageContent[] = [
     eyebrow: "Electrodomésticos",
     title: "Envío de electrodomésticos a Cuba",
     description:
-      "Envía electrodomésticos, piezas y muebles a Cuba. Oferta de martes $1.64/lb, mínimo 15 lb, desde Hialeah Gardens.",
+      "Envía electrodomésticos, piezas y muebles a Cuba. Oferta de lunes y viernes $1.64/lb para artículos duraderos, mínimo 15 lb, desde Hialeah Gardens.",
     intro:
-      "Los martes CT Envios mueve electrodomésticos, piezas y muebles a $1.64/lb (mínimo 15 lb). Cotizamos equipos grandes uno a uno por peso y volumen.",
+      "Los lunes y viernes CT Envios mueve artículos duraderos — electrodomésticos, piezas y muebles — a $1.64/lb (mínimo 15 lb). Cotizamos equipos grandes uno a uno por peso y volumen.",
     priceInfo:
-      "Martes $1.64/lb para electrodomésticos, piezas y muebles. Regular $1.99/lb el resto de días hábiles. Equipos voluminosos se cotizan por WhatsApp.",
+      "Lunes y viernes $1.64/lb para artículos duraderos (electrodomésticos, piezas y muebles). Regular $1.99/lb. Equipos voluminosos se cotizan por WhatsApp.",
     timeInfo:
       "Vía marítima. El estimado depende del destino, aduana y si el equipo requiere manejo especial.",
     benefits: [
-      "Tarifa de martes para carga pesada.",
+      "Tarifa de lunes y viernes para artículos duraderos.",
       "Orientación de empaque para frágiles.",
       "Declaración y tracking.",
       "Entrega puerta a puerta.",
@@ -153,7 +153,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Cómo se calcula el precio?",
         answer:
-          "Por libra (mínimo 15 lb) o por cotización si el volumen es alto. El martes aplica $1.64/lb a esta categoría.",
+          "Por libra (mínimo 15 lb) o por cotización si el volumen es alto. Los lunes y viernes aplica $1.64/lb a esta categoría.",
       },
     ],
     whatsappText: "Hola, quiero cotizar el envío de un electrodoméstico a Cuba.",
@@ -206,7 +206,7 @@ export const blogPosts: BlogPostContent[] = [
     publishedAt: "2026-02-26",
     readTime: "5 min",
     paragraphs: [
-      "En CT Envios el envío marítimo a Cuba desde Miami parte de $0.99/lb martes, miércoles y jueves (alimentos, medicina y aseo), con mínimo 15 lb. El fin de semana está en $1.45/lb, el martes en $1.64/lb para electrodomésticos, piezas y muebles, y el regular en $1.99/lb.",
+      "En CT Envios el envío marítimo a Cuba desde Miami parte de $0.99/lb martes, miércoles y jueves (alimentos, aseo, medicina, ropa y calzado), con mínimo 15 lb. El fin de semana está en $1.45/lb, los lunes y viernes en $1.64/lb para artículos duraderos, y el regular en $1.99/lb.",
       "Si no quieres calcular libras, hay cajas fijas: 12×12×12 por $30, 15×15×15 por $60 y 16×16×16 por $65. En caja solo se admite alimentos, aseo, ropa y medicinas.",
       "El precio final también depende del contenido y de aduana. Una cotización útil incluye peso o tamaño de caja, lista de artículos y destino en Cuba.",
       "Cotiza el día que vas a enviar. Las ofertas semanales cambian el total más que cualquier calculadora genérica.",
@@ -276,12 +276,12 @@ export const blogPosts: BlogPostContent[] = [
     slug: "enviar-planta-electrica-a-cuba-desde-miami",
     title: "Cómo enviar una planta eléctrica a Cuba desde Miami",
     description:
-      "Guía para enviar una planta eléctrica (generador) a Cuba: qué confirmar antes, empaque, tarifa de martes para electrodomésticos y tracking puerta a puerta.",
+      "Guía para enviar una planta eléctrica (generador) a Cuba: qué confirmar antes, empaque, tarifa de lunes y viernes para artículos duraderos y tracking puerta a puerta.",
     publishedAt: "2026-10-23",
     readTime: "5 min",
     paragraphs: [
       "Las plantas eléctricas están entre los equipos más pedidos para Cuba. En CT Envios se cotizan como electrodomésticos: antes de empacar, confirma por WhatsApp la marca, los watts y si el modelo se puede transportar por vía marítima, porque no todos los equipos ni todas las baterías se aceptan igual.",
-      "Los martes aplica la oferta de electrodomésticos, piezas y muebles desde $1.64/lb, con mínimo de 15 lb. El resto de días hábiles aplica la tarifa regular de $1.99/lb. Los equipos grandes o voluminosos se cotizan uno a uno por peso y volumen, así que la foto y las medidas ayudan a darte un precio cerrado.",
+      "Los lunes y viernes aplica la oferta de artículos duraderos — electrodomésticos, piezas y muebles — desde $1.64/lb, con mínimo de 15 lb. El resto de días hábiles aplica la tarifa regular de $1.99/lb. Los equipos grandes o voluminosos se cotizan uno a uno por peso y volumen, así que la foto y las medidas ayudan a darte un precio cerrado.",
       "Empaca la planta en su caja original si la tienes, protegida por los cuatro lados y sin combustible. Retira o asegura cualquier pieza suelta, protege el panel de controles y declara el equipo con nombre concreto, marca y potencia. Evita descripciones genéricas: una declaración clara reduce revisiones en aduana.",
       "No des por hecho un tiempo de entrega fijo. El envío va por vía marítima y el estimado depende de la provincia de destino, la aduana y si el equipo requiere manejo especial. Al cotizar te damos el estimado para tu destino, no un promedio genérico.",
       "Cuando el paquete entra en agencia en Hialeah Gardens recibes tu número de orden o HBL. Con ese número sigues el envío en ctenvios.com/tracking: recibido, en tránsito, en aduana en Cuba, en reparto y entregado en la puerta del destinatario.",
@@ -315,11 +315,11 @@ export const blogPosts: BlogPostContent[] = [
     readTime: "4 min",
     image: "/images/blog/halloween-enviar-barato-cuba.webp",
     imageAlt:
-      "Súper oferta de Halloween de CT Envios: $0.99 por libra martes, miércoles y jueves en alimentos, medicina y aseo, mínimo 15 lb, precio regular $1.99",
+      "Súper oferta de Halloween de CT Envios: $0.99 por libra martes, miércoles y jueves en alimentos, aseo, medicina, ropa y calzado, mínimo 15 lb, precio regular $1.99",
     paragraphs: [
       "Llega Halloween y entre disfraces y calabazas hay un susto que nadie quiere: el precio de enviar un paquete a Cuba. La buena noticia es que enviar barato no depende de la temporada, depende del día en que traes tu caja y de con quién la envías. En CT Envios, en Hialeah Gardens, la semana de Halloween se envía desde $0.99/lb.",
-      "La oferta fuerte de la semana: martes, miércoles y jueves los alimentos, las medicinas y el aseo salen a $0.99/lb, con mínimo de 15 lb. Es la mitad del precio regular de $1.99/lb. Si tu familia necesita comida, medicina o productos de aseo, esos tres días son el momento de traer el paquete.",
-      "¿No puedes entre semana? El sábado y el domingo la tarifa de fin de semana es $1.45/lb para todos los productos, de 10:00 AM a 4:00 PM. Y los martes los electrodomésticos, las piezas y los muebles tienen su propia oferta: $1.64/lb.",
+      "La oferta fuerte de la semana: martes, miércoles y jueves los alimentos, el aseo, las medicinas, la ropa y el calzado salen a $0.99/lb, con mínimo de 15 lb. Es la mitad del precio regular de $1.99/lb. Si tu familia necesita comida, medicina, productos de aseo, ropa o zapatos, esos tres días son el momento de traer el paquete.",
+      "¿No puedes entre semana? El sábado y el domingo la tarifa de fin de semana es $1.45/lb para todos los productos, de 10:00 AM a 4:00 PM. Y los lunes y viernes los artículos duraderos tienen su propia oferta: $1.64/lb para electrodomésticos, piezas y muebles.",
       "Si no quieres calcular libras, usa una caja fija y paga un solo precio: 12×12×12 por $30, 15×15×15 por $60 o 16×16×16 por $65. En las cajas fijas solo va alimentos, aseo, ropa y medicinas, con entrega en la puerta y número de tracking incluido.",
       "El regalo de Halloween que de verdad resuelve en Cuba es la energía: la EcoFlow Delta 3 Classic está en $559.00 puesta en Cuba, con disponibilidad limitada. Es la planta que se está llevando todo el mundo para los apagones: 1024 Wh, carga rápida y sin ruido ni gasolina. Se reserva por WhatsApp.",
       "Tres trucos para que el total baje más: junta todo en un solo envío hasta pasar el mínimo de 15 lb en vez de mandar paquetes chicos por separado; declara cada artículo con su nombre concreto (nada de “misceláneas”), porque una declaración clara evita revisiones y demoras en aduana; y separa en un bulto aparte los alimentos, el aseo y las medicinas.",
@@ -361,12 +361,12 @@ export const seoHubLinks: SeoHubLink[] = [
   {
     label: "Enviar alimentos",
     href: "/envio-alimentos-cuba",
-    support: "Mar, mié y jue desde $0.99/lb. Comida, medicina y aseo.",
+    support: "Mar, mié y jue desde $0.99/lb. Alimentos, aseo, medicina, ropa y calzado.",
   },
   {
     label: "Electrodomésticos",
     href: "/envio-electrodomesticos-cuba",
-    support: "Martes $1.64/lb. Equipos, piezas y muebles.",
+    support: "Lunes y viernes $1.64/lb. Artículos duraderos.",
   },
   {
     label: "Cajas fijas",

@@ -1,6 +1,6 @@
 # Pricing — CT Envios
 
-Last updated: 2026-10-01
+Last updated: 2026-10-27
 
 Envíos marítimos a Cuba desde Miami (Hialeah Gardens, FL). Moneda: USD. Cotiza por WhatsApp antes de empacar.
 
@@ -11,7 +11,7 @@ Contacto: https://wa.me/17542778810 · soporte@ctenvios.com · (305) 851-3004
 ### Martes, Miércoles y Jueves — Super oferta
 - Price: $0.99 / lb
 - Precio regular de referencia: $1.99 / lb
-- Categoría: Alimentos, Medicina y Aseo
+- Categoría: Alimentos, Aseo, Medicina, Ropa y Calzado
 - Incluye: envío a toda Cuba, tracking, entrega puerta a puerta
 - Mínimo: 15 libras
 
@@ -23,10 +23,10 @@ Contacto: https://wa.me/17542778810 · soporte@ctenvios.com · (305) 851-3004
 - Incluye: atención por WhatsApp, tracking
 - Mínimo: 15 libras
 
-### Todos los Martes
+### Lunes y Viernes
 - Price: $1.64 / lb
 - Precio regular de referencia: $1.99 / lb
-- Categoría: Electrodomésticos, Piezas y Muebles
+- Categoría: Artículos duraderos (Electrodomésticos, Piezas y Muebles)
 - Incluye: entrega puerta a puerta
 - Mínimo: 15 libras
 
