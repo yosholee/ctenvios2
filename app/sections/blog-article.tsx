@@ -1,4 +1,5 @@
 import type { ReactElement } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts, getBlogPost, serviceWhatsAppUrl } from "@/content/seo";
@@ -33,6 +34,7 @@ export function BlogArticle({ slug }: BlogArticleProps): ReactElement {
     author: { "@type": "Organization", name: "CT Envios" },
     publisher: { "@id": `${SITE_URL}/#business` },
     url: `${SITE_URL}/blog/${post.slug}`,
+    ...(post.image ? { image: `${SITE_URL}${post.image}` } : {}),
   };
 
   return (
@@ -62,6 +64,19 @@ export function BlogArticle({ slug }: BlogArticleProps): ReactElement {
             {formatPostDate(post.publishedAt)} · {post.readTime} · Equipo CT
             Envios
           </p>
+
+          {post.image ? (
+            <figure className="mt-8">
+              <Image
+                src={post.image}
+                alt={post.imageAlt ?? post.title}
+                width={1296}
+                height={1616}
+                priority
+                className="mx-auto w-full max-w-md rounded-3xl"
+              />
+            </figure>
+          ) : null}
 
           <div className="mt-8 space-y-4">
             {post.paragraphs.map((paragraph) => (

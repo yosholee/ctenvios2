@@ -39,6 +39,16 @@ export function buildBlogMetadata(slug: string): Metadata {
       url: `${SITE_URL}/blog/${slug}`,
       type: "article",
       locale: "es_US",
+      ...(post.image
+        ? {
+            images: [
+              {
+                url: `${SITE_URL}${post.image}`,
+                alt: post.imageAlt ?? post.title,
+              },
+            ],
+          }
+        : {}),
     },
   };
 }

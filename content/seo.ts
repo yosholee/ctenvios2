@@ -25,6 +25,8 @@ export interface BlogPostContent {
   publishedAt: string;
   readTime: string;
   paragraphs: string[];
+  image?: string;
+  imageAlt?: string;
 }
 
 export const servicePages: ServicePageContent[] = [
@@ -302,6 +304,27 @@ export const blogPosts: BlogPostContent[] = [
       "Lo que no cambia es igual de importante. El régimen de importación no comercial sigue como estaba: los equipajes y envíos personales dentro de sus límites mantienen su tratamiento y sus pagos en pesos cubanos, y no hay una obligación general de pagar en dólares por viajar a Cuba. También sigue vigente el beneficio para alimentos, aseo, medicamentos e insumos médicos en el equipaje acompañado, presentados en bultos separados del resto: las normas de octubre no modifican ese régimen, que se rige por sus propias resoluciones.",
       "La Resolución 340/2026 fija además los valores de referencia y las reglas para determinar el carácter comercial, con cantidades máximas para artículos como los teléfonos celulares o inteligentes (hasta cinco unidades) y los equipos de cómputo (hasta tres, independientemente del tipo). Como novedad, permite importar por única vez un auto o auto rural totalmente eléctrico por equipaje no acompañado o envío, exonerado del impuesto aduanero si viene con su estación de carga alimentada por energía renovable, aunque se paga el servicio correspondiente. Y advierte que repetir importaciones de las mismas mercancías puede llevar a que la Aduana limite por un período el derecho a importar.",
       "Para quien envía paquetes a Cuba desde Miami la lección es clara: el exceso ya no es automáticamente una pérdida, pero puede salir caro si se clasifica como comercial, porque en envíos se paga el 30 % en USD. Declara cada artículo con nombre concreto y cantidades razonables para uso familiar, separa alimentos, aseo y medicinas del resto, y evita mezclar muchas unidades idénticas. Antes de cerrar tu caja o de viajar, confirma tu caso por WhatsApp con CT Envios: revisamos contenido, cantidades y la vía que más te conviene según las reglas vigentes.",
+    ],
+  },
+  {
+    slug: "enviar-barato-a-cuba-en-halloween",
+    title: "Cómo enviar barato a Cuba en Halloween (y con quién)",
+    description:
+      "Guía de Halloween para enviar a Cuba sin asustar tu bolsillo: $0.99/lb de martes a jueves, cajas fijas desde $30 y la EcoFlow a $559.00 puesta en Cuba, con CT Envios en Hialeah Gardens.",
+    publishedAt: "2026-10-27",
+    readTime: "4 min",
+    image: "/images/blog/halloween-enviar-barato-cuba.webp",
+    imageAlt:
+      "Súper oferta de Halloween de CT Envios: $0.99 por libra martes, miércoles y jueves en alimentos, medicina y aseo, mínimo 15 lb, precio regular $1.99",
+    paragraphs: [
+      "Llega Halloween y entre disfraces y calabazas hay un susto que nadie quiere: el precio de enviar un paquete a Cuba. La buena noticia es que enviar barato no depende de la temporada, depende del día en que traes tu caja y de con quién la envías. En CT Envios, en Hialeah Gardens, la semana de Halloween se envía desde $0.99/lb.",
+      "La oferta fuerte de la semana: martes, miércoles y jueves los alimentos, las medicinas y el aseo salen a $0.99/lb, con mínimo de 15 lb. Es la mitad del precio regular de $1.99/lb. Si tu familia necesita comida, medicina o productos de aseo, esos tres días son el momento de traer el paquete.",
+      "¿No puedes entre semana? El sábado y el domingo la tarifa de fin de semana es $1.45/lb para todos los productos, de 10:00 AM a 4:00 PM. Y los martes los electrodomésticos, las piezas y los muebles tienen su propia oferta: $1.64/lb.",
+      "Si no quieres calcular libras, usa una caja fija y paga un solo precio: 12×12×12 por $30, 15×15×15 por $60 o 16×16×16 por $65. En las cajas fijas solo va alimentos, aseo, ropa y medicinas, con entrega en la puerta y número de tracking incluido.",
+      "El regalo de Halloween que de verdad resuelve en Cuba es la energía: la EcoFlow Delta 3 Classic está en $559.00 puesta en Cuba, con disponibilidad limitada. Es la planta que se está llevando todo el mundo para los apagones: 1024 Wh, carga rápida y sin ruido ni gasolina. Se reserva por WhatsApp.",
+      "Tres trucos para que el total baje más: junta todo en un solo envío hasta pasar el mínimo de 15 lb en vez de mandar paquetes chicos por separado; declara cada artículo con su nombre concreto (nada de “misceláneas”), porque una declaración clara evita revisiones y demoras en aduana; y separa en un bulto aparte los alimentos, el aseo y las medicinas.",
+      "¿Y con quién enviar? Busca tres cosas: precio publicado sin letra pequeña, tracking real y entrega puerta a puerta. CT Envios tiene 4.7 estrellas y 126 reseñas en Google, publica todas sus tarifas en ctenvios.com y cada envío se sigue en ctenvios.com/tracking con el número de orden o el HBL, sin registrarse.",
+      "Estamos en 10230 NW 80th Ave, Hialeah Gardens, FL 33016. Abrimos de lunes a viernes de 9:00 AM a 6:00 PM y sábado y domingo de 10:00 AM a 4:00 PM. Escríbenos por WhatsApp al (754) 277-8810 con la lista o la foto de tu paquete y te cotizamos hoy mismo. Que este Halloween el único susto sea el de los disfraces.",
     ],
   },
 ];
