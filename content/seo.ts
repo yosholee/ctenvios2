@@ -358,6 +358,52 @@ export const blogPosts: BlogPostContent[] = [
       "Estamos en 10230 NW 80th Ave, Hialeah Gardens, FL 33016. Abrimos de lunes a viernes de 9:00 AM a 6:00 PM y sábado y domingo de 10:00 AM a 4:00 PM. Escríbenos por WhatsApp al (754) 277-8810 con la lista o la foto de tu paquete y te cotizamos hoy mismo. Que este Halloween el único susto sea el de los disfraces.",
     ],
   },
+  {
+    slug: "enviar-ropa-calzado-cuba-desde-miami",
+    title: "Enviar ropa y calzado a Cuba desde Miami: cómo empacar y cuánto cuesta",
+    description:
+      "Ropa y calzado a Cuba desde $0.99/lb martes, miércoles y jueves (mínimo 15 lb) con CT Envios: qué empacar, cómo declarar cada prenda y cuándo conviene caja fija o libra.",
+    publishedAt: "2026-11-01",
+    readTime: "5 min",
+    cta: {
+      whatsappText:
+        "Hola, quiero cotizar un envío de ropa y calzado a Cuba. ¿Me confirman tarifa y qué conviene, libra o caja?",
+      label: "Cotizar ropa y calzado",
+      secondaryHref: "/cajas-envios-cuba",
+      secondaryLabel: "Ver cajas fijas",
+    },
+    paragraphs: [
+      "La ropa y el calzado están entre lo más enviado a Cuba desde Miami, y desde la oferta vigente también están entre lo más barato de enviar: martes, miércoles y jueves salen a $0.99/lb, con mínimo de 15 lb, dentro de la misma categoría que los alimentos, el aseo y la medicina. El fin de semana la tarifa es $1.45/lb para todos los productos, y el precio regular es $1.99/lb.",
+      "Si tu envío es solo ropa, también puedes usar una caja fija y pagar un precio cerrado: 12×12×12 por $30, 15×15×15 por $60 o 16×16×16 por $65. Las cajas fijas admiten alimentos, aseo, ropa y medicinas. El calzado, en cambio, se cotiza por libra: antes de mezclar zapatos en una caja fija, confírmalo por WhatsApp para que te digan la vía que más te conviene.",
+      "Empaca la ropa doblada y en bolsas dentro de la caja, separada por persona o por tipo si mandas para varias personas. Los zapatos van en pares, con las suelas enfrentadas o en bolsas, para que no manchen la ropa. Si mandas ropa blanca o delicada, una bolsa aparte evita que llegue con marcas de otros artículos.",
+      "Declara cada cosa con su nombre concreto: “camisetas de hombre”, “zapatos deportivos talla 42”, “ropa de niña”. Evita la palabra “misceláneas”: una declaración clara reduce revisiones en aduana y hace más fácil cualquier reclamación. Toma fotos del contenido y de la caja cerrada antes de entregarla.",
+      "Junta todo en un solo envío hasta pasar el mínimo de 15 lb en vez de mandar paquetes chicos por separado: el mínimo se cobra igual aunque la caja pese menos. Y cotiza el día que vas a enviar, porque la oferta de $0.99/lb aplica martes, miércoles y jueves; fuera de esos días cambia el total.",
+      "No hay un plazo fijo para todos los destinos: el envío va por vía marítima y el estimado depende de la provincia y de aduana. Al cotizar por WhatsApp te damos el estimado para tu destino. Estamos en 10230 NW 80th Ave, Hialeah Gardens, de lunes a viernes de 9:00 AM a 6:00 PM y sábado y domingo de 10:00 AM a 4:00 PM, o escríbenos al (754) 277-8810 con la lista o la foto de tu paquete.",
+    ],
+  },
+  {
+    slug: "enviar-paquetes-a-cuba-por-provincia",
+    title: "Enviar paquetes a Cuba por provincia: La Habana, Santiago, Holguín y el resto de la isla",
+    description:
+      "CT Envios entrega puerta a puerta en toda Cuba desde Hialeah Gardens. Qué cambia según la provincia de destino, qué datos pedir al destinatario y cómo pedir un estimado real.",
+    publishedAt: "2026-11-01",
+    readTime: "5 min",
+    cta: {
+      whatsappText:
+        "Hola, quiero cotizar un envío a Cuba. Mi destinatario está en otra provincia y quiero el estimado para ese destino.",
+      label: "Cotizar por provincia",
+      secondaryHref: "/blog/cuanto-demora-envio-maritimo-cuba",
+      secondaryLabel: "Cuánto demora el marítimo",
+    },
+    paragraphs: [
+      "Un envío a Cuba no tiene un único plazo ni un único recorrido: la provincia del destinatario cambia la ruta, el reparto y el estimado. CT Envios entrega puerta a puerta en toda Cuba desde Hialeah Gardens, pero al cotizar siempre pide el estimado para tu provincia, no un promedio genérico. Oriente y occidente no se mueven igual, y un paquete para Santiago de Cuba o Holguín no sigue el mismo reparto que uno para La Habana.",
+      "Lo primero que define tu envío es el destino exacto: provincia, municipio y dirección completa del destinatario, con un teléfono de contacto en Cuba. Los datos incompletos o con errores son una de las causas más comunes de demora en la entrega, así que confirma la dirección con tu familia antes de cerrar la caja.",
+      "El segundo factor es el contenido. Las tarifas publicadas aplican igual en toda la isla: martes, miércoles y jueves $0.99/lb para alimentos, aseo, medicina, ropa y calzado (mínimo 15 lb); fin de semana $1.45/lb para todos los productos; lunes y viernes $1.64/lb para artículos duraderos; regular $1.99/lb; y cajas fijas desde $30 para alimentos, aseo, ropa y medicinas. Lo que cambia por provincia no es la tarifa, es el tiempo de reparto y de aduana.",
+      "El tercer factor es la declaración. Declara cada artículo con su nombre concreto y separa en un bulto aparte los alimentos, el aseo y las medicinas. Una declaración clara reduce revisiones en aduana, y eso se nota más en los destinos con reparto más largo, donde cada revisión extra pesa más en el total.",
+      "Cuando el paquete entra en agencia recibes tu número de orden o HBL. Con ese número sigues el envío en ctenvios.com/tracking: recibido en Hialeah, en tránsito, en aduana en Cuba, en reparto y entregado en la puerta del destinatario. Si una etapa se queda quieta varios días, escribe por WhatsApp con el número y el nombre del destinatario.",
+      "Antes de empacar, escríbenos por WhatsApp al (754) 277-8810 con la provincia y el municipio de destino, la lista del paquete y si vas por libra o por caja fija. Te devolvemos tarifa, estimado para ese destino y la vía que más te conviene. Atendemos en 10230 NW 80th Ave, Hialeah Gardens, de lunes a viernes de 9:00 AM a 6:00 PM y sábado y domingo de 10:00 AM a 4:00 PM.",
+    ],
+  },
 ];
 
 export function getServicePage(slug: string): ServicePageContent | undefined {
