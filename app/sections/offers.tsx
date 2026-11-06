@@ -52,6 +52,17 @@ export function Offers(): ReactElement {
           <p className="mt-4 text-base leading-relaxed text-brand-navy/65 sm:text-lg">
             {offers.support}
           </p>
+          <p className="mt-5 text-lg font-bold tracking-tight text-balance text-brand-navy sm:text-xl">
+            No por gusto nos dicen{" "}
+            <Highlighter
+              action="underline"
+              color="#ffd141"
+              strokeWidth={3}
+              padding={4}
+            >
+              Mister 99
+            </Highlighter>
+          </p>
         </div>
 
         <div className="mt-14 grid gap-5 lg:grid-cols-3 lg:items-stretch">
