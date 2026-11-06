@@ -158,7 +158,7 @@ export function Tracking(): ReactElement {
             aria-atomic="false"
           >
             <p className="mb-3 text-center text-xs font-semibold tracking-wide text-brand-navy/45 uppercase lg:text-left">
-              Actualizaciones en vivo
+              Ejemplo de seguimiento
             </p>
             <AnimatedList delay={1800} className="gap-3 px-1">
               {loopEvents.map((event, index) => (

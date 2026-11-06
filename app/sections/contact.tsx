@@ -1,5 +1,4 @@
 import type { ReactElement } from "react";
-import { AppsTile } from "@/app/sections/apps";
 import { ContactForm } from "@/app/sections/contact-form";
 import { contact } from "@/content/landing";
 
@@ -10,9 +9,7 @@ export function Contact(): ReactElement {
       className="scroll-mt-20 bg-background/90 py-16 backdrop-blur-md sm:py-20"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid gap-4 lg:grid-cols-5 lg:grid-rows-[auto_1fr] lg:gap-5">
-          <AppsTile />
-
+        <div className="grid gap-4 lg:grid-cols-5 lg:gap-5">
           <article className="order-3 flex flex-col rounded-3xl border border-brand-navy/10 bg-white p-6 shadow-sm sm:p-8 lg:order-none lg:col-span-2 lg:col-start-4 lg:row-span-2 lg:row-start-1">
             <h3 className="text-xl font-semibold text-brand-navy">
               {contact.formTitle}
@@ -22,7 +19,7 @@ export function Contact(): ReactElement {
             </div>
           </article>
 
-          <article className="order-2 flex flex-col justify-center rounded-3xl border border-brand-navy/10 bg-white p-6 sm:p-8 lg:order-none lg:col-span-3 lg:col-start-1 lg:row-start-2">
+          <article className="order-2 flex flex-col justify-center rounded-3xl border border-brand-navy/10 bg-white p-6 sm:p-8 lg:order-none lg:col-span-3 lg:col-start-1 lg:row-start-1">
             <span className="inline-flex w-fit rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold tracking-wide text-brand-navy uppercase">
               {contact.eyebrow}
             </span>
