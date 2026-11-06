@@ -297,7 +297,7 @@ export const site: SiteContent = {
   brand: "CT Envios",
   logoSrc: "/brand/logo.webp",
   tagline: "Tu aliado en cada envío",
-  title: "Envíos a Cuba desde Miami | Agencia CT Envios",
+  title: "Envíos a Cuba desde Miami desde $0.99/lb | CT Envios",
   description:
     "Envíos a Cuba desde Miami con CT Envios: agencia en Hialeah Gardens, entrega puerta a puerta, cajas fijas, tracking y atención por WhatsApp.",
   phones: ["(305) 851-3004"],
@@ -998,7 +998,7 @@ export const testimonials: TestimonialsContent = {
   eyebrow: "Reseñas",
   headline: "Lo que dicen quienes ya enviaron con nosotros",
   support:
-    "La valoración y las reseñas están en nuestro perfil de Google. Ahí puedes leer comentarios verificables de clientes reales.",
+    "Reseñas reales de nuestro perfil de Google, tal como las escribieron nuestros clientes.",
   rating: 4.8,
   reviewCount: 128,
   sourceLabel: "Google",
@@ -1007,7 +1007,35 @@ export const testimonials: TestimonialsContent = {
     href: "https://www.google.com/search?q=ctenvios#mpd=~6558092595028842705/customers/reviews",
     external: true,
   },
-  items: [],
+  items: [
+    {
+      id: "google-marilyn-tabares",
+      quote:
+        "La mejor agencia de envios a Cuba, estamos super satisfechos, tienen una atención increíble, un servicio rápido y excelente, ademas el mejor precio con especiales todas las semanas, salí de allí pensando que mis familiares recibirían el envío aproximadamente en un mes o quizás mas porque es lo que suele pasar pero no, a los 20 días ya mis familiares lo estaban disfrutando, el muchacho que me atendió me dijo que íbamos a quedar contentos y realmente así fue, muchas gracias por todo su esfuerzo, bendiciones ❤️",
+      name: "Marilyn Tabares",
+      handle: "Reseña verificada de Google",
+      initials: "MT",
+      rating: 5,
+    },
+    {
+      id: "google-nuvia-viera",
+      quote:
+        "Excelente servicio. Envié un paquete a mi familia en Cuba con CT Envíos y quedé muy satisfecha. El proceso fue fácil, el personal fue muy amable y atento, y en todo momento pude darle seguimiento al envío. Mi familia recibió la caja en buenas condiciones y dentro del tiempo esperado. Sin duda seguiré utilizando sus servicios y los recomiendo a cualquier persona que necesite enviar paquetes a Cuba. ¡Muchas gracias por su profesionalismo y responsabilidad!",
+      name: "Nuvia Viera",
+      handle: "Reseña verificada de Google",
+      initials: "NV",
+      rating: 5,
+    },
+    {
+      id: "google-katy-horta",
+      quote:
+        "Llevo enviando a mis familiares con CTEnvios por bastante tiempo y estamos muy contentos. El trato es exelente y todo llega en perfectas condiciones a la isla.",
+      name: "Katy Horta",
+      handle: "Reseña verificada de Google",
+      initials: "KH",
+      rating: 5,
+    },
+  ],
 };
 
 export function getActiveOffers(): OfferItem[] {
