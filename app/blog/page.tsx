@@ -5,7 +5,7 @@ import { blogPosts } from "@/content/seo";
 import { site } from "@/content/landing";
 
 export const metadata: Metadata = {
-  title: `Guías para enviar a Cuba: precios, aduana y tracking | ${site.brand}`,
+  title: `Enviar a Cuba desde Miami: precios, aduana y tracking | ${site.brand}`,
   description:
     "Precios 2026, nuevas reglas de la Aduana de Cuba, qué se puede enviar, cuánto demora el marítimo y cómo rastrear tu paquete. Guías de CT Envios, Hialeah Gardens.",
   alternates: { canonical: "/blog" },

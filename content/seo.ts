@@ -39,9 +39,9 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "envios-cuba-miami",
     eyebrow: "Agencia en Hialeah",
-    title: "Envíos a Cuba desde Miami: desde $0.99/lb en Hialeah",
+    title: "Agencia de envíos a Cuba en Hialeah Gardens: desde $0.99/lb",
     description:
-      "Envía paquetes a Cuba desde Hialeah Gardens: marítimo puerta a puerta desde $0.99/lb (mar–jue), cajas fijas desde $30, tracking incluido y cotización por WhatsApp.",
+      "Agencia de envíos a Cuba en Hialeah Gardens, Miami: envío marítimo puerta a puerta desde $0.99/lb (mar–jue), cajas fijas desde $30, tracking incluido y cotización por WhatsApp.",
     intro:
       "Atendemos en 10230 NW 80th Ave, Hialeah Gardens. Envíos marítimos a toda Cuba, tarifas por libra, cajas fijas y seguimiento desde que recibimos el paquete hasta la entrega.",
     priceInfo:
@@ -103,7 +103,7 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "envio-alimentos-cuba",
     eyebrow: "Alimentos",
-    title: "Enviar comida y medicinas a Cuba desde $0.99/lb",
+    title: "Envío de comida a Cuba desde Miami: $0.99/lb mar–jue",
     description:
       "Envía alimentos, aseo, medicinas, ropa y calzado a Cuba desde Miami: $0.99/lb de martes a jueves o cajas fijas de $30 a $65. Entrega puerta a puerta con tracking.",
     intro:
@@ -186,7 +186,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Qué puedo meter en una caja fija?",
         answer:
-          "Solo alimentos, aseo, ropa y medicinas. Si mezclas electrodomésticos u otra carga, cotiza por libra.",
+          "Solo alimentos, aseo, ropa y medicinas. Si mezclas [electrodomésticos](/envio-electrodomesticos-cuba) u otra carga, cotiza por libra.",
       },
       {
         question: "¿Cuál caja conviene más?",
@@ -224,7 +224,7 @@ export const blogPosts: BlogPostContent[] = [
       "La agencia socia de CT Envios funciona al revés: tú atiendes a tus clientes y vendes con tu negocio, y CT Envios mueve la carga marítima hasta la puerta en Cuba. Nosotros consolidamos y transportamos; tú ganas clientes y comisión, con tarifas preferenciales de socio que se definen según tu zona y tu volumen.",
       "El centro de la operación es Atlas, nuestro sistema, incluido para las agencias socias. Desde un solo panel gestionas tus órdenes, tus clientes y tus métricas: ves qué vendiste, qué está en tránsito y qué ya se entregó. Tu equipo trabaja con usuarios, roles y permisos propios, con autonomía y con el respaldo de CT Envios.",
       "Para tu cliente final, la diferencia se nota en el tracking: cada paquete se sigue en tiempo real, desde que se recibe hasta la entrega en la puerta en Cuba. Y los tiempos que das son los tiempos reales de la ruta marítima y la aduana: estimados honestos al cotizar, sin prometer fechas imposibles que después te reclamen a ti.",
-      "No empiezas desde cero: entras a una red que ya opera, con más de 15,000 envíos movidos y una agencia en Hialeah Gardens con 4.8 estrellas y 128 reseñas en Google. Esa reputación también respalda a tu negocio frente a tus clientes.",
+      "No empiezas desde cero: entras a una red que ya opera, con más de 15,000 envíos movidos y una [agencia en Hialeah Gardens](/envios-cuba-miami) con 4.8 estrellas y 128 reseñas en Google. Esa reputación también respalda a tu negocio frente a tus clientes.",
       "¿Qué necesitas para asociarte? Primero, escríbenos por WhatsApp: es el único canal para abrir una agencia socia, y por ahí revisamos tu caso y tus tarifas de socio. Segundo, debes contar con todo lo necesario para operar en regla y cumplir las leyes y regulaciones vigentes de Estados Unidos y de Cuba aplicables a los envíos de paquetería. Sin eso no se puede trabajar con nosotros.",
       "Si cumples eso, el arranque es simple: conversamos por WhatsApp, activamos tu cuenta en Atlas y empiezas a vender. Escríbenos al (754) 277-8810 y dile al equipo que quieres abrir una agencia CT Envios con Atlas.",
     ],
@@ -238,7 +238,7 @@ export const blogPosts: BlogPostContent[] = [
     readTime: "5 min",
     paragraphs: [
       "En CT Envios el envío marítimo a Cuba desde Miami parte de $0.99/lb martes, miércoles y jueves (alimentos, aseo, medicina, ropa y calzado), con mínimo 15 lb. El fin de semana está en $1.45/lb, los lunes y viernes en $1.64/lb para artículos duraderos, y el regular en $1.99/lb.",
-      "Si no quieres calcular libras, hay cajas fijas: 12×12×12 por $30, 15×15×15 por $60 y 16×16×16 por $65. En caja solo se admite alimentos, aseo, ropa y medicinas.",
+      "Si no quieres calcular libras, hay [cajas fijas](/cajas-envios-cuba): 12×12×12 por $30, 15×15×15 por $60 y 16×16×16 por $65. En caja solo se admite alimentos, aseo, ropa y medicinas.",
       "El precio final también depende del contenido y de aduana. Una cotización útil incluye peso o tamaño de caja, lista de artículos y destino en Cuba.",
       "Cotiza el día que vas a enviar. Las ofertas semanales cambian el total más que cualquier calculadora genérica.",
       "Escríbenos por WhatsApp con fotos o lista del paquete. Te devolvemos tarifa, estimado de tiempo y si conviene caja o libra.",
@@ -269,7 +269,7 @@ export const blogPosts: BlogPostContent[] = [
     readTime: "4 min",
     paragraphs: [
       "No hay un único plazo para toda Cuba. El tiempo sale de la ruta marítima, la aduana y el reparto en destino.",
-      "Al cotizar, pide el estimado para tu provincia, no un promedio genérico. Oriente y occidente no se mueven igual.",
+      "Al cotizar, pide [el estimado para tu provincia](/blog/enviar-paquetes-a-cuba-por-provincia), no un promedio genérico. Oriente y occidente no se mueven igual.",
       "Una declaración clara y un empaque correcto bajan revisiones extra. El contenido ambiguo alarga la liberación.",
       "Usa el tracking en ctenvios.com/tracking con tu orden o HBL. Si una etapa se queda quieta, escribe por WhatsApp con el número y el destinatario.",
     ],
@@ -284,7 +284,7 @@ export const blogPosts: BlogPostContent[] = [
     paragraphs: [
       "Entra a /tracking e ingresa el número de orden o el HBL. Verás el estado actualizado del paquete.",
       "Las etapas habituales son: recibido en Hialeah, en tránsito, aduana en Cuba, en reparto y entregado.",
-      "Si el estado no cambia varios días, primero compara con el estimado de esa etapa. No todo silencio es un problema.",
+      "Si el estado no cambia varios días, primero compara con [el estimado de esa etapa](/blog/cuanto-demora-envio-maritimo-cuba). No todo silencio es un problema.",
       "Para soporte, manda tracking, nombre del destinatario y un teléfono. Con eso el equipo puede revisar el caso sin ir y venir.",
     ],
   },
@@ -299,7 +299,7 @@ export const blogPosts: BlogPostContent[] = [
       "Un solo artículo restringido puede frenar todo el paquete. Si dudas, pregunta antes de empacar.",
       "No se aceptan armas, municiones, explosivos, drogas, dinero en efectivo ni material que viole embargo o transporte internacional.",
       "Los perecederos sin empaque adecuado y los productos sin etiqueta también generan rechazo o revisión larga.",
-      "En cajas fijas de CT Envios solo van alimentos, aseo, ropa y medicinas. El resto va por libra, según la oferta del día.",
+      "En [cajas fijas](/cajas-envios-cuba) de CT Envios solo van alimentos, aseo, ropa y medicinas. El resto va por libra, según la oferta del día.",
       "Manda foto del artículo por WhatsApp. Resolverlo en Hialeah es más barato que resolverlo en aduana.",
     ],
   },
@@ -311,7 +311,7 @@ export const blogPosts: BlogPostContent[] = [
     publishedAt: "2026-10-23",
     readTime: "5 min",
     paragraphs: [
-      "Las plantas eléctricas están entre los equipos más pedidos para Cuba. En CT Envios se cotizan como electrodomésticos: antes de empacar, confirma por WhatsApp la marca, los watts y si el modelo se puede transportar por vía marítima, porque no todos los equipos ni todas las baterías se aceptan igual.",
+      "Las plantas eléctricas están entre los equipos más pedidos para Cuba. En CT Envios se cotizan como [electrodomésticos](/envio-electrodomesticos-cuba): antes de empacar, confirma por WhatsApp la marca, los watts y si el modelo se puede transportar por vía marítima, porque no todos los equipos ni todas las baterías se aceptan igual.",
       "Los lunes y viernes aplica la oferta de artículos duraderos — electrodomésticos, piezas y muebles — desde $1.64/lb, con mínimo de 15 lb. El resto de días hábiles aplica la tarifa regular de $1.99/lb. Los equipos grandes o voluminosos se cotizan uno a uno por peso y volumen, así que la foto y las medidas ayudan a darte un precio cerrado.",
       "Empaca la planta en su caja original si la tienes, protegida por los cuatro lados y sin combustible. Retira o asegura cualquier pieza suelta, protege el panel de controles y declara el equipo con nombre concreto, marca y potencia. Evita descripciones genéricas: una declaración clara reduce revisiones en aduana.",
       "No des por hecho un tiempo de entrega fijo. El envío va por vía marítima y el estimado depende de la provincia de destino, la aduana y si el equipo requiere manejo especial. Al cotizar te damos el estimado para tu destino, no un promedio genérico.",
@@ -334,7 +334,7 @@ export const blogPosts: BlogPostContent[] = [
       "El pago se hace en USD con tarjetas nacionales o internacionales. El efectivo solo se acepta en los aeropuertos y a través de las entidades habilitadas para ello. Además del arancel hay tarifas máximas por los servicios aduaneros: comienzan en 2 USD para envíos de hasta 200 USD y llegan hasta 50 USD cuando el valor de las mercancías supera los 6 000 USD. Estas importaciones comerciales pagan aunque la misma mercancía tenga algún beneficio fiscal en otro régimen: las exenciones anteriores no aplican en este despacho.",
       "Lo que no cambia es igual de importante. El régimen de importación no comercial sigue como estaba: los equipajes y envíos personales dentro de sus límites mantienen su tratamiento y sus pagos en pesos cubanos, y no hay una obligación general de pagar en dólares por viajar a Cuba. También sigue vigente el beneficio para alimentos, aseo, medicamentos e insumos médicos en el equipaje acompañado, presentados en bultos separados del resto: las normas de octubre no modifican ese régimen, que se rige por sus propias resoluciones.",
       "La Resolución 340/2026 fija además los valores de referencia y las reglas para determinar el carácter comercial, con cantidades máximas para artículos como los teléfonos celulares o inteligentes (hasta cinco unidades) y los equipos de cómputo (hasta tres, independientemente del tipo). Como novedad, permite importar por única vez un auto o auto rural totalmente eléctrico por equipaje no acompañado o envío, exonerado del impuesto aduanero si viene con su estación de carga alimentada por energía renovable, aunque se paga el servicio correspondiente. Y advierte que repetir importaciones de las mismas mercancías puede llevar a que la Aduana limite por un período el derecho a importar.",
-      "Para quien envía paquetes a Cuba desde Miami la lección es clara: el exceso ya no es automáticamente una pérdida, pero puede salir caro si se clasifica como comercial, porque en envíos se paga el 30 % en USD. Declara cada artículo con nombre concreto y cantidades razonables para uso familiar, separa alimentos, aseo y medicinas del resto, y evita mezclar muchas unidades idénticas. Antes de cerrar tu caja o de viajar, confirma tu caso por WhatsApp con CT Envios: revisamos contenido, cantidades y la vía que más te conviene según las reglas vigentes.",
+      "Para quien envía paquetes a Cuba desde Miami la lección es clara: el exceso ya no es automáticamente una pérdida, pero puede salir caro si se clasifica como comercial, porque en envíos se paga el 30 % en USD. Declara cada artículo con nombre concreto y cantidades razonables para uso familiar, separa [alimentos, aseo y medicinas](/envio-alimentos-cuba) del resto, y evita mezclar muchas unidades idénticas. Antes de cerrar tu caja o de viajar, confirma tu caso por WhatsApp con CT Envios: revisamos contenido, cantidades y la vía que más te conviene según las reglas vigentes.",
     ],
   },
   {
@@ -354,7 +354,7 @@ export const blogPosts: BlogPostContent[] = [
       "Si no quieres calcular libras, usa una caja fija y paga un solo precio: 12×12×12 por $30, 15×15×15 por $60 o 16×16×16 por $65. En las cajas fijas solo va alimentos, aseo, ropa y medicinas, con entrega en la puerta y número de tracking incluido.",
       "El regalo de Halloween que de verdad resuelve en Cuba es la energía: la EcoFlow Delta 3 Classic está en $559.00 puesta en Cuba, con disponibilidad limitada. Es la planta que se está llevando todo el mundo para los apagones: 1024 Wh, carga rápida y sin ruido ni gasolina. Se reserva por WhatsApp.",
       "Tres trucos para que el total baje más: junta todo en un solo envío hasta pasar el mínimo de 15 lb en vez de mandar paquetes chicos por separado; declara cada artículo con su nombre concreto (nada de “misceláneas”), porque una declaración clara evita revisiones y demoras en aduana; y separa en un bulto aparte los alimentos, el aseo y las medicinas.",
-      "¿Y con quién enviar? Busca tres cosas: precio publicado sin letra pequeña, tracking real y entrega puerta a puerta. CT Envios tiene 4.8 estrellas y 128 reseñas en Google, publica todas sus tarifas en ctenvios.com y cada envío se sigue en ctenvios.com/tracking con el número de orden o el HBL, sin registrarse.",
+      "¿Y con quién enviar? Busca tres cosas: precio publicado sin letra pequeña, [tracking real](/blog/como-rastrear-un-envio-a-cuba) y entrega puerta a puerta. CT Envios tiene 4.8 estrellas y 128 reseñas en Google, publica todas sus tarifas en ctenvios.com y cada envío se sigue en ctenvios.com/tracking con el número de orden o el HBL, sin registrarse.",
       "Estamos en 10230 NW 80th Ave, Hialeah Gardens, FL 33016. Abrimos de lunes a viernes de 9:00 AM a 6:00 PM y sábado y domingo de 10:00 AM a 4:00 PM. Escríbenos por WhatsApp al (754) 277-8810 con la lista o la foto de tu paquete y te cotizamos hoy mismo. Que este Halloween el único susto sea el de los disfraces.",
     ],
   },
@@ -398,8 +398,8 @@ export const blogPosts: BlogPostContent[] = [
     paragraphs: [
       "Un envío a Cuba no tiene un único plazo ni un único recorrido: la provincia del destinatario cambia la ruta, el reparto y el estimado. CT Envios entrega puerta a puerta en toda Cuba desde Hialeah Gardens, pero al cotizar siempre pide el estimado para tu provincia, no un promedio genérico. Oriente y occidente no se mueven igual, y un paquete para Santiago de Cuba o Holguín no sigue el mismo reparto que uno para La Habana.",
       "Lo primero que define tu envío es el destino exacto: provincia, municipio y dirección completa del destinatario, con un teléfono de contacto en Cuba. Los datos incompletos o con errores son una de las causas más comunes de demora en la entrega, así que confirma la dirección con tu familia antes de cerrar la caja.",
-      "El segundo factor es el contenido. Las tarifas publicadas aplican igual en toda la isla: martes, miércoles y jueves $0.99/lb para alimentos, aseo, medicina, ropa y calzado (mínimo 15 lb); fin de semana $1.45/lb para todos los productos; lunes y viernes $1.64/lb para artículos duraderos; regular $1.99/lb; y cajas fijas desde $30 para alimentos, aseo, ropa y medicinas. Lo que cambia por provincia no es la tarifa, es el tiempo de reparto y de aduana.",
-      "El tercer factor es la declaración. Declara cada artículo con su nombre concreto y separa en un bulto aparte los alimentos, el aseo y las medicinas. Una declaración clara reduce revisiones en aduana, y eso se nota más en los destinos con reparto más largo, donde cada revisión extra pesa más en el total.",
+      "El segundo factor es el contenido. Las tarifas publicadas aplican igual en toda la isla: martes, miércoles y jueves $0.99/lb para alimentos, aseo, medicina, ropa y calzado (mínimo 15 lb); fin de semana $1.45/lb para todos los productos; lunes y viernes $1.64/lb para artículos duraderos; regular $1.99/lb; y [cajas fijas](/cajas-envios-cuba) desde $30 para alimentos, aseo, ropa y medicinas. Lo que cambia por provincia no es la tarifa, es el tiempo de reparto y de aduana.",
+      "El tercer factor es la declaración. Declara cada artículo con su nombre concreto y separa en un bulto aparte [los alimentos, el aseo y las medicinas](/envio-alimentos-cuba). Una declaración clara reduce revisiones en aduana, y eso se nota más en los destinos con reparto más largo, donde cada revisión extra pesa más en el total.",
       "Cuando el paquete entra en agencia recibes tu número de orden o HBL. Con ese número sigues el envío en ctenvios.com/tracking: recibido en Hialeah, en tránsito, en aduana en Cuba, en reparto y entregado en la puerta del destinatario. Si una etapa se queda quieta varios días, escribe por WhatsApp con el número y el nombre del destinatario.",
       "Antes de empacar, escríbenos por WhatsApp al (754) 277-8810 con la provincia y el municipio de destino, la lista del paquete y si vas por libra o por caja fija. Te devolvemos tarifa, estimado para ese destino y la vía que más te conviene. Atendemos en 10230 NW 80th Ave, Hialeah Gardens, de lunes a viernes de 9:00 AM a 6:00 PM y sábado y domingo de 10:00 AM a 4:00 PM.",
     ],

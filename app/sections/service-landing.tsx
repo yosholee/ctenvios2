@@ -9,6 +9,7 @@ import {
   serviceWhatsAppUrl,
 } from "@/content/seo";
 import { SITE_URL } from "@/lib/site";
+import { RichText, stripRichText } from "./rich-text";
 
 interface ServiceLandingProps {
   slug: string;
@@ -58,7 +59,7 @@ export function ServiceLanding({ slug }: ServiceLandingProps): ReactElement {
           name: item.question,
           acceptedAnswer: {
             "@type": "Answer",
-            text: item.answer,
+            text: stripRichText(item.answer),
           },
         })),
       },
@@ -129,7 +130,7 @@ export function ServiceLanding({ slug }: ServiceLandingProps): ReactElement {
                   {item.question}
                 </h3>
                 <p className="mt-1 text-sm leading-relaxed text-brand-navy/70 sm:text-base">
-                  {item.answer}
+                  <RichText text={item.answer} />
                 </p>
               </article>
             ))}

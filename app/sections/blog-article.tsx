@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts, getBlogPost, serviceWhatsAppUrl } from "@/content/seo";
 import { SITE_URL } from "@/lib/site";
+import { RichText } from "./rich-text";
 
 interface BlogArticleProps {
   slug: string;
@@ -84,7 +85,7 @@ export function BlogArticle({ slug }: BlogArticleProps): ReactElement {
                 key={paragraph}
                 className="text-base leading-relaxed text-brand-navy/70"
               >
-                {paragraph}
+                <RichText text={paragraph} />
               </p>
             ))}
           </div>
