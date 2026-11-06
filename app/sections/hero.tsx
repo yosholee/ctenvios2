@@ -57,7 +57,7 @@ export function Hero(): ReactElement {
               strokeWidth={3}
               padding={4}
             >
-              rápidos y confiables
+              llega como aéreo, cuesta como marítimo
             </Highlighter>
           </h1>
           <p className="mt-5 text-base leading-relaxed text-brand-navy/70 sm:text-lg">

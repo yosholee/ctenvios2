@@ -341,7 +341,7 @@ export const site: SiteContent = {
 
 export const hero: HeroContent = {
   eyebrow: "Rápidos. Claros. Reales.",
-  headline: "Envíos a Cuba desde Miami: rápidos y confiables",
+  headline: "Envíos a Cuba desde Miami: llega como aéreo, cuesta como marítimo",
   highlight: "con precios bajos y tracking real",
   support:
     "CTEnvios es una agencia de envíos a Cuba ubicada en Hialeah Gardens, Miami. Ofrecemos envíos marítimos, cajas con tarifa fija, entrega puerta a puerta, tracking en tiempo real y atención personalizada por WhatsApp.",
