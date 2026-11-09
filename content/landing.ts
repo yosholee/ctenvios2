@@ -1039,22 +1039,55 @@ export const testimonials: TestimonialsContent = {
 };
 
 export interface StatItem {
-  value: string;
+  key: string;
+  value: number;
+  decimals?: number;
+  prefix?: string;
+  suffix?: string;
   label: string;
+  detail: string;
 }
 
 export interface StatsContent {
   eyebrow: string;
+  title: string;
+  description: string;
   items: StatItem[];
 }
 
 export const stats: StatsContent = {
   eyebrow: "CT Envios en cifras",
+  title: "La red detrás de cada envío",
+  description:
+    "Cifras reales de nuestra operación y de nuestros clientes: años moviendo paquetes de Miami a toda Cuba, con tracking en cada paso.",
   items: [
-    { value: "+17", label: "años enviando a Cuba" },
-    { value: "94", label: "agencias en nuestra red" },
-    { value: "43,475", label: "paquetes entregados" },
-    { value: "4.8/5", label: "calificación en Google · 128 reseñas" },
+    {
+      key: "years",
+      value: 17,
+      prefix: "+",
+      label: "años enviando a Cuba",
+      detail: "Agencia mayorista marítima con más de 17 años en el mercado",
+    },
+    {
+      key: "agencies",
+      value: 94,
+      label: "agencias en la red",
+      detail: "Socias que consolidan y venden con nuestro sistema Atlas",
+    },
+    {
+      key: "delivered",
+      value: 43475,
+      label: "paquetes entregados",
+      detail: "Entregas puerta a puerta registradas en Atlas",
+    },
+    {
+      key: "rating",
+      value: 4.8,
+      decimals: 1,
+      suffix: "/5",
+      label: "calificación en Google",
+      detail: "128 reseñas de clientes reales",
+    },
   ],
 };
 
