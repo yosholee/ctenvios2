@@ -1038,6 +1038,26 @@ export const testimonials: TestimonialsContent = {
   ],
 };
 
+export interface StatItem {
+  value: string;
+  label: string;
+}
+
+export interface StatsContent {
+  eyebrow: string;
+  items: StatItem[];
+}
+
+export const stats: StatsContent = {
+  eyebrow: "CT Envios en cifras",
+  items: [
+    { value: "+17", label: "años enviando a Cuba" },
+    { value: "94", label: "agencias en nuestra red" },
+    { value: "43,475", label: "paquetes entregados" },
+    { value: "4.8/5", label: "calificación en Google · 128 reseñas" },
+  ],
+};
+
 export function getActiveOffers(): OfferItem[] {
   return offers.items.filter((item) => item.active);
 }
