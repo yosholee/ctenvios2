@@ -5,7 +5,6 @@ import { Faq } from "@/app/sections/faq";
 import { Hero } from "@/app/sections/hero";
 import { HowItWorks } from "@/app/sections/how-it-works";
 import { Offers } from "@/app/sections/offers";
-import { SeoHub } from "@/app/sections/seo-hub";
 import { Stats } from "@/app/sections/stats";
 import { Testimonials } from "@/app/sections/testimonials";
 import { Tracking } from "@/app/sections/tracking";
@@ -14,11 +13,10 @@ export default function Home(): ReactElement {
   return (
     <main id="contenido" className="flex flex-1 flex-col">
       <Hero />
-      <Stats />
       <Offers />
       <Boxes />
       <HowItWorks />
-      <SeoHub />
+      <Stats />
       <Testimonials />
       <Faq />
       <Tracking />
