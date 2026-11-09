@@ -205,6 +205,27 @@ export const servicePages: ServicePageContent[] = [
 
 export const blogPosts: BlogPostContent[] = [
   {
+    slug: "mejores-agencias-envios-cuba-miami",
+    title: "Mejores agencias de envíos a Cuba en Miami: cómo compararlas",
+    description:
+      "Qué mirar antes de elegir agencia de envíos a Cuba en Miami: precio publicado, tracking, tiempos, reseñas y sede. Comparativa real de CT Envios, DimeCuba, ZAS, Cubamax, District Cuba, Rapid y Bolt.",
+    publishedAt: "2026-11-09",
+    readTime: "5 min",
+    paragraphs: [
+      "Elegir una agencia de envíos a Cuba en Miami no es solo buscar el precio más bajo por libra. Antes de dejar tu caja, mira cinco cosas: que el precio esté publicado y no solo por mensaje, que puedas seguir el paquete con un número de tracking, que la agencia diga tiempos estimados, que tenga reseñas reales recientes y que sepas dónde está su sede.",
+      "En CT Envios publicamos la escalera completa: desde $0.99/lb martes, miércoles y jueves para alimentos, aseo, medicina, ropa y calzado; $1.64/lb lunes y viernes para artículos duraderos; $1.45/lb sábado y domingo para todo; regular $1.99/lb, con mínimo de 15 lb en tarifas por libra. También hay [cajas fijas](/cajas-envios-cuba) de $30, $60 y $65. La cotización final se confirma por WhatsApp, con el peso, el contenido y el destino.",
+      "En la comparativa que hicimos el 5 de noviembre, leyendo las 7 landings con la misma rúbrica, CT Envios quedó primera con 61 puntos sobre 80, seguida de DimeCuba con 56, ZAS Express con 43, Cubamax con 42, District Cuba con 39 y Rapid Multiservice con 37. Bolt Travel no tiene web de envíos, así que no entra en la tabla: vende por redes sociales.",
+      "CT gana en lo que más pesa para enviar una caja: precios visibles desde la primera pantalla, un solo objetivo (cotizar por WhatsApp) y [tracking real](/blog/como-rastrear-un-envio-a-cuba) de un campo, sin registro. También suma 4.8 estrellas con 128 reseñas en Google y más de 17 años en el mercado, desde su agencia en Hialeah Gardens.",
+      "DimeCuba es la máquina comercial más completa: deja configurar y pagar el envío en la web, ofrece recogida a domicilio y publica rangos de tiempo. Pero se contradice entre sus propias páginas: el aéreo aparece a $2.99/lb en una y a $3.99/lb en otra, y el marítimo a 25–45 días en la landing y a 35–60 días en su guía. Tampoco muestra un buscador de tracking visible.",
+      "ZAS Express tiene la red más grande, con más de 80 agencias asociadas, y una app con perfil de cliente que guarda remitente y destinatarios. Su debilidad es la contraria a la de CT: no publica ni un solo precio ni rangos de tiempo, así que el cliente no puede comparar sin escribirles. Su cliente real es la agencia que revende, no el público directo.",
+      "Cubamax es la marca más grande, con 22 años declarados y decenas de oficinas, pero su home no vende envíos: abre con servicios, tienda y un sorteo, y el precio llega tras elegir provincia. District Cuba publica precios y tiempos en páginas internas (20–25 días hábiles), pero su home vende trámites de pasaporte y mantiene publicada una súper oferta de septiembre ya vencida. Rapid Multiservice es fuerte en redes, pero su web es un marketplace de combos a medio traducir, sin tarifas de envío visibles.",
+      "Bolt Travel es la amenaza de precio: marítimo a $0.80/lb parejo para todo, incluidos duraderos y plantas eléctricas, hasta el 15 de diciembre, y aéreo a $2.60/lb, con unos 30 días hábiles declarados. El precio es real, pero en sus propios comentarios hay clientes con paquetes sin entregar a los 2 meses. Ahí la comparación cambia: no es solo la libra, es si el paquete llega y si alguien responde.",
+      "Sobre los tiempos, una honestidad necesaria: CT Envios no publica un rango fijo de días, porque el tiempo depende de la ruta marítima y de la aduana. Al cotizar te damos [el estimado para tu provincia](/blog/cuanto-demora-envio-maritimo-cuba) según destino, tipo de carga y oferta del día. Ninguna agencia seria debería prometer una fecha garantizada; la que lo hace, que lo demuestre con sus entregas.",
+      "La forma práctica de comparar: pide el precio por libra para tu contenido exacto, pregunta el estimado para tu provincia, prueba el tracking con un envío real y lee las reseñas recientes, no las de hace años. Si una agencia no publica precio, no muestra tracking ni da un estimado, te está pidiendo confianza a ciegas.",
+      "Si quieres cotizar con CT Envios, escríbenos por WhatsApp al (754) 277-8810 con fotos o lista del paquete. Te devolvemos tarifa, estimado de tiempo y si conviene caja o libra. Atendemos en 10230 NW 80th Ave, Hialeah Gardens, lunes a viernes de 9:00 a 6:00 y sábado y domingo de 10:00 a 4:00.",
+    ],
+  },
+  {
     slug: "como-abrir-agencia-envios-cuba",
     title:
       "Cómo abrir una agencia de envíos a Cuba con CT Envios: Atlas, tracking y tarifas de socio",
