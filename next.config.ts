@@ -44,6 +44,13 @@ const nextConfig: NextConfig = {
         destination: "/blog/articulos-prohibidos-cuba",
         permanent: true,
       },
+      {
+        // URL fantasma que Google mostraba sin existir (404). El dueño decidió
+        // no publicar la comparativa con nombres de competidores: 301 a la home.
+        source: "/blog/mejores-agencias-envios-cuba-miami",
+        destination: "/",
+        permanent: true,
+      },
       { source: "/&", destination: "/", permanent: true },
     ];
   },
