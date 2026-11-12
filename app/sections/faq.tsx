@@ -20,14 +20,14 @@ export function Faq(): ReactElement {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="overflow-hidden rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5 lg:grid lg:grid-cols-5 lg:items-stretch">
           <div className="relative flex items-end justify-center overflow-hidden bg-gradient-to-b from-[#16336f] to-brand-navy px-6 pt-8 lg:col-span-2 lg:pt-10">
-            <div aria-hidden="true" className="absolute left-1/2 top-1/2 h-[42rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-yellow/15 blur-3xl" />
+            <div aria-hidden="true" className="absolute -bottom-24 left-1/2 h-[44rem] w-[36rem] -translate-x-1/2 rounded-full bg-brand-yellow/20 blur-3xl" />
             <Image
               src={faq.image.src}
               alt={faq.image.alt}
               width={1024}
               height={1536}
               quality={75}
-              className="relative h-auto w-52 object-contain object-bottom [filter:drop-shadow(0_0_26px_rgb(160_190_255/0.45))] sm:w-64 lg:w-full lg:max-w-md"
+              className="relative h-auto w-52 object-contain object-bottom [filter:drop-shadow(0_0_34px_rgb(160_190_255/0.55))] sm:w-64 lg:w-full lg:max-w-md"
               sizes="(max-width: 1024px) 256px, 448px"
             />
           </div>
