@@ -15,7 +15,7 @@ function TrackingFallback(): ReactElement {
 
 export function TrackingView(): ReactElement {
   return (
-    <div className="flex flex-1 flex-col">
+    <div className="flex flex-1 flex-col bg-[#f5f5f7]">
       <Suspense fallback={<TrackingFallback />}>
         <TrackingClient />
       </Suspense>

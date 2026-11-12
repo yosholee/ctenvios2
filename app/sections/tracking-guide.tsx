@@ -60,7 +60,7 @@ export function TrackingGuide(): ReactElement {
         {STEPS.map((step, index) => (
           <div
             key={step.title}
-            className="rounded-2xl border border-brand-navy/10 bg-white p-5"
+            className="rounded-[28px] bg-white p-5 shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5 sm:p-6"
           >
             <span className="font-mono text-xs font-bold tracking-widest text-brand-navy/35">
               {String(index + 1).padStart(2, "0")}
@@ -76,7 +76,7 @@ export function TrackingGuide(): ReactElement {
       <h2 className="mt-12 text-2xl font-bold tracking-tight text-balance text-brand-navy sm:text-3xl">
         ¿Qué significan los estados de tu envío?
       </h2>
-      <dl className="mt-5 divide-y divide-brand-navy/8 rounded-2xl border border-brand-navy/10 bg-white">
+      <dl className="mt-5 divide-y divide-brand-navy/8 overflow-hidden rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5">
         {STATUSES.map((status) => (
           <div
             key={status.label}
@@ -92,7 +92,7 @@ export function TrackingGuide(): ReactElement {
         ))}
       </dl>
 
-      <div className="mt-10 rounded-2xl bg-brand-navy p-6 text-white sm:p-8">
+      <div className="mt-10 rounded-[28px] bg-brand-navy p-6 text-white sm:p-8">
         <h2 className="text-xl font-bold tracking-tight text-balance sm:text-2xl">
           ¿Tu envío no aparece o lleva días sin moverse?
         </h2>

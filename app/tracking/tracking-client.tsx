@@ -262,7 +262,7 @@ function ParcelTrackingCard({
   order: TrackingResult;
 }): ReactElement {
   return (
-    <Card className="overflow-hidden border-brand-navy/10 bg-white shadow-sm">
+    <Card className="overflow-hidden rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5">
       <CardContent className="grid gap-6 p-4 md:grid-cols-[minmax(0,280px)_1fr] md:items-stretch md:gap-8 md:p-5">
         <div className="flex w-full items-center border-brand-navy/10 md:border-r md:pr-8">
           <ParcelDetailsPanel parcel={parcel} order={order} />
@@ -428,7 +428,7 @@ export function TrackingClient(): ReactElement {
     >
         <div
           className={cn(
-            "flex w-full max-w-lg flex-col items-center",
+            "flex w-full max-w-lg flex-col items-center rounded-[28px] bg-white p-6 shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5 sm:p-8",
             isCompact ? "gap-4" : "gap-6"
           )}
         >
@@ -439,7 +439,7 @@ export function TrackingClient(): ReactElement {
               <div className="flex w-full flex-col gap-2 sm:flex-row sm:items-center">
                 <InputGroup
                   className={cn(
-                    "h-11 flex-1 rounded-full border-brand-navy/10 bg-muted/60",
+                    "h-11 flex-1 rounded-full border-brand-navy/10 bg-[#f5f5f7]",
                     validationError && "ring-1 ring-destructive/50"
                   )}
                 >
@@ -464,7 +464,7 @@ export function TrackingClient(): ReactElement {
                 </InputGroup>
                 <Button
                   type="submit"
-                  className="h-11 shrink-0 rounded-full bg-brand-yellow px-6 text-brand-navy hover:bg-brand-yellow/90"
+                  className="h-11 shrink-0 rounded-full bg-[#0071e3] px-6 text-white hover:bg-[#0077ed]"
                   disabled={isLoading || !query.trim()}
                 >
                   {isLoading ? (
@@ -487,7 +487,7 @@ export function TrackingClient(): ReactElement {
           aria-live="polite"
         >
           {isInvalidId ? (
-            <Empty className="w-full border border-brand-navy/10 bg-white">
+            <Empty className="w-full rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5">
               <EmptyHeader>
                 <EmptyMedia variant="icon">
                   <FileWarning aria-hidden />
@@ -504,7 +504,7 @@ export function TrackingClient(): ReactElement {
           ) : null}
 
           {isMissingApi ? (
-            <Empty className="w-full border border-brand-navy/10 bg-white">
+            <Empty className="w-full rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5">
               <EmptyHeader>
                 <EmptyMedia variant="icon">
                   <FileWarning aria-hidden />
@@ -522,7 +522,7 @@ export function TrackingClient(): ReactElement {
           ) : null}
 
           {isLoading ? (
-            <Empty className="w-full border border-brand-navy/10 bg-white">
+            <Empty className="w-full rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5">
               <EmptyHeader>
                 <EmptyMedia variant="icon">
                   <Spinner className="size-4" />
@@ -538,7 +538,7 @@ export function TrackingClient(): ReactElement {
           ) : null}
 
           {isLookupError ? (
-            <Empty className="w-full border border-brand-navy/10 bg-white">
+            <Empty className="w-full rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5">
               <EmptyHeader>
                 <EmptyMedia variant="icon">
                   <FileWarning aria-hidden />
@@ -555,7 +555,7 @@ export function TrackingClient(): ReactElement {
           ) : null}
 
           {isNotFound ? (
-            <Empty className="w-full border border-brand-navy/10 bg-white">
+            <Empty className="w-full rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5">
               <EmptyHeader>
                 <EmptyMedia variant="icon">
                   <FileWarning aria-hidden />
