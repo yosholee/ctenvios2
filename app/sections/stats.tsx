@@ -127,12 +127,12 @@ export function Stats(): ReactElement {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 gap-4">
+        <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
           {/* Tile grande: la modelo + paquetes entregados */}
           <div
             className={cn(
               tileClass,
-              "relative col-span-2 aspect-[4/5] overflow-hidden lg:row-span-2 lg:aspect-auto",
+              "relative order-1 col-span-2 aspect-[4/5] overflow-hidden lg:order-none lg:row-span-2 lg:aspect-auto",
               reveal(0).className,
             )}
             style={reveal(0).style}
@@ -171,7 +171,7 @@ export function Stats(): ReactElement {
           <div
             className={cn(
               tileClass,
-              "relative col-span-2 aspect-[16/10] overflow-hidden lg:col-span-1 lg:aspect-[7/10]",
+              "relative order-2 col-span-2 aspect-[16/10] overflow-hidden lg:order-none lg:col-span-1 lg:aspect-[7/10]",
               reveal(1).className,
             )}
             style={reveal(1).style}
@@ -199,7 +199,7 @@ export function Stats(): ReactElement {
           <div
             className={cn(
               tileClass,
-              "col-span-2 flex aspect-[16/9] flex-col overflow-hidden bg-[#f7f1e3] p-5 sm:p-6 lg:col-span-1 lg:aspect-[7/10]",
+              "order-5 col-span-2 flex aspect-[16/9] flex-col overflow-hidden bg-[#f7f1e3] p-5 sm:p-6 lg:order-none lg:col-span-1 lg:aspect-[7/10]",
               reveal(2).className,
             )}
             style={reveal(2).style}
@@ -222,7 +222,7 @@ export function Stats(): ReactElement {
           <div
             className={cn(
               tileClass,
-              "flex aspect-[8/7] flex-col items-center justify-center bg-white p-6 text-center lg:aspect-[7/10]",
+              "order-3 flex aspect-[8/7] flex-col items-center justify-center bg-white p-6 text-center lg:order-none lg:aspect-[7/10]",
               reveal(3).className,
             )}
             style={reveal(3).style}
@@ -237,7 +237,7 @@ export function Stats(): ReactElement {
           <div
             className={cn(
               tileClass,
-              "flex aspect-[8/7] flex-col items-center justify-center bg-white p-6 text-center lg:aspect-[7/10]",
+              "order-4 flex aspect-[8/7] flex-col items-center justify-center bg-white p-6 text-center lg:order-none lg:aspect-[7/10]",
               reveal(4).className,
             )}
             style={reveal(4).style}
