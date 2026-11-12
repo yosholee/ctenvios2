@@ -165,8 +165,8 @@ export function Hero(): ReactElement {
             <Image
               src={hero.image.src}
               alt={hero.image.alt}
-              width={408}
-              height={612}
+              width={1024}
+              height={1536}
               priority
               className="relative z-10 mx-auto h-auto w-[78%] max-w-sm object-contain"
             />
