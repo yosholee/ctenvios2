@@ -212,6 +212,9 @@ export const blogPosts: BlogPostContent[] = [
       "Guía para agencias y emprendedores: vende envíos a Cuba con el respaldo de CT Envios, el sistema Atlas como CRM, tracking en tiempo real para tus clientes y tarifas de socio. Escríbenos por WhatsApp.",
     publishedAt: "2026-10-27",
     readTime: "5 min",
+    image: "/images/blog/como-abrir-agencia-envios-cuba.webp",
+    imageAlt:
+      "Interior de una agencia socia de envíos a Cuba con cajas listas para enviar",
     cta: {
       whatsappText:
         "Hola, leí el artículo de agencias socias y quiero abrir una agencia CT Envios con Atlas.",
@@ -236,6 +239,9 @@ export const blogPosts: BlogPostContent[] = [
       "Precios actuales de CT Envios: desde $0.99/lb, cajas fijas desde $30 y cómo cotizar por WhatsApp.",
     publishedAt: "2026-02-26",
     readTime: "5 min",
+    image: "/images/blog/cuanto-cuesta-enviar-cuba.webp",
+    imageAlt:
+      "Caja de envío sobre una báscula industrial en el almacén de CT Envios",
     paragraphs: [
       "En CT Envios el envío marítimo a Cuba desde Miami parte de $0.99/lb martes, miércoles y jueves (alimentos, aseo, medicina, ropa y calzado), con mínimo 15 lb. El fin de semana está en $1.45/lb, los lunes y viernes en $1.64/lb para artículos duraderos, y el regular en $1.99/lb.",
       "Si no quieres calcular libras, hay [cajas fijas](/cajas-envios-cuba): 12×12×12 por $30, 15×15×15 por $60 y 16×16×16 por $65. En caja solo se admite alimentos, aseo, ropa y medicinas.",
@@ -251,6 +257,9 @@ export const blogPosts: BlogPostContent[] = [
       "Artículos permitidos y cómo preparar el paquete para envíos a Cuba desde Miami con CT Envios.",
     publishedAt: "2026-02-26",
     readTime: "6 min",
+    image: "/images/blog/que-se-puede-enviar-cuba.webp",
+    imageAlt:
+      "Caja abierta con alimentos, aseo, medicinas, ropa y calzado listos para enviar a Cuba",
     paragraphs: [
       "Lo más enviado desde Miami es ropa, aseo, alimentos no perecederos, medicinas permitidas y pequeños electrodomésticos. En CT Envios las cajas fijas solo aceptan alimentos, aseo, ropa y medicinas.",
       "Declara cada cosa con nombre concreto: “latas de atún”, “jabón de tocador”, “ropa de niño”. Evita la palabra “misceláneas”.",
@@ -267,6 +276,9 @@ export const blogPosts: BlogPostContent[] = [
       "El tiempo de un envío marítimo a Cuba depende de la ruta, la aduana y tu provincia. Qué lo acorta, qué lo demora y cómo pedir un estimado real para tu destino.",
     publishedAt: "2026-02-26",
     readTime: "4 min",
+    image: "/images/blog/cuanto-demora-envio-maritimo.webp",
+    imageAlt:
+      "Barco portacontenedores navegando hacia la costa de Cuba al atardecer",
     paragraphs: [
       "No hay un único plazo para toda Cuba. El tiempo sale de la ruta marítima, la aduana y el reparto en destino.",
       "Al cotizar, pide [el estimado para tu provincia](/blog/enviar-paquetes-a-cuba-por-provincia), no un promedio genérico. Oriente y occidente no se mueven igual.",
@@ -281,6 +293,9 @@ export const blogPosts: BlogPostContent[] = [
       "Rastrea tu paquete a Cuba en minutos: entra al tracking de CT Envios con tu número de orden o HBL y mira recibido, en tránsito, aduana, en reparto y entregado.",
     publishedAt: "2026-04-09",
     readTime: "4 min",
+    image: "/images/blog/como-rastrear-envio-cuba.webp",
+    imageAlt:
+      "Mano con un celular mostrando el tracking de un envío a Cuba",
     paragraphs: [
       "Entra a /tracking e ingresa el número de orden o el HBL. Verás el estado actualizado del paquete.",
       "Las etapas habituales son: recibido en Hialeah, en tránsito, aduana en Cuba, en reparto y entregado.",
@@ -295,6 +310,9 @@ export const blogPosts: BlogPostContent[] = [
       "Qué no enviar a Cuba para evitar retenciones, demoras o decomisos.",
     publishedAt: "2026-02-26",
     readTime: "5 min",
+    image: "/images/blog/articulos-prohibidos-cuba.webp",
+    imageAlt:
+      "Inspección aduanera de una caja con artículos prohibidos para enviar a Cuba",
     paragraphs: [
       "Un solo artículo restringido puede frenar todo el paquete. Si dudas, pregunta antes de empacar.",
       "No se aceptan armas, municiones, explosivos, drogas, dinero en efectivo ni material que viole embargo o transporte internacional.",
@@ -310,6 +328,9 @@ export const blogPosts: BlogPostContent[] = [
       "Guía para enviar una planta eléctrica (generador) a Cuba: qué confirmar antes, empaque, tarifa de lunes y viernes para artículos duraderos y tracking puerta a puerta.",
     publishedAt: "2026-10-23",
     readTime: "5 min",
+    image: "/images/blog/enviar-planta-electrica-cuba.webp",
+    imageAlt:
+      "Planta eléctrica portátil junto a su caja en un almacén de envíos",
     paragraphs: [
       "Las plantas eléctricas están entre los equipos más pedidos para Cuba. En CT Envios se cotizan como [electrodomésticos](/envio-electrodomesticos-cuba): antes de empacar, confirma por WhatsApp la marca, los watts y si el modelo se puede transportar por vía marítima, porque no todos los equipos ni todas las baterías se aceptan igual.",
       "Los lunes y viernes aplica la oferta de artículos duraderos — electrodomésticos, piezas y muebles — desde $1.64/lb, con mínimo de 15 lb. El resto de días hábiles aplica la tarifa regular de $1.99/lb. Los equipos grandes o voluminosos se cotizan uno a uno por peso y volumen, así que la foto y las medidas ayudan a darte un precio cerrado.",
@@ -326,6 +347,9 @@ export const blogPosts: BlogPostContent[] = [
       "Desde el 12 de octubre de 2026 el exceso sobre los límites no comerciales ya no se decomisa automático: se puede formalizar como importación comercial pagando aranceles progresivos en USD. Qué cambió y qué sigue igual.",
     publishedAt: "2026-10-23",
     readTime: "6 min",
+    image: "/images/blog/aduana-cuba-2026.webp",
+    imageAlt:
+      "Terminal portuaria con contenedores al amanecer en el Caribe",
     paragraphs: [
       "La Aduana de Cuba actualizó las reglas para las importaciones de las personas naturales. Las nuevas disposiciones se publicaron en la Edición Ordinaria No. 83 de la Gaceta Oficial e incluyen el Decreto-Ley 132/2026, la Resolución 197/2026 del Ministerio de Finanzas y Precios y la Resolución 340/2026 de la Aduana General de la República. Entraron en vigor el 12 de octubre de 2026 y cambian, sobre todo, lo que ocurre cuando un viajero o un envío supera los límites de la importación no comercial.",
       "El cambio principal es una alternativa al decomiso. Hasta ahora, lo que excedía los límites vigentes (1 000 USD para pasajeros y 500 USD para envíos) normalmente se perdía. Con la nueva norma, cuando la Aduana determine que hay excesos o que las mercancías tienen carácter comercial, el titular puede optar por formalizar esa parte como importación comercial mediante un nuevo despacho, pagando los aranceles y servicios correspondientes en dólares estadounidenses (USD). Esto se hace por la vía no comercial y no constituye una actividad de comercio exterior.",
@@ -365,6 +389,9 @@ export const blogPosts: BlogPostContent[] = [
       "Ropa y calzado a Cuba desde $0.99/lb martes, miércoles y jueves (mínimo 15 lb) con CT Envios: qué empacar, cómo declarar cada prenda y cuándo conviene caja fija o libra.",
     publishedAt: "2026-11-01",
     readTime: "5 min",
+    image: "/images/blog/enviar-ropa-calzado-cuba.webp",
+    imageAlt:
+      "Empacando ropa doblada y zapatos en una caja para enviar a Cuba",
     cta: {
       whatsappText:
         "Hola, quiero cotizar un envío de ropa y calzado a Cuba. ¿Me confirman tarifa y qué conviene, libra o caja?",
@@ -388,6 +415,9 @@ export const blogPosts: BlogPostContent[] = [
       "CT Envios entrega puerta a puerta en toda Cuba desde Hialeah Gardens. Qué cambia según la provincia de destino, qué datos pedir al destinatario y cómo pedir un estimado real.",
     publishedAt: "2026-11-01",
     readTime: "5 min",
+    image: "/images/blog/enviar-paquetes-por-provincia.webp",
+    imageAlt:
+      "Mapa de Cuba con puntos de entrega en varias provincias",
     cta: {
       whatsappText:
         "Hola, quiero cotizar un envío a Cuba. Mi destinatario está en otra provincia y quiero el estimado para ese destino.",

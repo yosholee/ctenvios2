@@ -71,10 +71,10 @@ export function BlogArticle({ slug }: BlogArticleProps): ReactElement {
               <Image
                 src={post.image}
                 alt={post.imageAlt ?? post.title}
-                width={1296}
-                height={1616}
+                width={1600}
+                height={900}
                 priority
-                className="mx-auto w-full max-w-md rounded-3xl"
+                className="mx-auto h-auto w-full max-w-2xl rounded-3xl"
               />
             </figure>
           ) : null}
