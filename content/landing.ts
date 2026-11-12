@@ -744,7 +744,7 @@ export const howItWorks: HowItWorksContent = {
     },
     {
       id: "transporte",
-      title: "Transportamos y procesamos el envío",
+      title: "Procesamos y transportamos el envío",
       description:
         "Tu paquete viaja de Miami a Cuba. En el tracking ves si ya salió, si está en camino o si ya llegó a la isla.",
     },
@@ -978,8 +978,9 @@ export const footer: FooterContent = {
   blurb:
     "Agencia de envíos a Cuba en Hialeah Gardens, Miami. Entrega puerta a puerta, cajas fijas, tracking y atención por WhatsApp.",
   social: [
-    { label: "TikTok", href: "https://www.tiktok.com/@ctenvios" },
     { label: "Instagram", href: "https://www.instagram.com/ctenvios/" },
+    { label: "Facebook", href: "https://www.facebook.com/ctenvio" },
+    { label: "TikTok", href: "https://www.tiktok.com/@ctenvios" },
     { label: "WhatsApp", href: "https://wa.me/17542778810" },
   ],
   legal: "CTEnvios. All Rights Reserved",
