@@ -6,10 +6,10 @@ export function Contact(): ReactElement {
   return (
     <section
       id="contacto"
-      className="scroll-mt-20 bg-background/90 py-16 backdrop-blur-md sm:py-20"
+      className="scroll-mt-20 py-16 sm:py-20"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <article className="rounded-3xl border border-brand-navy/10 bg-white p-6 shadow-sm sm:p-8">
+        <article className="rounded-[28px] bg-white p-6 shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5 sm:p-8 lg:p-10">
           <div className="grid gap-8 lg:grid-cols-5 lg:gap-10">
             <div className="flex flex-col justify-center lg:col-span-3">
               <span className="inline-flex w-fit rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold tracking-wide text-brand-navy uppercase">

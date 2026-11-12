@@ -29,7 +29,7 @@ export function Testimonials(): ReactElement {
   return (
     <section
       id="reseñas"
-      className="scroll-mt-20 bg-background/90 py-16 backdrop-blur-md sm:py-20"
+      className="scroll-mt-20 py-16 sm:py-20"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
@@ -64,7 +64,7 @@ export function Testimonials(): ReactElement {
             {testimonials.items.map((item) => (
               <figure
                 key={item.id}
-                className="flex flex-col justify-between rounded-2xl border border-brand-navy/10 bg-white p-6 sm:rounded-3xl sm:p-7"
+                className="flex flex-col justify-between rounded-[28px] bg-white p-6 shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5 sm:p-7"
               >
                 <div>
                   <Stars rating={item.rating} />
@@ -97,7 +97,7 @@ export function Testimonials(): ReactElement {
             href={testimonials.cta.href}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-brand-yellow px-5 py-2.5 text-sm font-bold text-brand-navy transition-colors hover:bg-brand-yellow/90 focus-visible:ring-2 focus-visible:ring-brand-navy/35 focus-visible:outline-none"
+            className="inline-flex items-center gap-2 rounded-full bg-[#0071e3] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#0077ed] focus-visible:ring-2 focus-visible:ring-brand-navy/35 focus-visible:outline-none"
           >
             {testimonials.cta.label}
           </a>

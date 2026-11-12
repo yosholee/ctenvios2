@@ -122,6 +122,10 @@ export interface OfferItem {
   ctaLabel: string;
   featured: boolean;
   active: boolean;
+  image?: {
+    src: string;
+    alt: string;
+  };
 }
 
 export interface OffersContent {
@@ -508,6 +512,10 @@ export const offers: OffersContent = {
       ctaLabel: "Cotizar oferta",
       featured: true,
       active: true,
+      image: {
+        src: "/images/offers/oferta-099.jpg",
+        alt: "Modelo de CT Envios con una caja de alimentos y aseo de la oferta de $0.99 por libra",
+      },
     },
     {
       id: "finde",
@@ -527,6 +535,10 @@ export const offers: OffersContent = {
       ctaLabel: "Cotizar fin de semana",
       featured: false,
       active: true,
+      image: {
+        src: "/images/offers/oferta-145.jpg",
+        alt: "Modelo de CT Envios con una caja de productos variados de la oferta de fin de semana de $1.45 por libra",
+      },
     },
     {
       id: "duraderos",
@@ -546,6 +558,10 @@ export const offers: OffersContent = {
       ctaLabel: "Cotizar duraderos",
       featured: false,
       active: true,
+      image: {
+        src: "/images/offers/oferta-164.jpg",
+        alt: "Modelo de CT Envios junto a una planta eléctrica y un microondas de la oferta de duraderos de $1.64 por libra",
+      },
     },
     {
       id: "regular",

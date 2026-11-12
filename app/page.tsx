@@ -11,7 +11,7 @@ import { Tracking } from "@/app/sections/tracking";
 
 export default function Home(): ReactElement {
   return (
-    <main id="contenido" className="flex flex-1 flex-col">
+    <main id="contenido" className="flex flex-1 flex-col bg-[#f5f5f7]">
       <Hero />
       <Offers />
       <Boxes />

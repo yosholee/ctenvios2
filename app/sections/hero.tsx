@@ -43,7 +43,7 @@ export function Hero(): ReactElement {
   }));
 
   return (
-    <section className="relative z-0 overflow-hidden bg-background/90 backdrop-blur-md">
+    <section className="relative z-0 overflow-hidden">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:gap-12 lg:px-8 lg:py-28">
         <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
           <span className="inline-flex rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold tracking-wide text-brand-navy uppercase">
@@ -98,7 +98,7 @@ export function Hero(): ReactElement {
                 />
               }
               size="lg"
-              className="shrink-0 bg-brand-yellow text-brand-navy hover:bg-brand-yellow/90"
+              className="shrink-0 rounded-full bg-[#0071e3] text-white hover:bg-[#0077ed]"
             >
               <MessageCircleIcon data-icon="inline-start" aria-hidden />
               {hero.primaryCta.label}
@@ -174,7 +174,7 @@ export function Hero(): ReactElement {
 
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-1/2 bg-linear-to-t from-background via-background/40 to-transparent"
+            className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-1/2 bg-linear-to-t from-[#f5f5f7] via-[#f5f5f7]/40 to-transparent"
           />
 
           <div className="absolute inset-x-4 bottom-3 z-30 overflow-hidden rounded-2xl bg-linear-to-br from-brand-navy via-[#12285f] to-[#06122e] px-1 py-2 shadow-lg sm:inset-x-5 sm:bottom-4 sm:rounded-3xl">

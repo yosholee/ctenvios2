@@ -19,7 +19,7 @@ export function HowItWorks(): ReactElement {
   return (
     <section
       id="como-funciona"
-      className="scroll-mt-20 bg-background/90 py-16 backdrop-blur-md sm:py-20"
+      className="scroll-mt-20 py-16 sm:py-20"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
@@ -42,7 +42,7 @@ export function HowItWorks(): ReactElement {
             return (
               <li
                 key={step.id}
-                className="relative rounded-2xl border border-brand-navy/10 bg-white p-6"
+                className="relative rounded-[28px] bg-white p-6 shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5 sm:p-7"
               >
                 <div className="flex items-center justify-between gap-3">
                   <span className="flex size-10 items-center justify-center rounded-xl bg-brand-yellow text-brand-navy">

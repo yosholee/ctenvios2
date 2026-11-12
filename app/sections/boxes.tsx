@@ -11,7 +11,7 @@ export function Boxes(): ReactElement {
   return (
     <section
       id="cajas"
-      className="scroll-mt-20 bg-white py-16 sm:py-20"
+      className="scroll-mt-20 py-16 sm:py-20"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
@@ -26,8 +26,8 @@ export function Boxes(): ReactElement {
           </p>
         </div>
 
-        <div className="mt-12 grid lg:grid-cols-3 lg:divide-x lg:divide-brand-navy/10">
-          {boxes.items.map((box, index) => {
+        <div className="mt-12 grid gap-5 lg:grid-cols-3">
+          {boxes.items.map((box) => {
             const whatsappHref = `${site.whatsappUrl}?text=${encodeURIComponent(
               `Hola, quiero reservar la ${box.sizeLabel} a ${formatPrice(box.price)} USD.`
             )}`;
@@ -36,10 +36,7 @@ export function Boxes(): ReactElement {
               <article
                 key={box.id}
                 className={cn(
-                  "row-span-7 grid grid-rows-subgrid items-start py-10 lg:px-8 lg:py-0",
-                  index > 0 && "border-t border-brand-navy/10 lg:border-t-0",
-                  index === 0 && "lg:pl-0",
-                  index === boxes.items.length - 1 && "lg:pr-0"
+                  "row-span-7 grid grid-rows-subgrid items-start rounded-[28px] bg-white p-7 shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5 sm:p-8"
                 )}
               >
                 <div className="flex min-h-12 flex-col items-center justify-end gap-2">
@@ -90,10 +87,10 @@ export function Boxes(): ReactElement {
                     }
                     size="lg"
                     className={cn(
-                      "w-full rounded-xl",
+                      "w-full rounded-full",
                       box.featured
-                        ? "bg-brand-yellow text-brand-navy hover:bg-brand-yellow/90"
-                        : "border border-brand-navy/15 bg-transparent text-brand-navy hover:bg-brand-navy/[0.04]"
+                        ? "bg-[#0071e3] text-white hover:bg-[#0077ed]"
+                        : "bg-brand-navy/5 text-brand-navy hover:bg-brand-navy/10"
                     )}
                   >
                     {boxes.ctaLabel}

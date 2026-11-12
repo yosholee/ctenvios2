@@ -41,12 +41,7 @@ function TrackingNotification({
   const Icon = eventIcons[eventId] ?? PackageIcon;
 
   return (
-    <figure
-      className={cn(
-        "relative mx-auto w-full max-w-md overflow-hidden rounded-2xl border border-brand-navy/10 bg-white p-4",
-        "transition-[border-color] duration-200 ease-in-out hover:border-brand-navy/20"
-      )}
-    >
+    <figure className="relative mx-auto w-full max-w-md overflow-hidden rounded-[20px] bg-white p-4 shadow-[0_2px_12px_rgba(0,0,0,0.05)] ring-1 ring-brand-navy/5">
       <div className="flex flex-row items-center gap-3">
         <div
           className={cn(
@@ -78,7 +73,7 @@ export function Tracking(): ReactElement {
   return (
     <section
       id="tracking"
-      className="scroll-mt-20 overflow-hidden bg-background/90 py-16 backdrop-blur-md sm:py-20"
+      className="scroll-mt-20 overflow-hidden py-16 sm:py-20"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
@@ -95,7 +90,7 @@ export function Tracking(): ReactElement {
             href={tracking.cta.href}
             target={tracking.cta.external ? "_blank" : undefined}
             rel={tracking.cta.external ? "noreferrer" : undefined}
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-yellow px-5 py-2.5 text-sm font-bold text-brand-navy transition-colors hover:bg-brand-yellow/90 focus-visible:ring-2 focus-visible:ring-brand-navy/35 focus-visible:outline-none"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#0071e3] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#0077ed] focus-visible:ring-2 focus-visible:ring-brand-navy/35 focus-visible:outline-none"
           >
             <MapPinIcon className="size-4" aria-hidden />
             {tracking.cta.label}
@@ -174,7 +169,7 @@ export function Tracking(): ReactElement {
             </AnimatedList>
             <div
               aria-hidden
-              className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-linear-to-t from-background via-background/70 to-transparent"
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-linear-to-t from-[#f5f5f7] via-[#f5f5f7]/70 to-transparent"
             />
           </div>
         </div>

@@ -15,10 +15,10 @@ export function Faq(): ReactElement {
   return (
     <section
       id="faq"
-      className="scroll-mt-20 bg-background/90 pt-6 pb-16 backdrop-blur-md sm:pt-8 sm:pb-20"
+      className="scroll-mt-20 pt-6 pb-16 sm:pt-8 sm:pb-20"
     >
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="overflow-hidden bg-brand-navy sm:rounded-[2rem] lg:grid lg:grid-cols-2 lg:items-stretch">
+        <div className="overflow-hidden bg-brand-navy sm:rounded-[28px] lg:grid lg:grid-cols-2 lg:items-stretch">
           <div className="relative flex items-end justify-center overflow-hidden px-6 pt-10 sm:px-8 lg:px-10 lg:pt-12">
             <div
               aria-hidden
