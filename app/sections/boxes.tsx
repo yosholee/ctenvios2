@@ -43,7 +43,7 @@ export function Boxes(): ReactElement {
                 key={box.id}
                 className="flex h-full flex-col overflow-hidden rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5"
               >
-                <div className="relative aspect-[4/3] bg-gradient-to-b from-[#e9e9fa] to-[#f7f7fd]">
+                <div className="relative aspect-[4/3] bg-gradient-to-b from-[#16336f] to-brand-navy">
                   {box.featured ? (
                     <span className="absolute top-4 left-4 z-10 rounded-full bg-brand-yellow px-3 py-1 text-[11px] font-bold tracking-wide text-brand-navy uppercase">
                       {box.badge}

@@ -19,7 +19,8 @@ export function Faq(): ReactElement {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="overflow-hidden rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5 lg:grid lg:grid-cols-5 lg:items-stretch">
-          <div className="relative flex items-end justify-center overflow-hidden bg-gradient-to-b from-[#e9e9fa] to-[#f7f7fd] px-6 pt-8 lg:col-span-2 lg:pt-10">
+          <div className="relative flex items-end justify-center overflow-hidden bg-gradient-to-b from-[#16336f] to-brand-navy px-6 pt-8 lg:col-span-2 lg:pt-10">
+            <div aria-hidden="true" className="absolute left-1/2 top-10 h-72 w-72 -translate-x-1/2 rounded-full bg-brand-yellow/20 blur-3xl lg:top-16" />
             <Image
               src={faq.image.src}
               alt={faq.image.alt}
