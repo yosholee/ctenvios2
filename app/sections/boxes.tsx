@@ -7,6 +7,12 @@ import { Highlighter } from "@/components/ui/highlighter";
 import { boxes, formatPrice, site } from "@/content/landing";
 import { cn } from "@/lib/utils";
 
+const boxVisualScale: Record<string, string> = {
+  "box-12": "h-[68%]",
+  "box-15": "h-[80%]",
+  "box-16": "h-[92%]",
+};
+
 export function Boxes(): ReactElement {
   return (
     <section
@@ -35,87 +41,86 @@ export function Boxes(): ReactElement {
             return (
               <article
                 key={box.id}
-                className={cn(
-                  "row-span-7 grid grid-rows-subgrid items-start rounded-[28px] bg-white p-7 shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5 sm:p-8"
-                )}
+                className="flex h-full flex-col overflow-hidden rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5"
               >
-                <div className="flex min-h-12 flex-col items-center justify-end gap-2">
+                <div className="relative aspect-[4/3] bg-gradient-to-b from-[#e9e9fa] to-[#f7f7fd]">
                   {box.featured ? (
-                    <span className="rounded-full bg-brand-yellow px-2.5 py-0.5 text-[10px] font-bold tracking-wide text-brand-navy uppercase">
+                    <span className="absolute top-4 left-4 z-10 rounded-full bg-brand-yellow px-3 py-1 text-[11px] font-bold tracking-wide text-brand-navy uppercase">
                       {box.badge}
                     </span>
-                  ) : (
-                    <span className="invisible h-[18px] text-[10px]" aria-hidden>
-                      {box.badge}
-                    </span>
-                  )}
-                  <span className="rounded-full bg-brand-navy px-3 py-1 text-xs font-bold tracking-wide text-white">
+                  ) : null}
+                  <div className="flex h-full items-end justify-center pb-1">
+                    <Image
+                      src={box.image.src}
+                      alt={box.image.alt}
+                      width={640}
+                      height={640}
+                      className={cn(
+                        "w-auto object-contain",
+                        boxVisualScale[box.id] ?? "h-[80%]"
+                      )}
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-1 flex-col p-7 sm:p-8">
+                  <span className="inline-flex self-start rounded-full bg-brand-navy px-3.5 py-1.5 text-xs font-bold tracking-wide text-white">
                     {box.dimensions}
                   </span>
-                </div>
 
-                <div className="mt-6 flex h-40 items-end justify-center sm:h-44">
-                  <Image
-                    src={box.image.src}
-                    alt={box.image.alt}
-                    width={320}
-                    height={320}
-                    className="h-full w-auto object-contain"
-                  />
-                </div>
+                  <p className="mt-5 flex items-baseline gap-2">
+                    <span className="text-5xl font-bold tracking-tight text-brand-navy tabular-nums">
+                      {formatPrice(box.price)}
+                    </span>
+                    <span className="text-sm text-brand-navy/45">USD</span>
+                  </p>
 
-                <p className="mt-6 flex items-baseline justify-center gap-2">
-                  <span className="text-5xl font-bold tracking-tight text-brand-navy tabular-nums">
-                    {formatPrice(box.price)}
-                  </span>
-                  <span className="text-sm text-brand-navy/45">USD</span>
-                </p>
+                  <p className="mt-2 text-sm text-brand-navy/45">
+                    {box.priceNote}
+                  </p>
 
-                <p className="mt-2 text-center text-sm text-brand-navy/45">
-                  {box.priceNote}
-                </p>
+                  <p className="mt-3 text-[15px] leading-relaxed text-brand-navy">
+                    {box.summary}
+                  </p>
 
-                <div className="mt-6">
-                  <Button
-                    nativeButton={false}
-                    render={
-                      <a
-                        href={whatsappHref}
-                        target="_blank"
-                        rel="noreferrer"
-                      />
-                    }
-                    size="lg"
-                    className={cn(
-                      "w-full rounded-full",
-                      box.featured
-                        ? "bg-[#0071e3] text-white hover:bg-[#0077ed]"
-                        : "bg-brand-navy/5 text-brand-navy hover:bg-brand-navy/10"
-                    )}
-                  >
-                    {boxes.ctaLabel}
-                  </Button>
-                </div>
+                  <ul className="mt-6 space-y-3 border-t border-brand-navy/10 pt-6">
+                    {box.includes.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-3 text-sm text-brand-navy/80"
+                      >
+                        <CheckIcon
+                          className="mt-0.5 size-4 shrink-0 text-[#0071e3]"
+                          strokeWidth={2.5}
+                          aria-hidden
+                        />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
 
-                <p className="mt-6 text-sm leading-relaxed text-brand-navy">
-                  {box.summary}
-                </p>
-
-                <ul className="mt-6 space-y-3">
-                  {box.includes.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-3 text-sm text-brand-navy/80"
+                  <div className="mt-auto pt-7">
+                    <Button
+                      nativeButton={false}
+                      render={
+                        <a
+                          href={whatsappHref}
+                          target="_blank"
+                          rel="noreferrer"
+                        />
+                      }
+                      size="lg"
+                      className={cn(
+                        "w-full rounded-full",
+                        box.featured
+                          ? "bg-[#0071e3] text-white hover:bg-[#0077ed]"
+                          : "bg-brand-navy/5 text-brand-navy hover:bg-brand-navy/10"
+                      )}
                     >
-                      <CheckIcon
-                        className="mt-0.5 size-4 shrink-0 text-brand-navy/55"
-                        strokeWidth={2.5}
-                        aria-hidden
-                      />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                      {boxes.ctaLabel}
+                    </Button>
+                  </div>
+                </div>
               </article>
             );
           })}
