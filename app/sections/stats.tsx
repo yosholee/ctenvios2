@@ -126,7 +126,11 @@ export function Stats(): ReactElement {
   });
 
   return (
-    <section ref={sectionRef} aria-label="CT Envios en cifras">
+    <section
+      ref={sectionRef}
+      aria-label="CT Envios en cifras"
+      className="overflow-x-clip"
+    >
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold tracking-wide text-brand-navy uppercase">
@@ -140,7 +144,7 @@ export function Stats(): ReactElement {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-flow-dense grid-cols-2 gap-4 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
           {/* Tile grande: paquetes entregados */}
           <div
             className={cn(
@@ -185,7 +189,7 @@ export function Stats(): ReactElement {
           <div
             className={cn(
               cardClass,
-              "relative col-span-2 min-h-56 overflow-hidden max-lg:aspect-[16/8] lg:col-span-1 lg:row-span-2",
+              "relative col-span-2 overflow-hidden max-lg:aspect-[16/10] lg:col-span-1 lg:row-span-2 lg:min-h-full",
               reveal(1).className,
             )}
             style={reveal(1).style}
@@ -195,7 +199,7 @@ export function Stats(): ReactElement {
               alt="Representante de CT Envios en el almacén de Hialeah Gardens"
               fill
               sizes="(max-width: 1024px) 100vw, 25vw"
-              className="object-cover object-top"
+              className="object-cover object-[50%_20%]"
             />
             <div
               aria-hidden="true"
@@ -267,12 +271,12 @@ export function Stats(): ReactElement {
           <div
             className={cn(
               cardClass,
-              "relative col-span-2 flex items-center overflow-hidden bg-[#f6f0e2] p-7 sm:p-8",
+              "col-span-2 flex items-center gap-4 overflow-hidden bg-[#f6f0e2] p-7 sm:gap-6 sm:p-8",
               reveal(5).className,
             )}
             style={reveal(5).style}
           >
-            <div className="relative z-10 max-w-[55%]">
+            <div className="min-w-0 flex-1">
               <p className="text-2xl font-extrabold tracking-tight text-brand-navy sm:text-3xl">
                 Puerta a puerta
               </p>
@@ -286,7 +290,7 @@ export function Stats(): ReactElement {
               alt=""
               width={1200}
               height={675}
-              className="absolute top-1/2 -right-10 w-[75%] max-w-none -translate-y-1/2 opacity-90"
+              className="w-[42%] shrink-0 object-contain"
             />
           </div>
         </div>
