@@ -196,7 +196,7 @@ export function Stats(): ReactElement {
           >
             <Image
               src="/images/bento-modelo-almacen.jpg"
-              alt="Representante de CT Envios en el almacén de Hialeah Gardens"
+              alt="Representante de CT Envios sosteniendo una caja con alimentos y aseo para enviar a Cuba"
               fill
               sizes="(max-width: 1024px) 100vw, 25vw"
               className="object-cover object-[50%_20%]"
@@ -206,7 +206,7 @@ export function Stats(): ReactElement {
               className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-brand-navy/70 to-transparent"
             />
             <p className="absolute bottom-4 left-5 text-sm font-semibold text-white">
-              Almacén propio en Hialeah Gardens
+              Lista para enviar a Cuba
             </p>
           </div>
 
