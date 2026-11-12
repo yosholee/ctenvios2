@@ -23,8 +23,8 @@ export function Faq(): ReactElement {
             <Image
               src={faq.image.src}
               alt={faq.image.alt}
-              width={408}
-              height={612}
+              width={1024}
+              height={1536}
               quality={75}
               className="relative h-auto w-52 object-contain object-bottom sm:w-64 lg:w-full lg:max-w-md"
               sizes="(max-width: 1024px) 256px, 448px"
