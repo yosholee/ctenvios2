@@ -1094,7 +1094,7 @@ export const stats: StatsContent = {
       key: "delivered",
       value: 43475,
       label: "paquetes entregados",
-      detail: "Entregas puerta a puerta registradas en Atlas",
+      detail: "Entregas puerta a puerta registradas en Atlas, solo en lo que va de 2026",
     },
     {
       key: "rating",
