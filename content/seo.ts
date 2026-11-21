@@ -65,6 +65,11 @@ export const servicePages: ServicePageContent[] = [
         answer:
           "Datos del remitente y del destinatario, contenido del paquete y si vas por libra o por caja fija.",
       },
+      {
+        question: "¿Cuánto demora?",
+        answer:
+          "El tiempo depende de la ruta marítima y de aduana en Cuba. Al cotizar te damos un estimado según destino, tipo de carga y oferta del día. Si tu envío lleva medicinas, revisa el [envío de medicamentos a Cuba](/envio-medicamentos-cuba).",
+      },
     ],
     whatsappText: "Hola, quiero cotizar un envío a Cuba desde la agencia de Hialeah.",
   },
@@ -95,7 +100,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Qué conviene enviar por marítimo?",
         answer:
-          "Alimentos no perecederos, aseo, ropa, medicinas permitidas, misceláneas y electrodomésticos o muebles en la oferta de lunes y viernes.",
+          "Alimentos no perecederos, aseo, ropa, medicinas permitidas, misceláneas y electrodomésticos o muebles en la oferta de lunes y viernes. Las medicinas permitidas van en la tarifa de $0.99/lb de martes a jueves, junto con alimentos, aseo, ropa y calzado.",
       },
     ],
     whatsappText: "Hola, quiero cotizar un envío marítimo a Cuba.",
@@ -159,7 +164,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Cómo se calcula el precio?",
         answer:
-          "Por libra (mínimo 15 lb) o por cotización si el volumen es alto. Los lunes y viernes aplica $1.64/lb a esta categoría.",
+          "Por libra (mínimo 15 lb) o por cotización si el volumen es alto. Los lunes y viernes aplica $1.64/lb a esta categoría. La ropa, el calzado y las medicinas no van en la oferta de duraderos: esas categorías van en la de $0.99/lb de martes a jueves.",
       },
     ],
     whatsappText: "Hola, quiero cotizar el envío de un electrodoméstico a Cuba.",
@@ -186,7 +191,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Qué puedo meter en una caja fija?",
         answer:
-          "Solo alimentos, aseo, ropa y medicinas. Si mezclas [electrodomésticos](/envio-electrodomesticos-cuba) u otra carga, cotiza por libra.",
+          "Solo alimentos, aseo, ropa y [medicinas](/envio-medicamentos-cuba). Si mezclas [electrodomésticos](/envio-electrodomesticos-cuba) u otra carga, cotiza por libra.",
       },
       {
         question: "¿Cuál caja conviene más?",
@@ -198,8 +203,56 @@ export const servicePages: ServicePageContent[] = [
         answer:
           "Escríbenos por WhatsApp con el tamaño. Te confirmamos disponibilidad, destino y cómo entregar el paquete en Hialeah Gardens.",
       },
+      {
+        question: "¿Qué va en una caja fija?",
+        answer:
+          "Solo alimentos, aseo, ropa y medicinas. El calzado no va en caja fija: se cotiza por libra.",
+      },
     ],
     whatsappText: "Hola, quiero reservar una caja fija para enviar a Cuba.",
+  },
+  {
+    slug: "envio-medicamentos-cuba",
+    eyebrow: "Medicamentos",
+    title: "Envío de medicamentos a Cuba desde Miami: $0.99/lb mar–jue",
+    description:
+      "Envía medicamentos permitidos a Cuba desde Miami: $0.99/lb de martes a jueves o en caja fija desde $30. Declara cada medicina por su nombre, sepárala en bulto aparte y cotiza por WhatsApp.",
+    intro:
+      "Las medicinas van en la misma categoría de $0.99/lb que los alimentos, el aseo, la ropa y el calzado: martes, miércoles y jueves, con mínimo de 15 lb en tarifas por libra. También se admiten en las cajas fijas. Antes de empacar, confirma tu lista por WhatsApp: solo se envían medicinas permitidas.",
+    priceInfo:
+      "Martes, miércoles y jueves $0.99/lb para alimentos, aseo, medicina, ropa y calzado (mínimo 15 lb). Fin de semana $1.45/lb para todos los productos. Regular $1.99/lb. Cajas fijas 12×12×12 $30, 15×15×15 $60, 16×16×16 $65 — solo alimentos, aseo, ropa y medicinas.",
+    timeInfo:
+      "El tiempo depende de la ruta marítima y de aduana en Cuba. Al cotizar te damos un estimado según destino y tipo de carga.",
+    benefits: [
+      "Medicinas en la tarifa de $0.99/lb mar–jue.",
+      "Admitidas en caja fija.",
+      "Entrega puerta a puerta.",
+      "Tracking con número de orden o HBL.",
+      "Asesoría para declarar el contenido.",
+    ],
+    faqs: [
+      {
+        question: "¿Cuánto cuesta enviar medicamentos a Cuba?",
+        answer:
+          "$0.99/lb mar–jue (mínimo 15 lb); fin de semana $1.45/lb; regular $1.99/lb; o caja fija desde $30.",
+      },
+      {
+        question: "¿Puedo mandar medicinas en una caja fija?",
+        answer:
+          "Sí: las [cajas fijas](/cajas-envios-cuba) admiten solo alimentos, aseo, ropa y medicinas.",
+      },
+      {
+        question: "¿Cómo debo declarar las medicinas?",
+        answer:
+          "Cada artículo con su nombre concreto, nada de «misceláneas»; sepáralas en un bulto aparte de alimentos y aseo.",
+      },
+      {
+        question: "¿Todas las medicinas se pueden enviar?",
+        answer:
+          "No: solo medicinas permitidas. Confirma tu lista por WhatsApp antes de empacar.",
+      },
+    ],
+    whatsappText: "Hola, quiero cotizar un envío de medicamentos a Cuba.",
   },
 ];
 
