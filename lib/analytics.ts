@@ -6,6 +6,8 @@
  * - `phone_click`: clic en cualquier enlace tel:.
  * - `tracking_search`: búsqueda válida enviada desde /tracking.
  * - `tracking_result`: resultado de la consulta de tracking (found true/false).
+ * - `review_click`: clic en «Dejar mi reseña en Google» de la tarjeta que
+ *   aparece en /tracking cuando el paquete ya fue entregado.
  *
  * Nunca se envía el número de orden ni el HBL como parámetro: solo se
  * contabiliza la acción para proteger los datos del cliente.

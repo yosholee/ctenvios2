@@ -280,16 +280,61 @@ function ParcelTrackingCard({
   );
 }
 
+const GOOGLE_REVIEW_URL = "https://g.page/r/CYaPkLOL5fw1EBM/review";
+
+function ReviewInviteCard(): ReactElement | null {
+  const [dismissed, setDismissed] = useState(false);
+
+  if (dismissed) return null;
+
+  return (
+    <Card className="w-full overflow-hidden rounded-[28px] bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)] ring-1 ring-brand-navy/5">
+      <CardContent className="flex flex-col items-start gap-3 p-5 sm:p-6">
+        <p className="text-lg font-bold tracking-tight text-brand-navy">
+          ¡Tu paquete llegó!
+        </p>
+        <p className="text-sm leading-relaxed text-brand-navy/65">
+          ¿Nos cuentas cómo te fue? Tu reseña en Google ayuda a otras familias
+          a confiar en CT Envios.
+        </p>
+        <div className="flex flex-wrap items-center gap-4 pt-1">
+          <a
+            href={GOOGLE_REVIEW_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackEvent("review_click")}
+            className="inline-flex h-11 items-center rounded-full bg-[#0071e3] px-6 text-sm font-medium text-white hover:bg-[#0077ed]"
+          >
+            Dejar mi reseña en Google
+          </a>
+          <button
+            type="button"
+            onClick={() => setDismissed(true)}
+            className="text-sm text-brand-navy/50 underline-offset-4 hover:text-brand-navy/70 hover:underline"
+          >
+            Ahora no
+          </button>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
 function TrackingResultCard({
   result,
 }: {
   result: TrackingResult;
 }): ReactElement {
+  const hasDeliveredParcel = result.parcels.some(isParcelDelivered);
+
   return (
     <div className="flex w-full flex-col gap-4">
       {result.parcels.map((parcel) => (
         <ParcelTrackingCard key={parcel.id} parcel={parcel} order={result} />
       ))}
+      {hasDeliveredParcel ? (
+        <ReviewInviteCard key={result.order_id} />
+      ) : null}
     </div>
   );
 }
