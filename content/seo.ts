@@ -134,6 +134,11 @@ export const servicePages: ServicePageContent[] = [
         answer:
           "Declara cada ítem con nombre claro (no “misceláneas”), usa empaque firme y no mezcles restringidos.",
       },
+      {
+        question: "¿Puedo enviar medicinas junto con los alimentos?",
+        answer:
+          "Sí, pero en bulto aparte y declaradas por su nombre. Las medicinas permitidas van en la misma tarifa de $0.99/lb de martes a jueves; revisa los detalles en el [envío de medicamentos a Cuba](/envio-medicamentos-cuba).",
+      },
     ],
     whatsappText: "Hola, quiero enviar alimentos a Cuba. ¿Me cotizan?",
   },
@@ -234,7 +239,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Cuánto cuesta enviar medicamentos a Cuba?",
         answer:
-          "$0.99/lb mar–jue (mínimo 15 lb); fin de semana $1.45/lb; regular $1.99/lb; o caja fija desde $30.",
+          "$0.99/lb mar–jue (mínimo 15 lb); fin de semana $1.45/lb; regular $1.99/lb; o caja fija desde $30. Los precios completos están en [cuánto cuesta enviar a Cuba desde Miami](/blog/cuanto-cuesta-enviar-a-cuba-desde-miami).",
       },
       {
         question: "¿Puedo mandar medicinas en una caja fija?",
@@ -249,7 +254,12 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Todas las medicinas se pueden enviar?",
         answer:
-          "No: solo medicinas permitidas. Confirma tu lista por WhatsApp antes de empacar.",
+          "No: solo medicinas permitidas. Confirma tu lista por WhatsApp antes de empacar. La lista general de lo permitido está en [qué se puede enviar a Cuba en 2026](/blog/que-se-puede-enviar-a-cuba-2026).",
+      },
+      {
+        question: "¿Cuánto demora el envío de medicamentos?",
+        answer:
+          "Depende de la ruta marítima y de la aduana en Cuba; al cotizar te damos el estimado según destino. Los factores que alargan o acortan el plazo están en [cuánto demora un envío marítimo a Cuba](/blog/cuanto-demora-envio-maritimo-cuba).",
       },
     ],
     whatsappText: "Hola, quiero cotizar un envío de medicamentos a Cuba.",
