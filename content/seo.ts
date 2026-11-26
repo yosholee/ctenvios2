@@ -428,7 +428,7 @@ export const blogPosts: BlogPostContent[] = [
     slug: "enviar-barato-a-cuba-en-halloween",
     title: "Cómo enviar barato a Cuba en Halloween (y con quién)",
     description:
-      "Guía de Halloween para enviar a Cuba sin asustar tu bolsillo: $0.99/lb de martes a jueves, cajas fijas desde $30 y la EcoFlow a $559.00 puesta en Cuba, con CT Envios en Hialeah Gardens.",
+      "Guía de Halloween para enviar a Cuba sin asustar tu bolsillo: $0.99/lb de martes a jueves, cajas fijas desde $30 y la EcoFlow a $560 puesta en Cuba, con CT Envios en Hialeah Gardens.",
     publishedAt: "2026-10-27",
     readTime: "4 min",
     image: "/images/blog/halloween-enviar-barato-cuba.webp",
@@ -439,7 +439,7 @@ export const blogPosts: BlogPostContent[] = [
       "La oferta fuerte de la semana: martes, miércoles y jueves los alimentos, el aseo, las medicinas, la ropa y el calzado salen a $0.99/lb, con mínimo de 15 lb. Es la mitad del precio regular de $1.99/lb. Si tu familia necesita comida, medicina, productos de aseo, ropa o zapatos, esos tres días son el momento de traer el paquete.",
       "¿No puedes entre semana? El sábado y el domingo la tarifa de fin de semana es $1.45/lb para todos los productos, de 10:00 AM a 4:00 PM. Y los lunes y viernes los artículos duraderos tienen su propia oferta: $1.64/lb para electrodomésticos, piezas y muebles.",
       "Si no quieres calcular libras, usa una caja fija y paga un solo precio: 12×12×12 por $30, 15×15×15 por $60 o 16×16×16 por $65. En las cajas fijas solo va alimentos, aseo, ropa y medicinas, con entrega en la puerta y número de tracking incluido.",
-      "El regalo de Halloween que de verdad resuelve en Cuba es la energía: la EcoFlow Delta 3 Classic está en $559.00 puesta en Cuba, con disponibilidad limitada. Es la planta que se está llevando todo el mundo para los apagones: 1024 Wh, carga rápida y sin ruido ni gasolina. Se reserva por WhatsApp.",
+      "El regalo de Halloween que de verdad resuelve en Cuba es la energía: la EcoFlow Delta 3 Classic está en $560 puesta en Cuba, con disponibilidad limitada. Es la planta que se está llevando todo el mundo para los apagones: 1024 Wh, carga rápida y sin ruido ni gasolina. Se reserva por WhatsApp.",
       "Tres trucos para que el total baje más: junta todo en un solo envío hasta pasar el mínimo de 15 lb en vez de mandar paquetes chicos por separado; declara cada artículo con su nombre concreto (nada de “misceláneas”), porque una declaración clara evita revisiones y demoras en aduana; y separa en un bulto aparte los alimentos, el aseo y las medicinas.",
       "¿Y con quién enviar? Busca tres cosas: precio publicado sin letra pequeña, [tracking real](/blog/como-rastrear-un-envio-a-cuba) y entrega puerta a puerta. CT Envios tiene 4.8 estrellas y 128 reseñas en Google, publica todas sus tarifas en ctenvios.com y cada envío se sigue en ctenvios.com/tracking con el número de orden o el HBL, sin registrarse.",
       "Estamos en 10230 NW 80th Ave, Hialeah Gardens, FL 33016. Abrimos de lunes a viernes de 9:00 AM a 6:00 PM y sábado y domingo de 10:00 AM a 4:00 PM. Escríbenos por WhatsApp al (754) 277-8810 con la lista o la foto de tu paquete y te cotizamos hoy mismo. Que este Halloween el único susto sea el de los disfraces.",
