@@ -41,13 +41,13 @@ export const servicePages: ServicePageContent[] = [
     eyebrow: "Agencia en Hialeah",
     title: "Agencia de envíos a Cuba en Hialeah Gardens: desde $0.99/lb",
     description:
-      "Agencia de envíos a Cuba en Hialeah Gardens, Miami: envío marítimo puerta a puerta desde $0.99/lb (mar–jue), cajas fijas desde $30, tracking incluido y cotización por WhatsApp.",
+      "Agencia de envíos a Cuba en Hialeah Gardens, Miami: envío marítimo puerta a puerta desde $0.99/lb todos los días, desde el Black Friday hasta Año Nuevo, cajas fijas desde $30, tracking incluido y cotización por WhatsApp.",
     intro:
       "Atendemos en 10230 NW 80th Ave, Hialeah Gardens. Envíos marítimos a toda Cuba, tarifas por libra, cajas fijas y seguimiento desde que recibimos el paquete hasta la entrega.",
     priceInfo:
-      "Desde $0.99/lb martes, miércoles y jueves (alimentos, aseo, medicina, ropa y calzado). Fin de semana $1.45/lb. Lunes y viernes $1.64/lb para artículos duraderos. Regular $1.99/lb. Cajas fijas desde $30. Mínimo 15 lb en tarifas por libra.",
+      "Desde el Black Friday hasta Año Nuevo: $0.99/lb para alimentos, aseo, medicina, ropa y calzado, y $1.45/lb para artículos duraderos, todos los días. Antes $1.99/lb. Cajas fijas desde $30. Mínimo 15 lb en tarifas por libra.",
     timeInfo:
-      "El tiempo depende de la ruta marítima y de aduana en Cuba. Al cotizar te damos un estimado según destino, tipo de carga y oferta del día.",
+      "El tiempo depende de la ruta marítima y de aduana en Cuba. Al cotizar te damos un estimado según destino, tipo de carga y tarifa vigente.",
     benefits: [
       "Atención local en Hialeah Gardens.",
       "Entrega puerta a puerta en Cuba.",
@@ -68,7 +68,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Cuánto demora?",
         answer:
-          "El tiempo depende de la ruta marítima y de aduana en Cuba. Al cotizar te damos un estimado según destino, tipo de carga y oferta del día. Si tu envío lleva medicinas, revisa el [envío de medicamentos a Cuba](/envio-medicamentos-cuba).",
+          "El tiempo depende de la ruta marítima y de aduana en Cuba. Al cotizar te damos un estimado según destino, tipo de carga y tarifa vigente. Si tu envío lleva medicinas, revisa el [envío de medicamentos a Cuba](/envio-medicamentos-cuba).",
       },
     ],
     whatsappText: "Hola, quiero cotizar un envío a Cuba desde la agencia de Hialeah.",
@@ -82,7 +82,7 @@ export const servicePages: ServicePageContent[] = [
     intro:
       "El marítimo es la vía de CT Envios para paquetes familiares y carga consolidada: mejor precio por libra, entrega en puerta y seguimiento en cada etapa.",
     priceInfo:
-      "Regular $1.99/lb. Ofertas: martes, miércoles y jueves $0.99/lb (alimentos, aseo, medicina, ropa y calzado), fin de semana $1.45/lb, lunes y viernes $1.64/lb (artículos duraderos). Mínimo 15 lb. Cajas fijas desde $30.",
+      "Desde el Black Friday hasta Año Nuevo: $0.99/lb para alimentos, aseo, medicina, ropa y calzado, y $1.45/lb para artículos duraderos, todos los días. Antes $1.99/lb. Mínimo 15 lb. Cajas fijas desde $30.",
     timeInfo:
       "No hay un plazo fijo para todos los destinos. El estimado se confirma al cotizar, según provincia, aduana y tipo de carga.",
     benefits: [
@@ -100,7 +100,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Qué conviene enviar por marítimo?",
         answer:
-          "Alimentos no perecederos, aseo, ropa, medicinas permitidas, misceláneas y electrodomésticos o muebles en la oferta de lunes y viernes. Las medicinas permitidas van en la tarifa de $0.99/lb de martes a jueves, junto con alimentos, aseo, ropa y calzado.",
+          "Alimentos no perecederos, aseo, ropa, medicinas permitidas, misceláneas y electrodomésticos o muebles a $1.45/lb. Las medicinas permitidas van en la tarifa de $0.99/lb, junto con alimentos, aseo, ropa y calzado.",
       },
     ],
     whatsappText: "Hola, quiero cotizar un envío marítimo a Cuba.",
@@ -108,17 +108,17 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "envio-alimentos-cuba",
     eyebrow: "Alimentos",
-    title: "Envío de comida a Cuba desde Miami: $0.99/lb mar–jue",
+    title: "Envío de comida a Cuba desde Miami: $0.99/lb",
     description:
-      "Envía alimentos, aseo, medicinas, ropa y calzado a Cuba desde Miami: $0.99/lb de martes a jueves o cajas fijas de $30 a $65. Entrega puerta a puerta con tracking.",
+      "Envía alimentos, aseo, medicinas, ropa y calzado a Cuba desde Miami: $0.99/lb todos los días, desde el Black Friday hasta Año Nuevo, o cajas fijas de $30 a $65. Entrega puerta a puerta con tracking.",
     intro:
-      "Martes, miércoles y jueves la tarifa de alimentos, aseo, medicina, ropa y calzado parte de $0.99/lb (mínimo 15 lb). También puedes usar cajas fijas si el contenido es alimentos, aseo, ropa o medicinas.",
+      "Desde el Black Friday hasta Año Nuevo, la tarifa de alimentos, aseo, medicina, ropa y calzado es $0.99/lb todos los días (mínimo 15 lb). También puedes usar cajas fijas si el contenido es alimentos, aseo, ropa o medicinas.",
     priceInfo:
-      "Martes, miércoles y jueves $0.99/lb para alimentos, aseo, medicina, ropa y calzado. Cajas 12×12×12 $30, 15×15×15 $60, 16×16×16 $65. Confirma la lista vigente antes de empacar.",
+      "$0.99/lb todos los días, desde el Black Friday hasta Año Nuevo, para alimentos, aseo, medicina, ropa y calzado. Cajas 12×12×12 $30, 15×15×15 $60, 16×16×16 $65. Confirma la lista vigente antes de empacar.",
     timeInfo:
       "Va por vía marítima. El estimado de entrega se da al cotizar, según destino y aduana.",
     benefits: [
-      "Oferta semanal para comida y aseo.",
+      "Oferta del período para comida y aseo: $0.99/lb todos los días.",
       "Cajas fijas si no quieres calcular libras.",
       "Recomendaciones de empaque y declaración.",
       "Tracking hasta la puerta.",
@@ -137,7 +137,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Puedo enviar medicinas junto con los alimentos?",
         answer:
-          "Sí, pero en bulto aparte y declaradas por su nombre. Las medicinas permitidas van en la misma tarifa de $0.99/lb de martes a jueves; revisa los detalles en el [envío de medicamentos a Cuba](/envio-medicamentos-cuba).",
+          "Sí, pero en bulto aparte y declaradas por su nombre. Las medicinas permitidas van en la misma tarifa de $0.99/lb todos los días, desde el Black Friday hasta Año Nuevo; revisa los detalles en el [envío de medicamentos a Cuba](/envio-medicamentos-cuba).",
       },
     ],
     whatsappText: "Hola, quiero enviar alimentos a Cuba. ¿Me cotizan?",
@@ -147,15 +147,15 @@ export const servicePages: ServicePageContent[] = [
     eyebrow: "Electrodomésticos",
     title: "Envío de electrodomésticos a Cuba",
     description:
-      "Envía electrodomésticos, piezas y muebles a Cuba. Oferta de lunes y viernes $1.64/lb para artículos duraderos, mínimo 15 lb, desde Hialeah Gardens.",
+      "Envía electrodomésticos, piezas y muebles a Cuba. Desde el Black Friday hasta Año Nuevo, $1.45/lb para artículos duraderos, todos los días, mínimo 15 lb, desde Hialeah Gardens.",
     intro:
-      "Los lunes y viernes CT Envios mueve artículos duraderos — electrodomésticos, piezas y muebles — a $1.64/lb (mínimo 15 lb). Cotizamos equipos grandes uno a uno por peso y volumen.",
+      "Desde el Black Friday hasta Año Nuevo, CT Envios mueve artículos duraderos — electrodomésticos, piezas y muebles — a $1.45/lb todos los días (mínimo 15 lb). Cotizamos equipos grandes uno a uno por peso y volumen.",
     priceInfo:
-      "Lunes y viernes $1.64/lb para artículos duraderos (electrodomésticos, piezas y muebles). Regular $1.99/lb. Equipos voluminosos se cotizan por WhatsApp.",
+      "Desde el Black Friday hasta Año Nuevo: $1.45/lb para artículos duraderos (electrodomésticos, piezas y muebles), todos los días. Antes $1.99/lb. Equipos voluminosos se cotizan por WhatsApp.",
     timeInfo:
       "Vía marítima. El estimado depende del destino, aduana y si el equipo requiere manejo especial.",
     benefits: [
-      "Tarifa de lunes y viernes para artículos duraderos.",
+      "Tarifa del período para artículos duraderos: $1.45/lb todos los días.",
       "Orientación de empaque para frágiles.",
       "Declaración y tracking.",
       "Entrega puerta a puerta.",
@@ -169,7 +169,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Cómo se calcula el precio?",
         answer:
-          "Por libra (mínimo 15 lb) o por cotización si el volumen es alto. Los lunes y viernes aplica $1.64/lb a esta categoría. La ropa, el calzado y las medicinas no van en la oferta de duraderos: esas categorías van en la de $0.99/lb de martes a jueves.",
+          "Por libra (mínimo 15 lb) o por cotización si el volumen es alto. Desde el Black Friday hasta Año Nuevo aplica $1.45/lb a esta categoría, todos los días. La ropa, el calzado y las medicinas no van en la tarifa de duraderos: esas categorías van a $0.99/lb.",
       },
     ],
     whatsappText: "Hola, quiero cotizar el envío de un electrodoméstico a Cuba.",
@@ -219,17 +219,17 @@ export const servicePages: ServicePageContent[] = [
   {
     slug: "envio-medicamentos-cuba",
     eyebrow: "Medicamentos",
-    title: "Envío de medicamentos a Cuba desde Miami: $0.99/lb mar–jue",
+    title: "Envío de medicamentos a Cuba desde Miami: $0.99/lb",
     description:
-      "Envía medicamentos permitidos a Cuba desde Miami: $0.99/lb de martes a jueves o en caja fija desde $30. Declara cada medicina por su nombre, sepárala en bulto aparte y cotiza por WhatsApp.",
+      "Envía medicamentos permitidos a Cuba desde Miami: $0.99/lb todos los días, desde el Black Friday hasta Año Nuevo, o en caja fija desde $30. Declara cada medicina por su nombre, sepárala en bulto aparte y cotiza por WhatsApp.",
     intro:
-      "Las medicinas van en la misma categoría de $0.99/lb que los alimentos, el aseo, la ropa y el calzado: martes, miércoles y jueves, con mínimo de 15 lb en tarifas por libra. También se admiten en las cajas fijas. Antes de empacar, confirma tu lista por WhatsApp: solo se envían medicinas permitidas.",
+      "Las medicinas van en la misma categoría de $0.99/lb que los alimentos, el aseo, la ropa y el calzado: todos los días, desde el Black Friday hasta Año Nuevo, con mínimo de 15 lb en tarifas por libra. También se admiten en las cajas fijas. Antes de empacar, confirma tu lista por WhatsApp: solo se envían medicinas permitidas.",
     priceInfo:
-      "Martes, miércoles y jueves $0.99/lb para alimentos, aseo, medicina, ropa y calzado (mínimo 15 lb). Fin de semana $1.45/lb para todos los productos. Regular $1.99/lb. Cajas fijas 12×12×12 $30, 15×15×15 $60, 16×16×16 $65 — solo alimentos, aseo, ropa y medicinas.",
+      "Desde el Black Friday hasta Año Nuevo: $0.99/lb para alimentos, aseo, medicina, ropa y calzado (mínimo 15 lb) y $1.45/lb para artículos duraderos, todos los días. Antes $1.99/lb. Cajas fijas 12×12×12 $30, 15×15×15 $60, 16×16×16 $65 — solo alimentos, aseo, ropa y medicinas.",
     timeInfo:
       "El tiempo depende de la ruta marítima y de aduana en Cuba. Al cotizar te damos un estimado según destino y tipo de carga.",
     benefits: [
-      "Medicinas en la tarifa de $0.99/lb mar–jue.",
+      "Medicinas en la tarifa de $0.99/lb todos los días.",
       "Admitidas en caja fija.",
       "Entrega puerta a puerta.",
       "Tracking con número de orden o HBL.",
@@ -239,7 +239,7 @@ export const servicePages: ServicePageContent[] = [
       {
         question: "¿Cuánto cuesta enviar medicamentos a Cuba?",
         answer:
-          "$0.99/lb mar–jue (mínimo 15 lb); fin de semana $1.45/lb; regular $1.99/lb; o caja fija desde $30. Los precios completos están en [cuánto cuesta enviar a Cuba desde Miami](/blog/cuanto-cuesta-enviar-a-cuba-desde-miami).",
+          "$0.99/lb todos los días, desde el Black Friday hasta Año Nuevo (mínimo 15 lb); $1.45/lb para artículos duraderos; o caja fija desde $30. Los precios completos están en [cuánto cuesta enviar a Cuba desde Miami](/blog/cuanto-cuesta-enviar-a-cuba-desde-miami).",
       },
       {
         question: "¿Puedo mandar medicinas en una caja fija?",
@@ -306,10 +306,10 @@ export const blogPosts: BlogPostContent[] = [
     imageAlt:
       "Caja de envío sobre una báscula industrial en el almacén de CT Envios",
     paragraphs: [
-      "En CT Envios el envío marítimo a Cuba desde Miami parte de $0.99/lb martes, miércoles y jueves (alimentos, aseo, medicina, ropa y calzado), con mínimo 15 lb. El fin de semana está en $1.45/lb, los lunes y viernes en $1.64/lb para artículos duraderos, y el regular en $1.99/lb.",
+      "Desde el Black Friday hasta Año Nuevo, el envío marítimo a Cuba desde Miami tiene dos precios regulares, todos los días: $0.99/lb para alimentos, aseo, medicina, ropa y calzado, y $1.45/lb para artículos duraderos, con mínimo de 15 lb en tarifas por libra. Antes $1.99/lb.",
       "Si no quieres calcular libras, hay [cajas fijas](/cajas-envios-cuba): 12×12×12 por $30, 15×15×15 por $60 y 16×16×16 por $65. En caja solo se admite alimentos, aseo, ropa y medicinas.",
       "El precio final también depende del contenido y de aduana. Una cotización útil incluye peso o tamaño de caja, lista de artículos y destino en Cuba.",
-      "Cotiza el día que vas a enviar. Las ofertas semanales cambian el total más que cualquier calculadora genérica.",
+      "Estos dos precios valen todos los días del período, desde el Black Friday hasta Año Nuevo. Cotiza el día que vas a enviar: la tarifa vigente cambia el total más que cualquier calculadora genérica.",
       "Escríbenos por WhatsApp con fotos o lista del paquete. Te devolvemos tarifa, estimado de tiempo y si conviene caja o libra.",
     ],
   },
@@ -531,12 +531,12 @@ export const seoHubLinks: SeoHubLink[] = [
   {
     label: "Enviar alimentos",
     href: "/envio-alimentos-cuba",
-    support: "Mar, mié y jue desde $0.99/lb. Alimentos, aseo, medicina, ropa y calzado.",
+    support: "Desde $0.99/lb todos los días. Alimentos, aseo, medicina, ropa y calzado.",
   },
   {
     label: "Electrodomésticos",
     href: "/envio-electrodomesticos-cuba",
-    support: "Lunes y viernes $1.64/lb. Artículos duraderos.",
+    support: "$1.45/lb todos los días. Artículos duraderos.",
   },
   {
     label: "Cajas fijas",

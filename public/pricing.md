@@ -1,40 +1,31 @@
 # Pricing — CT Envios
 
-Last updated: 2026-10-27
+Last updated: 2026-11-26
 
 Envíos marítimos a Cuba desde Miami (Hialeah Gardens, FL). Moneda: USD. Cotiza por WhatsApp antes de empacar.
 
 Contacto: https://wa.me/17542778810 · soporte@ctenvios.com · (305) 851-3004
 
-## Tarifas por libra (mínimo 15 lb)
+## Tarifas por libra (mínimo 15 lb) — precios regulares del período
 
-### Martes, Miércoles y Jueves — Super oferta
+Desde el Black Friday (viernes 27 de noviembre de 2026) hasta Año Nuevo, los precios regulares son los siguientes, todos los días. Reemplazan la rotación semanal durante ese período.
+
+### Alimentos, Aseo, Medicina, Ropa y Calzado
 - Price: $0.99 / lb
-- Precio regular de referencia: $1.99 / lb
+- Precio anterior de referencia: $1.99 / lb
 - Categoría: Alimentos, Aseo, Medicina, Ropa y Calzado
 - Incluye: envío a toda Cuba, tracking, entrega puerta a puerta
 - Mínimo: 15 libras
 
-### Sábado y Domingo
+### Artículos duraderos
 - Price: $1.45 / lb
-- Precio regular de referencia: $1.99 / lb
-- Categoría: Todos los productos
-- Horario en agencia: lunes a viernes 9:00 AM – 6:00 PM; sábado y domingo 10:00 AM – 4:00 PM
-- Incluye: atención por WhatsApp, tracking
-- Mínimo: 15 libras
-
-### Lunes y Viernes
-- Price: $1.64 / lb
-- Precio regular de referencia: $1.99 / lb
+- Precio anterior de referencia: $1.99 / lb
 - Categoría: Artículos duraderos (Electrodomésticos, Piezas y Muebles)
 - Incluye: entrega puerta a puerta
 - Mínimo: 15 libras
 
-### Precio regular (días hábiles)
-- Price: $1.99 / lb
-- Categoría: Envío marítimo estándar
-- Incluye: tracking en tiempo real, soporte personalizado
-- Mínimo: 15 libras
+### Al terminar el período
+Vuelve la rotación semanal: martes, miércoles y jueves $0.99/lb (alimentos, aseo, medicina, ropa y calzado), lunes y viernes $1.64/lb (artículos duraderos), sábado y domingo $1.45/lb (todos los productos), regular $1.99/lb.
 
 ## Cajas fijas
 

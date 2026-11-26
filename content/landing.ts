@@ -366,7 +366,7 @@ export const hero: HeroContent = {
   ],
   offerBadge: "Super oferta",
   offerPrice: "$0.99",
-  offerNote: "Martes, miércoles y jueves",
+  offerNote: "Desde Black Friday hasta Año Nuevo",
   image: {
     src: "/images/hero/model-agency.png",
     alt: "Envíos a Cuba desde Miami: caja CT Envios lista para enviar",
@@ -374,15 +374,15 @@ export const hero: HeroContent = {
   slides: [
     {
       id: "jueves",
-      label: "Martes, miércoles y jueves",
+      label: "Desde Black Friday hasta Año Nuevo",
       title: "Desde $0.99 / lb",
       description: "Alimentos, aseo, medicina, ropa y calzado. Envíos a toda Cuba.",
     },
     {
       id: "finde",
-      label: "Fin de semana",
+      label: "Artículos duraderos",
       title: "Desde $1.45 / lb",
-      description: "Abrimos sábado y domingo de 10:00 AM a 4:00 PM.",
+      description: "Electrodomésticos, piezas y muebles, todos los días.",
     },
     {
       id: "tracking",
@@ -492,17 +492,21 @@ export const offers: OffersContent = {
   headline: "Promociones que crecen contigo",
   highlight: "crecen contigo",
   support:
-    "Elige la oferta del día que mejor se adapte a tu envío. Tarifas claras por libra, con mínimo de 15 lb y entrega puerta a puerta.",
+    "Desde el Black Friday hasta Año Nuevo, estos son los precios regulares del período, todos los días. Tarifas claras por libra, con mínimo de 15 lb y entrega puerta a puerta.",
   items: [
+    // Precios del período Black Friday–Año Nuevo (27-nov-2026 a 1-ene-2027):
+    // reemplazan la rotación semanal. Al terminar el período, reactivar
+    // "duraderos" ($1.64 lun–vie) y "regular" ($1.99) y restaurar los
+    // dayLabel por días de la semana.
     {
       id: "jueves",
-      dayLabel: "Martes, Miércoles y Jueves",
+      dayLabel: "Desde Black Friday hasta Año Nuevo",
       category: "Alimentos, Aseo, Medicina, Ropa y Calzado",
       price: 0.99,
       regularPrice: 1.99,
       unit: "/lb",
       minLbs: 15,
-      description: "La mejor tarifa de la semana para lo esencial.",
+      description: "La mejor tarifa del período para lo esencial, todos los días.",
       features: [
         "Alimentos, aseo, medicina, ropa y calzado",
         "Mínimo 15 libras",
@@ -519,25 +523,25 @@ export const offers: OffersContent = {
     },
     {
       id: "finde",
-      dayLabel: "Sábado y Domingo",
-      category: "Todos los productos",
+      dayLabel: "Todos los días",
+      category: "Artículos duraderos",
       price: 1.45,
       regularPrice: 1.99,
       unit: "/lb",
       minLbs: 15,
-      description: "Tarifa especial de fin de semana, 10:00 AM – 4:00 PM.",
+      description: "Electrodomésticos, piezas y muebles a $1.45/lb, todos los días.",
       features: [
-        "Todos los productos",
+        "Electrodomésticos, piezas y muebles",
         "Mínimo 15 libras",
-        "Horario 10:00 AM – 4:00 PM",
+        "Entrega puerta a puerta",
         "Atención por WhatsApp",
       ],
-      ctaLabel: "Cotizar fin de semana",
+      ctaLabel: "Cotizar duraderos",
       featured: false,
       active: true,
       image: {
         src: "/images/offers/oferta-145.jpg",
-        alt: "Modelo de CT Envios con una caja de productos variados de la oferta de fin de semana de $1.45 por libra",
+        alt: "Modelo de CT Envios con una caja de productos variados de la tarifa de $1.45 por libra para artículos duraderos",
       },
     },
     {
@@ -557,7 +561,7 @@ export const offers: OffersContent = {
       ],
       ctaLabel: "Cotizar duraderos",
       featured: false,
-      active: true,
+      active: false,
       image: {
         src: "/images/offers/oferta-164.jpg",
         alt: "Modelo de CT Envios junto a una planta eléctrica y un microondas de la oferta de duraderos de $1.64 por libra",
@@ -580,7 +584,7 @@ export const offers: OffersContent = {
       ],
       ctaLabel: "Cotizar envío",
       featured: false,
-      active: true,
+      active: false,
     },
   ],
 };
@@ -783,14 +787,14 @@ export const faq: FaqContent = {
           featured: true,
           question: "¿Cuánto demora un envío a Cuba?",
           answer:
-            "El tiempo depende de la ruta marítima y de aduana en Cuba. No hay un plazo fijo para todos los destinos. Al cotizar por WhatsApp te damos un estimado según provincia, tipo de carga y oferta del día.",
+            "El tiempo depende de la ruta marítima y de aduana en Cuba. No hay un plazo fijo para todos los destinos. Al cotizar por WhatsApp te damos un estimado según provincia, tipo de carga y tarifa vigente.",
         },
         {
           id: "caja",
           featured: true,
           question: "¿Cuánto cuesta enviar una caja?",
           answer:
-            "Las cajas fijas empiezan en $30 (12×12×12), $60 (15×15×15) y $65 (16×16×16). Solo admiten alimentos, aseo, ropa y medicinas. Si vas por libra, el mínimo es 15 lb: martes, miércoles y jueves desde $0.99/lb (alimentos, aseo, medicina, ropa y calzado), fin de semana $1.45/lb, lunes y viernes $1.64/lb (artículos duraderos) y regular $1.99/lb.",
+            "Las cajas fijas empiezan en $30 (12×12×12), $60 (15×15×15) y $65 (16×16×16). Solo admiten alimentos, aseo, ropa y medicinas. Si vas por libra, el mínimo es 15 lb: desde el Black Friday hasta Año Nuevo, $0.99/lb para alimentos, aseo, medicina, ropa y calzado, y $1.45/lb para artículos duraderos, todos los días (antes $1.99/lb).",
         },
         {
           id: "minimo",
@@ -817,13 +821,13 @@ export const faq: FaqContent = {
           featured: true,
           question: "¿Qué productos se pueden enviar?",
           answer:
-            "Alimentos no perecederos, aseo, ropa, medicinas permitidas, misceláneas y, en la oferta de lunes y viernes, artículos duraderos como electrodomésticos, piezas y muebles. En cajas fijas solo alimentos, aseo, ropa y medicinas. Confirma artículos sensibles por WhatsApp antes de empacar.",
+            "Alimentos no perecederos, aseo, ropa, medicinas permitidas, misceláneas y artículos duraderos como electrodomésticos, piezas y muebles, a $1.45/lb todos los días, desde el Black Friday hasta Año Nuevo. En cajas fijas solo alimentos, aseo, ropa y medicinas. Confirma artículos sensibles por WhatsApp antes de empacar.",
         },
         {
           id: "electrodomesticos",
           question: "¿Puedo enviar electrodomésticos?",
           answer:
-            "Sí. Los lunes y viernes la tarifa es $1.64/lb para artículos duraderos: electrodomésticos, piezas y muebles (mínimo 15 lb). Equipos grandes o frágiles se cotizan uno a uno por WhatsApp.",
+            "Sí. Desde el Black Friday hasta Año Nuevo, los artículos duraderos van a $1.45/lb: electrodomésticos, piezas y muebles (mínimo 15 lb). Equipos grandes o frágiles se cotizan uno a uno por WhatsApp.",
         },
         {
           id: "prohibidos",
